@@ -1,0 +1,15 @@
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe.config
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.pdb
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csprojAssemblyReference.cache
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Colores.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.ConfirmarCierreSesion.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.InicioSesion.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Letras.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Menu.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Numeros.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Properties.Resources.resources
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.GenerateResource.cache
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.CoreCompileInputs.cache
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
+C:\Users\esper\source\repos\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb

@@ -35,12 +35,20 @@ Veces_Jugadas int,
 Puntos_Numeros int
 )
 
+Create table Puntajes(
+Id_Puntaje int primary key,
+Id_Colores int foreign key (Id_Colores) references Colores(Id_Colores),
+Id_Numeros int foreign key (Id_Numeros) references Numeros(Id_Numeros),
+Id_Letras int foreign key (Id_Letras) references Letras(Id_Letras)
+)
+
 Create table Alumno(
 Id_Alumno int identity primary key,
 Apellido_Paterno varchar(25),
 Apellido_Materno varchar(25),
 Nombres varchar(25),
 Promedio int,
+Id_Puntaje int foreign key (Id_Puntaje) references Puntajes(Id_Puntaje),
 Id_Grupo varchar(3) foreign key (Id_Grupo) references Grupo(Id_Grupo),
 Id_Computadora int foreign key (Id_Computadora) references Computadora(Id_Computadora)
 )
@@ -49,13 +57,4 @@ Create table Inicio_Sesion(
 Id_Sesion int primary key,
 Id_Alumno int foreign key (Id_Alumno) references Alumno(Id_Alumno),
 Id_Computadora int foreign key (Id_Computadora) references Computadora(Id_Computadora)
-)
-
-Create table Puntajes(
-Id_Puntaje int primary key,
-Id_Colores int foreign key (Id_Colores) references Colores(Id_Colores),
-Id_Numeros int foreign key (Id_Numeros) references Numeros(Id_Numeros),
-Id_Letras int foreign key (Id_Letras) references Letras(Id_Letras),
-Id_Alumno int foreign key (Id_Alumno) references Alumno(Id_Alumno),
-Promedio int
 )

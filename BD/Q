@@ -1,1 +1,66 @@
-Q
+Create database KinderApp
+Use KinderApp
+
+Create table Computadora(
+Id_Computadora int primary key,
+)
+
+Create table Docente(
+Id_Docente int identity primary key,
+Apellido_Paterno varchar(25),
+Apellido_Materno varchar(25),
+Nombres varchar(25)
+)
+
+Create table Grupo(
+Id_Grupo varchar(3) primary key,
+Id_Docente int foreign key (Id_Docente) references Docente(Id_Docente)
+)
+
+Create table Alumno(
+Id_Alumno int identity primary key,
+Apellido_Paterno varchar(25),
+Apellido_Materno varchar(25),
+Nombres varchar(25),
+Promedio int,
+Id_Grupo varchar(3) foreign key (Id_Grupo) references Grupo(Id_Grupo),
+Id_Computadora int foreign key (Id_Computadora) references Computadora(Id_Computadora)
+)
+Create table Inicio_Sesion(
+Id_Sesion int primary key,
+Id_Alumno int foreign key (Id_Alumno) references ALumno(Id_Alumno),
+Id_Computadora int foreign key (Id_Computadora) references Computadora(Id_Computadora)
+)
+
+Create table Juegos(
+Id_Juego int primary key,
+Categoria varchar(8),
+Veces_Jugadas int,
+Puntos int,
+Id_Alumno int foreign key (Id_Alumno) references Alumno(Id_Alumno) 
+)
+
+/*
+Create table Colores(
+Id_Colores int primary key,
+Veces_Jugadas int,
+Puntos int
+)
+
+Create table Letras(
+Id_Colores int primary key,
+Veces_Jugadas int,
+Puntos int
+)
+
+Create table Numeros(
+Id_Colores int primary key,
+Veces_Jugadas int,
+Puntos_Numeros int
+)
+
+Create table Promedio_Alumno(
+Id_Promedio int primary key,
+Puntaje_promediado int,
+)
+*/

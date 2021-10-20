@@ -13,7 +13,7 @@ namespace GestionProyectosSoftware
 {
     class conexion
     {
-        string cadena = "Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschoo;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999";
+        string cadena = "Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999";
         public SqlConnection conexionBD = new SqlConnection();
         InicioSesion inicio_sesion = new InicioSesion();
         

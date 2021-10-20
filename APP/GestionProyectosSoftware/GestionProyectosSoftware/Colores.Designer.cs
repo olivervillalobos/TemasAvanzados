@@ -30,6 +30,7 @@ namespace GestionProyectosSoftware
         private void InitializeComponent()
         {
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnPizarra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -42,11 +43,22 @@ namespace GestionProyectosSoftware
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // btnPizarra
+            // 
+            this.btnPizarra.Location = new System.Drawing.Point(179, 98);
+            this.btnPizarra.Name = "btnPizarra";
+            this.btnPizarra.Size = new System.Drawing.Size(113, 23);
+            this.btnPizarra.TabIndex = 2;
+            this.btnPizarra.Text = "Pizarra";
+            this.btnPizarra.UseVisualStyleBackColor = true;
+            this.btnPizarra.Click += new System.EventHandler(this.btnPizarra_Click);
+            // 
             // Colores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 352);
+            this.Controls.Add(this.btnPizarra);
             this.Controls.Add(this.btnRegresar);
             this.Name = "Colores";
             this.Text = "Colores";
@@ -57,5 +69,6 @@ namespace GestionProyectosSoftware
         #endregion
 
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnPizarra;
     }
 }

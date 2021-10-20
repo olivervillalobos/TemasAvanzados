@@ -83,6 +83,12 @@
     <Compile Include="Numeros.Designer.cs">
       <DependentUpon>Numeros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pizarra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pizarra.Designer.cs">
+      <DependentUpon>Pizarra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Colores.resx">
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Numeros.resx">
       <DependentUpon>Numeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pizarra.resx">
+      <DependentUpon>Pizarra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

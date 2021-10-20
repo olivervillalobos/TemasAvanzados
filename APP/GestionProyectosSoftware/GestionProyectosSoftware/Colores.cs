@@ -23,5 +23,12 @@ namespace GestionProyectosSoftware
             Form frmMenu = new Menu();
             frmMenu.Show();
         }
+
+        private void btnPizarra_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form Pizarra = new Pizarra();
+            Pizarra.Show();
+        }
     }
 }

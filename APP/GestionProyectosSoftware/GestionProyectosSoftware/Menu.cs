@@ -20,8 +20,8 @@ namespace GestionProyectosSoftware
         private void btnColores_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form frmColores = new Colores();
-            frmColores.Show();
+            Form Pizarra = new Pizarra();
+            Pizarra.Show();
         }
 
         private void btnNumeros_Click(object sender, EventArgs e)

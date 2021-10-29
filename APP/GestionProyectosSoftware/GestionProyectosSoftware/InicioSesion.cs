@@ -13,8 +13,8 @@ namespace GestionProyectosSoftware
 {
     public partial class InicioSesion : Form
     {
-        public int Id_Computadora;
-        public int Id_Alumno;
+        SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
+
         public InicioSesion()
         {
             InitializeComponent();
@@ -29,36 +29,41 @@ namespace GestionProyectosSoftware
         {
             try
             {
-                Id_Computadora = 0;
-                Id_Alumno = 0;
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+            logins();
+        }
 
-                Id_Computadora = Convert.ToInt32(txt_idComputadora.Text);
-                Id_Alumno = Convert.ToInt32(txt_idAlumno.Text);
-
-                if ((Id_Computadora != 0) && (Id_Alumno != 0))
+        public void logins()
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT Id_Computadora, Id_Alumno FROM Inicio_Sesion WHERE Id_Computadora = '" + txt_idComputadora.Text + "' AND Id_Alumno = '" + txt_idAlumno.Text + "'", connection);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
                 {
+                    MessageBox.Show("Bienvenido.");
                     this.Hide();
                     Form menu = new Menu();
                     menu.Show();
+                    connection.Close();
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Ha sucedido un error: Llene todo los campos.");
+                    MessageBox.Show("No se encontro su usuario.");
+                    connection.Close();
                 }
             }
-            catch(Exception)
+            catch
             {
-                System.Windows.Forms.MessageBox.Show("Ha sucedido un error: Solo se permiten caracteres numericos.");
+                MessageBox.Show("No se logro la conexion.");
+                connection.Close();
             }
-        }
-
-        private void InicioSesion_Load(object sender, EventArgs e)
-        {
-            conexion sqlconexion = new conexion();
-            sqlconexion.abrir();
-
-            txt_idComputadora.Text = "0";
-            txt_idAlumno.Text = "0";
         }
     }
 }

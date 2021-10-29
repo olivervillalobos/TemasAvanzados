@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\APP"
+    "\\APP",
+    "\\APP\\GestionProyectosSoftware",
+    "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware"
   ],
-  "SelectedNode": "\\APP",
+  "SelectedNode": "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware.sln",
   "PreviewInSolutionExplorer": false
 }

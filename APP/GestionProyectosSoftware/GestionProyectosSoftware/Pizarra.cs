@@ -72,19 +72,19 @@ namespace GestionProyectosSoftware
         private void btnAzul_Click(object sender, EventArgs e)
         {
             borrador = false;
-            Lapiz.Color = Color.Blue;
+            Lapiz.Color = Color.CornflowerBlue;
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Azul";
-            lblColor.ForeColor = Color.Blue;
+            lblColor.ForeColor = Color.CornflowerBlue;
         }
 
         private void btnVerde_Click(object sender, EventArgs e)
         {
             borrador = false;
-            Lapiz.Color = Color.Green;
+            Lapiz.Color = Color.LimeGreen;
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Verde";
-            lblColor.ForeColor = Color.Green;
+            lblColor.ForeColor = Color.LimeGreen;
         }
 
         private void btnNaranja_Click(object sender, EventArgs e)
@@ -108,10 +108,53 @@ namespace GestionProyectosSoftware
         private void btnPurpura_Click(object sender, EventArgs e)
         {
             borrador = false;
-            Lapiz.Color = Color.Purple;
+            Lapiz.Color = Color.MediumPurple;
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
-            lblColor.Text = "Púrpura";
-            lblColor.ForeColor = Color.Purple;
+            lblColor.Text = "Morado";
+            lblColor.ForeColor = Color.MediumPurple;
+        }
+
+        private void btnBlanco_Click(object sender, EventArgs e)
+        {
+            borrador = false;
+            Lapiz.Color = Color.White;
+            Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
+            lblColor.Text = "Blanco";
+            lblColor.ForeColor = Color.White;
+        }
+
+        private void btnCafe_Click(object sender, EventArgs e)
+        {
+            borrador = false;
+            Lapiz.Color = Color.SaddleBrown;
+            Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
+            lblColor.Text = "Café";
+            lblColor.ForeColor = Color.SaddleBrown;
+        }
+
+        private void btnAmarillo_Click(object sender, EventArgs e)
+        {
+            borrador = false;
+            Lapiz.Color = Color.Yellow;
+            Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
+            lblColor.Text = "Amarillo";
+            lblColor.ForeColor = Color.Yellow;
+        }
+
+        private void btnRosa_Click(object sender, EventArgs e)
+        {
+            borrador = false;
+            Lapiz.Color = Color.LightPink;
+            Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
+            lblColor.Text = "Rosa";
+            lblColor.ForeColor = Color.Pink;
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form frmMenu = new Menu();
+            frmMenu.Show();
         }
     }
 }

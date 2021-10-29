@@ -38,14 +38,22 @@ namespace GestionProyectosSoftware
             this.btnAzul = new System.Windows.Forms.Button();
             this.btnNaranja = new System.Windows.Forms.Button();
             this.btnNegro = new System.Windows.Forms.Button();
+            this.btnCafe = new System.Windows.Forms.Button();
+            this.btnBlanco = new System.Windows.Forms.Button();
+            this.btnAmarillo = new System.Windows.Forms.Button();
+            this.btnRosa = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnCambiarFondo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lienzo
             // 
             this.Lienzo.BackColor = System.Drawing.Color.Transparent;
-            this.Lienzo.Location = new System.Drawing.Point(110, 89);
+            this.Lienzo.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.poyo;
+            this.Lienzo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Lienzo.Location = new System.Drawing.Point(165, 89);
             this.Lienzo.Name = "Lienzo";
-            this.Lienzo.Size = new System.Drawing.Size(586, 358);
+            this.Lienzo.Size = new System.Drawing.Size(703, 358);
             this.Lienzo.TabIndex = 0;
             this.Lienzo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lienzo_MouseDown);
             this.Lienzo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Lienzo_MouseMove);
@@ -54,8 +62,9 @@ namespace GestionProyectosSoftware
             // lblColor
             // 
             this.lblColor.AutoSize = true;
+            this.lblColor.BackColor = System.Drawing.Color.Transparent;
             this.lblColor.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(392, 35);
+            this.lblColor.Location = new System.Drawing.Point(507, 34);
             this.lblColor.Name = "lblColor";
             this.lblColor.Size = new System.Drawing.Size(114, 41);
             this.lblColor.TabIndex = 1;
@@ -64,8 +73,10 @@ namespace GestionProyectosSoftware
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(263, 35);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(378, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 41);
             this.label1.TabIndex = 2;
@@ -73,78 +84,198 @@ namespace GestionProyectosSoftware
             // 
             // btnRojo
             // 
-            this.btnRojo.BackColor = System.Drawing.Color.Red;
-            this.btnRojo.Location = new System.Drawing.Point(12, 110);
+            this.btnRojo.BackColor = System.Drawing.Color.Transparent;
+            this.btnRojo.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.rojo;
+            this.btnRojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRojo.FlatAppearance.BorderSize = 0;
+            this.btnRojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRojo.Location = new System.Drawing.Point(55, 198);
             this.btnRojo.Name = "btnRojo";
-            this.btnRojo.Size = new System.Drawing.Size(75, 23);
+            this.btnRojo.Size = new System.Drawing.Size(94, 30);
             this.btnRojo.TabIndex = 3;
             this.btnRojo.UseVisualStyleBackColor = false;
             this.btnRojo.Click += new System.EventHandler(this.btnRojo_Click);
             // 
             // btnVerde
             // 
-            this.btnVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnVerde.Location = new System.Drawing.Point(12, 139);
+            this.btnVerde.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerde.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.verde;
+            this.btnVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVerde.FlatAppearance.BorderSize = 0;
+            this.btnVerde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerde.Location = new System.Drawing.Point(55, 294);
             this.btnVerde.Name = "btnVerde";
-            this.btnVerde.Size = new System.Drawing.Size(75, 23);
+            this.btnVerde.Size = new System.Drawing.Size(94, 30);
             this.btnVerde.TabIndex = 4;
             this.btnVerde.UseVisualStyleBackColor = false;
             this.btnVerde.Click += new System.EventHandler(this.btnVerde_Click);
             // 
             // btnPurpura
             // 
-            this.btnPurpura.BackColor = System.Drawing.Color.Purple;
-            this.btnPurpura.Location = new System.Drawing.Point(12, 226);
+            this.btnPurpura.BackColor = System.Drawing.Color.Transparent;
+            this.btnPurpura.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.morado;
+            this.btnPurpura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPurpura.FlatAppearance.BorderSize = 0;
+            this.btnPurpura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurpura.Location = new System.Drawing.Point(55, 358);
             this.btnPurpura.Name = "btnPurpura";
-            this.btnPurpura.Size = new System.Drawing.Size(75, 23);
+            this.btnPurpura.Size = new System.Drawing.Size(94, 30);
             this.btnPurpura.TabIndex = 5;
             this.btnPurpura.UseVisualStyleBackColor = false;
             this.btnPurpura.Click += new System.EventHandler(this.btnPurpura_Click);
             // 
             // btnAzul
             // 
-            this.btnAzul.BackColor = System.Drawing.Color.Blue;
-            this.btnAzul.Location = new System.Drawing.Point(12, 168);
+            this.btnAzul.BackColor = System.Drawing.Color.Transparent;
+            this.btnAzul.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.azul;
+            this.btnAzul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAzul.FlatAppearance.BorderSize = 0;
+            this.btnAzul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAzul.Location = new System.Drawing.Point(55, 326);
             this.btnAzul.Name = "btnAzul";
-            this.btnAzul.Size = new System.Drawing.Size(75, 23);
+            this.btnAzul.Size = new System.Drawing.Size(94, 30);
             this.btnAzul.TabIndex = 5;
             this.btnAzul.UseVisualStyleBackColor = false;
             this.btnAzul.Click += new System.EventHandler(this.btnAzul_Click);
             // 
             // btnNaranja
             // 
-            this.btnNaranja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnNaranja.Location = new System.Drawing.Point(12, 197);
+            this.btnNaranja.BackColor = System.Drawing.Color.Transparent;
+            this.btnNaranja.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.naranja;
+            this.btnNaranja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNaranja.FlatAppearance.BorderSize = 0;
+            this.btnNaranja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNaranja.Location = new System.Drawing.Point(55, 230);
             this.btnNaranja.Name = "btnNaranja";
-            this.btnNaranja.Size = new System.Drawing.Size(75, 23);
+            this.btnNaranja.Size = new System.Drawing.Size(94, 30);
             this.btnNaranja.TabIndex = 6;
             this.btnNaranja.UseVisualStyleBackColor = false;
             this.btnNaranja.Click += new System.EventHandler(this.btnNaranja_Click);
             // 
             // btnNegro
             // 
-            this.btnNegro.BackColor = System.Drawing.Color.Black;
-            this.btnNegro.Location = new System.Drawing.Point(12, 255);
+            this.btnNegro.BackColor = System.Drawing.Color.Transparent;
+            this.btnNegro.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.negro;
+            this.btnNegro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNegro.FlatAppearance.BorderSize = 0;
+            this.btnNegro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNegro.Location = new System.Drawing.Point(55, 134);
             this.btnNegro.Name = "btnNegro";
-            this.btnNegro.Size = new System.Drawing.Size(75, 23);
+            this.btnNegro.Size = new System.Drawing.Size(94, 30);
             this.btnNegro.TabIndex = 7;
             this.btnNegro.UseVisualStyleBackColor = false;
             this.btnNegro.Click += new System.EventHandler(this.btnNegro_Click);
+            // 
+            // btnCafe
+            // 
+            this.btnCafe.BackColor = System.Drawing.Color.Transparent;
+            this.btnCafe.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.café;
+            this.btnCafe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCafe.FlatAppearance.BorderSize = 0;
+            this.btnCafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCafe.Location = new System.Drawing.Point(55, 166);
+            this.btnCafe.Name = "btnCafe";
+            this.btnCafe.Size = new System.Drawing.Size(94, 30);
+            this.btnCafe.TabIndex = 11;
+            this.btnCafe.UseVisualStyleBackColor = false;
+            this.btnCafe.Click += new System.EventHandler(this.btnCafe_Click);
+            // 
+            // btnBlanco
+            // 
+            this.btnBlanco.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlanco.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.blanco;
+            this.btnBlanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlanco.FlatAppearance.BorderSize = 0;
+            this.btnBlanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlanco.Location = new System.Drawing.Point(55, 102);
+            this.btnBlanco.Name = "btnBlanco";
+            this.btnBlanco.Size = new System.Drawing.Size(94, 30);
+            this.btnBlanco.TabIndex = 10;
+            this.btnBlanco.UseVisualStyleBackColor = false;
+            this.btnBlanco.Click += new System.EventHandler(this.btnBlanco_Click);
+            // 
+            // btnAmarillo
+            // 
+            this.btnAmarillo.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmarillo.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.amarillo;
+            this.btnAmarillo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmarillo.FlatAppearance.BorderSize = 0;
+            this.btnAmarillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmarillo.Location = new System.Drawing.Point(55, 262);
+            this.btnAmarillo.Name = "btnAmarillo";
+            this.btnAmarillo.Size = new System.Drawing.Size(94, 30);
+            this.btnAmarillo.TabIndex = 8;
+            this.btnAmarillo.UseVisualStyleBackColor = false;
+            this.btnAmarillo.Click += new System.EventHandler(this.btnAmarillo_Click);
+            // 
+            // btnRosa
+            // 
+            this.btnRosa.BackColor = System.Drawing.Color.Transparent;
+            this.btnRosa.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.rosa;
+            this.btnRosa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRosa.FlatAppearance.BorderSize = 0;
+            this.btnRosa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRosa.Location = new System.Drawing.Point(55, 390);
+            this.btnRosa.Name = "btnRosa";
+            this.btnRosa.Size = new System.Drawing.Size(94, 30);
+            this.btnRosa.TabIndex = 9;
+            this.btnRosa.UseVisualStyleBackColor = false;
+            this.btnRosa.Click += new System.EventHandler(this.btnRosa_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Location = new System.Drawing.Point(55, 34);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(127, 40);
+            this.btnRegresar.TabIndex = 12;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // btnCambiarFondo
+            // 
+            this.btnCambiarFondo.BackColor = System.Drawing.Color.Transparent;
+            this.btnCambiarFondo.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
+            this.btnCambiarFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCambiarFondo.FlatAppearance.BorderSize = 0;
+            this.btnCambiarFondo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambiarFondo.ForeColor = System.Drawing.Color.White;
+            this.btnCambiarFondo.Location = new System.Drawing.Point(759, 34);
+            this.btnCambiarFondo.Name = "btnCambiarFondo";
+            this.btnCambiarFondo.Size = new System.Drawing.Size(127, 40);
+            this.btnCambiarFondo.TabIndex = 13;
+            this.btnCambiarFondo.Text = "Cambiar Fondo";
+            this.btnCambiarFondo.UseVisualStyleBackColor = false;
             // 
             // Pizarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 468);
-            this.Controls.Add(this.btnNegro);
+            this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(944, 501);
+            this.Controls.Add(this.btnCambiarFondo);
+            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.btnCafe);
             this.Controls.Add(this.btnNaranja);
+            this.Controls.Add(this.btnNegro);
+            this.Controls.Add(this.btnBlanco);
             this.Controls.Add(this.btnAzul);
+            this.Controls.Add(this.btnRosa);
             this.Controls.Add(this.btnPurpura);
+            this.Controls.Add(this.btnAmarillo);
             this.Controls.Add(this.btnVerde);
             this.Controls.Add(this.btnRojo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblColor);
             this.Controls.Add(this.Lienzo);
+            this.DoubleBuffered = true;
             this.Name = "Pizarra";
             this.Text = "Pizarra";
             this.ResumeLayout(false);
@@ -163,5 +294,11 @@ namespace GestionProyectosSoftware
         private System.Windows.Forms.Button btnAzul;
         private System.Windows.Forms.Button btnNaranja;
         private System.Windows.Forms.Button btnNegro;
+        private System.Windows.Forms.Button btnCafe;
+        private System.Windows.Forms.Button btnBlanco;
+        private System.Windows.Forms.Button btnAmarillo;
+        private System.Windows.Forms.Button btnRosa;
+        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnCambiarFondo;
     }
 }

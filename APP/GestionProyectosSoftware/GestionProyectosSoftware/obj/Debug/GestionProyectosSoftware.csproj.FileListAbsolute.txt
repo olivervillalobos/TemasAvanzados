@@ -94,3 +94,19 @@ C:\Users\omuri\OneDrive\Escritorio\GestionProyectos\APP\GestionProyectosSoftware
 C:\Users\omuri\OneDrive\Escritorio\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
 C:\Users\omuri\OneDrive\Escritorio\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb
 >>>>>>> 6fd67009cc10976b9fac78114622e8fc89e52d7a
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe.config
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.pdb
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csprojAssemblyReference.cache
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Colores.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.ConfirmarCierreSesion.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.InicioSesion.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Letras.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Menu.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Numeros.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Pizarra.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Properties.Resources.resources
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.GenerateResource.cache
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.CoreCompileInputs.cache
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
+C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb

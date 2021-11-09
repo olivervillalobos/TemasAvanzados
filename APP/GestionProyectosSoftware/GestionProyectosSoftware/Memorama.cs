@@ -153,8 +153,26 @@ namespace GestionProyectosSoftware
                 case 0:
                     TmpImg = Properties.Resources.negro;
                     break;
-                default:
-                    TmpImg = (Bitmap)Properties.Resources.ResourceManager.GetObject("img" + NumeroImagen);
+                case 1:
+                    TmpImg = Properties.Resources.café;
+                    break;
+                case 2:
+                    TmpImg = Properties.Resources.morado;
+                    break;
+                case 3:
+                    TmpImg = Properties.Resources.azul;
+                    break;
+                case 4:
+                    TmpImg = Properties.Resources.amarillo;
+                    break;
+                case 5:
+                    TmpImg = Properties.Resources.blanco;
+                    break;
+                case 6:
+                    TmpImg = Properties.Resources.rojo;
+                    break;
+                case 7:
+                    TmpImg = Properties.Resources.rosa;
                     break;
             }
             return TmpImg;

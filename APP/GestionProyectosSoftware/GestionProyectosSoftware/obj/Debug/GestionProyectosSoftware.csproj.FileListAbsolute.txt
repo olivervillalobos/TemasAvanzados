@@ -111,3 +111,18 @@ C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\Ge
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb
 C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Memorama.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe.config
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.pdb
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csprojAssemblyReference.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.ConfirmarCierreSesion.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.InicioSesion.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Letras.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Memorama.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Menu.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Pizarra.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Properties.Resources.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.GenerateResource.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.CoreCompileInputs.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb

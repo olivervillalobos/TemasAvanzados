@@ -9,12 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GestionProyectosSoftware
 {
     public partial class Memorama : Form
     {
-        
+        SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
+
+
         TimeSpan Tiempo;
         int TamColumnasFilas = 4;
         int CantidadDeCartasVolteadas = 0;
@@ -117,19 +120,22 @@ namespace GestionProyectosSoftware
                             if (Convert.ToInt32(lblSegundos.Text) <= 40 && Convert.ToInt32(lblMinutos.Text) == 0)
                             {
                                 lblPuntos.Visible = true;
-                                lblPuntos.Text = "100";
+                                lblPuntos.Text = "10";
+                                upload1();
                             }
                             else
                             {
                                 if (Convert.ToInt32(lblSegundos.Text) <= 50 && Convert.ToInt32(lblMinutos.Text) == 0)
                                 {
                                     lblPuntos.Visible = true;
-                                    lblPuntos.Text = "90";
+                                    lblPuntos.Text = "7";
+                                    upload2();
                                 }
                                 else
                                 {
                                     lblPuntos.Visible = true;
-                                    lblPuntos.Text = "80";
+                                    lblPuntos.Text = "4";
+                                    upload3();
                                 }
 
                             }
@@ -211,8 +217,105 @@ namespace GestionProyectosSoftware
             lblmilisegundos.Text = "000";
             lblPuntos.Text = "0";
             lblPuntos.Visible = false;
+            veces_jugas();
             iniciarJuego();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Puntajes set promedio = c.Puntos_Colores + n.Puntos_Numeros + l.Puntos_Letras from Colores c, Numeros n, Letras l WHERE (c.Id_Colores = Puntajes.Id_Colores) AND (n.Id_Numeros = Puntajes.Id_Numeros) AND (l.Id_Letras = Puntajes.Id_Letras)", connection);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Alumno set promedio = p.promedio from Puntajes p WHERE p.Id_Puntaje = Alumno.Id_Puntaje", connection);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+            this.Close();
+            Form frmMenu = new Menu();
+            frmMenu.Show();
+        }
+
+        public void upload1()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Numeros set Puntos_Numeros = ( Puntos_Numeros + 10) WHERE Id_Numeros = @Id_Numeros", connection);
+                altas.Parameters.AddWithValue("Id_Numeros", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
+        public void upload2()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Numeros set Puntos_Numeros = ( Puntos_Numeros + 7) WHERE Id_Numeros = @Id_Numeros", connection);
+                altas.Parameters.AddWithValue("Id_Numeros", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
+        public void upload3()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Numeros set Puntos_Numeros = ( Puntos_Numeros + 4) WHERE Id_Numeros = @Id_Numeros", connection);
+                altas.Parameters.AddWithValue("Id_Numeros", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
+        public void veces_jugas()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Numeros set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_Numeros = @Id_Numeros", connection);
+                altas.Parameters.AddWithValue("Id_Numeros", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
         }
     }
 }

@@ -47,6 +47,7 @@ namespace GestionProyectosSoftware
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
+                    global.id_user = Convert.ToInt32(txt_idAlumno.Text);
                     MessageBox.Show("Bienvenido.");
                     this.Hide();
                     Form menu = new Menu();

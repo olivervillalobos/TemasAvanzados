@@ -46,18 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Colores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Colores.Designer.cs">
-      <DependentUpon>Colores.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConfirmarCierreSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConfirmarCierreSesion.Designer.cs">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="global.cs" />
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,12 +77,6 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Numeros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Numeros.Designer.cs">
-      <DependentUpon>Numeros.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pizarra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,9 +85,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Colores.resx">
-      <DependentUpon>Colores.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmarCierreSesion.resx">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,9 +99,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Numeros.resx">
-      <DependentUpon>Numeros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pizarra.resx">
       <DependentUpon>Pizarra.cs</DependentUpon>

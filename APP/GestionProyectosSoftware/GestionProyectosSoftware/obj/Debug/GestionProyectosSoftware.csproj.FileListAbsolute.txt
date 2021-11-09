@@ -110,3 +110,4 @@ C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\Ge
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.CoreCompileInputs.cache
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb
+C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Memorama.resources

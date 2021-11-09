@@ -70,6 +70,12 @@
     <Compile Include="Letras.Designer.cs">
       <DependentUpon>Letras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Memorama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorama.Designer.cs">
+      <DependentUpon>Memorama.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Letras.resx">
       <DependentUpon>Letras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorama.resx">
+      <DependentUpon>Memorama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

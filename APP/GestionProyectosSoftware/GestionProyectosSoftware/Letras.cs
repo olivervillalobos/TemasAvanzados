@@ -23,5 +23,12 @@ namespace GestionProyectosSoftware
             Form frmMenu = new Menu();
             frmMenu.Show();
         }
+
+        private void btnMemorama_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form Memorama = new Memorama();
+            Memorama.Show();
+        }
     }
 }

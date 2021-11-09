@@ -30,6 +30,7 @@ namespace GestionProyectosSoftware
         private void InitializeComponent()
         {
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnMemorama = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -42,11 +43,22 @@ namespace GestionProyectosSoftware
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // btnMemorama
+            // 
+            this.btnMemorama.Location = new System.Drawing.Point(210, 81);
+            this.btnMemorama.Name = "btnMemorama";
+            this.btnMemorama.Size = new System.Drawing.Size(75, 23);
+            this.btnMemorama.TabIndex = 1;
+            this.btnMemorama.Text = "Memorama";
+            this.btnMemorama.UseVisualStyleBackColor = true;
+            this.btnMemorama.Click += new System.EventHandler(this.btnMemorama_Click);
+            // 
             // Letras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 374);
+            this.Controls.Add(this.btnMemorama);
             this.Controls.Add(this.btnRegresar);
             this.Name = "Letras";
             this.Text = "Letras";
@@ -57,5 +69,6 @@ namespace GestionProyectosSoftware
         #endregion
 
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnMemorama;
     }
 }

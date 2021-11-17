@@ -76,8 +76,8 @@ namespace GestionProyectosSoftware
                 connection.Close();
             }
             this.Close();
-            Hangman frmLetras = new Hangman();
-            frmLetras.Show();
+            Hangman hang = new Hangman();
+            hang.Show();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

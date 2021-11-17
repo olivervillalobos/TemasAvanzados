@@ -26,3 +26,17 @@ C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\AppMaestro\AppMaestro\obj\D
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.csproj.CoreCompileInputs.cache
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.exe
 C:\Users\omuri\OneDrive\Escritorio\Nueva carpeta\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.pdb
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\bin\Debug\AppMaestro.exe.config
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\bin\Debug\AppMaestro.exe
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\bin\Debug\AppMaestro.pdb
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.csprojAssemblyReference.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.Alumno.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.consultas.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.docente.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.Form1.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.Grupo.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.Properties.Resources.resources
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.csproj.GenerateResource.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.csproj.CoreCompileInputs.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.exe
+C:\Users\olive\source\repos\GestionProyectos\APP\AppMaestro\AppMaestro\obj\Debug\AppMaestro.pdb

@@ -65,12 +65,6 @@
     <Compile Include="InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Letras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Letras.Designer.cs">
-      <DependentUpon>Letras.cs</DependentUpon>
-    </Compile>
     <Compile Include="Memorama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,9 +93,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Letras.resx">
-      <DependentUpon>Letras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Memorama.resx">
       <DependentUpon>Memorama.cs</DependentUpon>

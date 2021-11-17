@@ -184,7 +184,28 @@
     <None Include="Resources\oso.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Carta .png" />
+    <Content Include="Resources\cero.png" />
+    <Content Include="Resources\cinco.png" />
+    <Content Include="Resources\cuatro.png" />
+    <Content Include="Resources\dos.png" />
+    <Content Include="Resources\eight.png" />
+    <Content Include="Resources\five.png" />
     <Content Include="Resources\flor.png" />
+    <Content Include="Resources\four.png" />
+    <Content Include="Resources\nein.png" />
+    <Content Include="Resources\nueve.png" />
+    <Content Include="Resources\ocho.png" />
+    <Content Include="Resources\one.png" />
+    <Content Include="Resources\seis.png" />
+    <Content Include="Resources\seven.png" />
+    <Content Include="Resources\siete.png" />
+    <Content Include="Resources\six.png" />
+    <Content Include="Resources\three.png" />
+    <Content Include="Resources\tres.png" />
+    <Content Include="Resources\two.png" />
+    <Content Include="Resources\uno.png" />
+    <Content Include="Resources\zero.png" />
     <None Include="Resources\Tacha.png" />
     <None Include="Resources\Palomita.png" />
     <None Include="Resources\login 2.png" />

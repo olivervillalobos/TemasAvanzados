@@ -154,31 +154,69 @@ namespace GestionProyectosSoftware
         public Bitmap RecuperarImagen(int NumeroImagen)
         {
             Bitmap TmpImg = new Bitmap(200, 100);
-            switch (NumeroImagen)
+            Random rnd = new Random();
+            int value = rnd.Next(0,20);
+            switch (value)
             {
                 case 0:
-                    TmpImg = Properties.Resources.negro;
+                    TmpImg = Properties.Resources.cero;
                     break;
                 case 1:
-                    TmpImg = Properties.Resources.café;
+                    TmpImg = Properties.Resources.uno;
                     break;
                 case 2:
-                    TmpImg = Properties.Resources.morado;
+                    TmpImg = Properties.Resources.dos;
                     break;
                 case 3:
-                    TmpImg = Properties.Resources.azul;
+                    TmpImg = Properties.Resources.tres;
                     break;
                 case 4:
-                    TmpImg = Properties.Resources.amarillo;
+                    TmpImg = Properties.Resources.cuatro;
                     break;
                 case 5:
-                    TmpImg = Properties.Resources.blanco;
+                    TmpImg = Properties.Resources.cinco;
                     break;
                 case 6:
-                    TmpImg = Properties.Resources.rojo;
+                    TmpImg = Properties.Resources.seis;
                     break;
                 case 7:
-                    TmpImg = Properties.Resources.rosa;
+                    TmpImg = Properties.Resources.siete;
+                    break;
+                case 8:
+                    TmpImg = Properties.Resources.ocho;
+                    break;
+                case 9:
+                    TmpImg = Properties.Resources.nueve;
+                    break;
+                case 10:
+                    TmpImg = Properties.Resources.one;
+                    break;
+                case 11:
+                    TmpImg = Properties.Resources.two;
+                    break;
+                case 12:
+                    TmpImg = Properties.Resources.three;
+                    break;
+                case 13:
+                    TmpImg = Properties.Resources.four;
+                    break;
+                case 14:
+                    TmpImg = Properties.Resources.five;
+                    break;
+                case 15:
+                    TmpImg = Properties.Resources.six;
+                    break;
+                case 16:
+                    TmpImg = Properties.Resources.seven;
+                    break;
+                case 17:
+                    TmpImg = Properties.Resources.eight;
+                    break;
+                case 18:
+                    TmpImg = Properties.Resources.nein;
+                    break;
+                case 19:
+                    TmpImg = Properties.Resources.zero;
                     break;
             }
             return TmpImg;

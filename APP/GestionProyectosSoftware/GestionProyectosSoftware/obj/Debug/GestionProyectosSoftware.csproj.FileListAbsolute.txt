@@ -126,3 +126,4 @@ C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\Gestio
 C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.CoreCompileInputs.cache
 C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.exe
 C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.pdb
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Hangman.resources

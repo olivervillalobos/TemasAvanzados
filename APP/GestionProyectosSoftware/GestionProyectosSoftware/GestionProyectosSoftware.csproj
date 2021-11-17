@@ -53,6 +53,12 @@
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="global.cs" />
+    <Compile Include="Hangman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hangman.Designer.cs">
+      <DependentUpon>Hangman.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ConfirmarCierreSesion.resx">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hangman.resx">
+      <DependentUpon>Hangman.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>

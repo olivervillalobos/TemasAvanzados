@@ -76,7 +76,7 @@ namespace GestionProyectosSoftware
                 connection.Close();
             }
             this.Close();
-            Form frmLetras = new Letras();
+            Hangman frmLetras = new Hangman();
             frmLetras.Show();
         }
 

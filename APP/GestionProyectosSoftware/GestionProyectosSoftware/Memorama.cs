@@ -74,7 +74,7 @@ namespace GestionProyectosSoftware
                     CartasJuego.Name = string.Format("{0}", contadorFichas);
                     CartasJuego.Dock = DockStyle.Fill;
                     CartasJuego.SizeMode = PictureBoxSizeMode.StretchImage;
-                    CartasJuego.Image = Properties.Resources.Palomita;
+                    CartasJuego.Image = Properties.Resources.Carta;
                     CartasJuego.Cursor = Cursors.Hand;
                     CartasJuego.Click += btnCarta_Click;
                     tablaPanel.Controls.Add(CartasJuego, j, i);

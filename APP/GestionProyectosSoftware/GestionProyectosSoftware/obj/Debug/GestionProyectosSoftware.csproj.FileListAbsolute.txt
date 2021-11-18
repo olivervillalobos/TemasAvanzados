@@ -157,3 +157,4 @@ C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProy
 C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe.config
 C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.exe
 C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProyectosSoftware\bin\Debug\GestionProyectosSoftware.pdb
+C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Hangman.resources

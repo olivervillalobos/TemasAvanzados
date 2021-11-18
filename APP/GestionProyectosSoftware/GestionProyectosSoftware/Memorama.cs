@@ -228,8 +228,8 @@ namespace GestionProyectosSoftware
             int TiempoGirarCarta = 10;
             if (TiempoGirarCarta == 10)
             {
-                CartaTemporal1.Image = Properties.Resources.Palomita;
-                CartaTemporal2.Image = Properties.Resources.Palomita;
+                CartaTemporal1.Image = Properties.Resources.carta;
+                CartaTemporal2.Image = Properties.Resources.carta;
                 CartasSeleccionadas.Clear();
                 TiempoGirarCarta = 0;
                 timer1.Stop();

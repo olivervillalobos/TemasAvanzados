@@ -74,7 +74,7 @@ namespace GestionProyectosSoftware
                     CartasJuego.Name = string.Format("{0}", contadorFichas);
                     CartasJuego.Dock = DockStyle.Fill;
                     CartasJuego.SizeMode = PictureBoxSizeMode.StretchImage;
-                    CartasJuego.Image = Properties.Resources.Carta;
+                    CartasJuego.Image = Properties.Resources.carta;
                     CartasJuego.Cursor = Cursors.Hand;
                     CartasJuego.Click += btnCarta_Click;
                     tablaPanel.Controls.Add(CartasJuego, j, i);
@@ -189,34 +189,34 @@ namespace GestionProyectosSoftware
                     TmpImg = Properties.Resources.nueve;
                     break;
                 case 10:
-                    TmpImg = Properties.Resources.one;
+                    TmpImg = Properties.Resources._1uno;
                     break;
                 case 11:
-                    TmpImg = Properties.Resources.two;
+                    TmpImg = Properties.Resources._2dos;
                     break;
                 case 12:
-                    TmpImg = Properties.Resources.three;
+                    TmpImg = Properties.Resources._3tres;
                     break;
                 case 13:
-                    TmpImg = Properties.Resources.four;
+                    TmpImg = Properties.Resources._4cuatro;
                     break;
                 case 14:
-                    TmpImg = Properties.Resources.five;
+                    TmpImg = Properties.Resources._5cinco;
                     break;
                 case 15:
-                    TmpImg = Properties.Resources.six;
+                    TmpImg = Properties.Resources._6seis;
                     break;
                 case 16:
-                    TmpImg = Properties.Resources.seven;
+                    TmpImg = Properties.Resources._7siete;
                     break;
                 case 17:
-                    TmpImg = Properties.Resources.eight;
+                    TmpImg = Properties.Resources._8ocho;
                     break;
                 case 18:
-                    TmpImg = Properties.Resources.nein;
+                    TmpImg = Properties.Resources._9nueve;
                     break;
                 case 19:
-                    TmpImg = Properties.Resources.zero;
+                    TmpImg = Properties.Resources._0cero;
                     break;
             }
             return TmpImg;

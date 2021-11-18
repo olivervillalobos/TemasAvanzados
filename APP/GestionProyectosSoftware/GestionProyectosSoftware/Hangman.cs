@@ -232,7 +232,7 @@ namespace GestionProyectosSoftware
                 connection.Close();
             }
             this.Close();
-            Form menu = new Form();
+            Menu menu = new Menu();
             menu.Show();
         }
     }

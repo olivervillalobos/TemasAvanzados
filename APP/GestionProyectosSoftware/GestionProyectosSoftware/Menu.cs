@@ -76,7 +76,7 @@ namespace GestionProyectosSoftware
                 connection.Close();
             }
             this.Close();
-            Form Hangman = new Form();
+            Hangman Hangman = new Hangman();
             Hangman.Show();
         }
 

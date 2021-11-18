@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using WMPLib;
 
 namespace GestionProyectosSoftware
 {
@@ -17,9 +18,9 @@ namespace GestionProyectosSoftware
     {
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
 
-
+        WindowsMediaPlayer Sonido;
         TimeSpan Tiempo;
-        int TamColumnasFilas = 4;
+        int TamColumnasFilas = 5;
         int CantidadDeCartasVolteadas = 0;
         List<string> CartasEnumeradas;
         List<string> CartasRevueltas;
@@ -44,7 +45,7 @@ namespace GestionProyectosSoftware
             CartasEnumeradas = new List<string>();
             CartasRevueltas = new List<string>();
             CartasSeleccionadas = new ArrayList();
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 10; i++)
             {
                 CartasEnumeradas.Add(i.ToString());
                 CartasEnumeradas.Add(i.ToString());
@@ -57,7 +58,7 @@ namespace GestionProyectosSoftware
             }
             var tablaPanel = new TableLayoutPanel();
             tablaPanel.RowCount = TamColumnasFilas;
-            tablaPanel.ColumnCount = TamColumnasFilas;
+            tablaPanel.ColumnCount = TamColumnasFilas-1;
             for (int i = 0; i < TamColumnasFilas; i++)
             {
                 var Porcentaje = 150f / (float)TamColumnasFilas - 10;
@@ -66,7 +67,7 @@ namespace GestionProyectosSoftware
             }
             int contadorFichas = 1;
 
-            for (var i = 0; i < TamColumnasFilas; i++)
+            for (var i = 0; i < TamColumnasFilas-1; i++)
             {
                 for (var j = 0; j < TamColumnasFilas; j++)
                 {
@@ -112,10 +113,11 @@ namespace GestionProyectosSoftware
                     else
                     {
                         CantidadDeCartasVolteadas++;
-                        if (CantidadDeCartasVolteadas > 7)
+                        if (CantidadDeCartasVolteadas > 9)
                         {
                             tmrTiempo.Stop();
                             Crono.Stop();
+                            Reproducir(100);
                             MessageBox.Show("El juego terminó");
                             if (Convert.ToInt32(lblSegundos.Text) <= 40 && Convert.ToInt32(lblMinutos.Text) == 0)
                             {
@@ -155,68 +157,47 @@ namespace GestionProyectosSoftware
         {
             Bitmap TmpImg = new Bitmap(200, 100);
             Random rnd = new Random();
-            int value = rnd.Next(0,20);
-            switch (value)
-            {
+            switch (NumeroImagen)
+            {  
                 case 0:
-                    TmpImg = Properties.Resources.cero;
+                    TmpImg = Properties.Resources._1uno;
+                    Reproducir(1);
                     break;
                 case 1:
-                    TmpImg = Properties.Resources.uno;
+                    TmpImg = Properties.Resources._2dos;
+                    Reproducir(2);
                     break;
                 case 2:
-                    TmpImg = Properties.Resources.dos;
+                    TmpImg = Properties.Resources._3tres;
+                    Reproducir(3);
                     break;
                 case 3:
-                    TmpImg = Properties.Resources.tres;
+                    TmpImg = Properties.Resources._4cuatro;
+                    Reproducir(4);
                     break;
                 case 4:
-                    TmpImg = Properties.Resources.cuatro;
+                    TmpImg = Properties.Resources._5cinco;
+                    Reproducir(5);
                     break;
                 case 5:
-                    TmpImg = Properties.Resources.cinco;
+                    TmpImg = Properties.Resources._6seis;
+                    Reproducir(6);
                     break;
                 case 6:
-                    TmpImg = Properties.Resources.seis;
+                    TmpImg = Properties.Resources._7siete;
+                    Reproducir(7);
                     break;
                 case 7:
-                    TmpImg = Properties.Resources.siete;
+                    TmpImg = Properties.Resources._8ocho;
+                    Reproducir(8);
                     break;
                 case 8:
-                    TmpImg = Properties.Resources.ocho;
+                    TmpImg = Properties.Resources._9nueve;
+                    Reproducir(9);
                     break;
                 case 9:
-                    TmpImg = Properties.Resources.nueve;
-                    break;
-                case 10:
-                    TmpImg = Properties.Resources._1uno;
-                    break;
-                case 11:
-                    TmpImg = Properties.Resources._2dos;
-                    break;
-                case 12:
-                    TmpImg = Properties.Resources._3tres;
-                    break;
-                case 13:
-                    TmpImg = Properties.Resources._4cuatro;
-                    break;
-                case 14:
-                    TmpImg = Properties.Resources._5cinco;
-                    break;
-                case 15:
-                    TmpImg = Properties.Resources._6seis;
-                    break;
-                case 16:
-                    TmpImg = Properties.Resources._7siete;
-                    break;
-                case 17:
-                    TmpImg = Properties.Resources._8ocho;
-                    break;
-                case 18:
-                    TmpImg = Properties.Resources._9nueve;
-                    break;
-                case 19:
                     TmpImg = Properties.Resources._0cero;
+                    Reproducir(0);
                     break;
             }
             return TmpImg;
@@ -354,6 +335,13 @@ namespace GestionProyectosSoftware
                 MessageBox.Show(ex.ToString());
                 connection.Close();
             }
+        }
+
+        public void Reproducir(int Numero)
+        {
+            Sonido = new WindowsMediaPlayer();
+            Sonido.URL = Application.StartupPath + @"\mp3\" + Numero + ".mp3";
+            Sonido.controls.play();
         }
     }
 }

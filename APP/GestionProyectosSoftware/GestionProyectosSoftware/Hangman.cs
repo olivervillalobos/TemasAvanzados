@@ -173,15 +173,15 @@ namespace GestionProyectosSoftware
                 switch(Oportunidades)
                 {
                     case 1:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_1;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_7;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 2:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_2;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_6;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 3:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_3;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_5;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 4:
@@ -189,15 +189,15 @@ namespace GestionProyectosSoftware
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 5:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_5;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_3;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 6:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_6;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_2;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 7:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_7;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_1;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     default:

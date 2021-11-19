@@ -34,7 +34,9 @@ namespace GestionProyectosSoftware
             lblperdiste.Visible = false;
             Oportunidades = 0;
             value = 0;
-            botoninicio.Image = Properties.Resources.rojo;
+
+            botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
+            botoninicio.Image = Properties.Resources.jugando;
             Palabras = new string[] {"Programa","Escuela" };
             Alfabeto = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".ToCharArray();
 
@@ -67,14 +69,16 @@ namespace GestionProyectosSoftware
                 word.Tag = PalabraSeleccionada[IndiceValorLetra].ToString();
                 word.Width = 46;
                 word.Height = 80;
-                word.ForeColor = Color.Aqua;
+                word.ForeColor = Color.White;
                 word.Text = "-";
                 word.Font = new Font(word.Font.Name, 32, FontStyle.Bold);
                 word.BackgroundImageLayout = ImageLayout.Center;
-                word.BackColor = Color.White;
+                word.BackColor = Color.Transparent;
                 word.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 word.Name = "Adivinado" + IndiceValorLetra.ToString();
-                word.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.azul));
+                word.BackgroundImageLayout = ImageLayout.Stretch;
+                word.FlatAppearance.BorderSize = 0;
+                word.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.button));
                 layoutPalabra.Controls.Add(word);
             }
         }
@@ -111,7 +115,9 @@ namespace GestionProyectosSoftware
             if(ganaste) 
             {
                 Reproducir(100);
-                MessageBox.Show("Ganaste"); botoninicio.Image = Properties.Resources.verde;
+
+                botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
+                MessageBox.Show("Ganaste"); botoninicio.Image = Properties.Resources.jugar;
                 if (Oportunidades == 0)
                 {
                     value = 10;
@@ -209,7 +215,8 @@ namespace GestionProyectosSoftware
                     }
 
                     layoutLetras.Enabled = false;
-                    botoninicio.Image = Properties.Resources.verde;
+                    botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
+                    botoninicio.Image = Properties.Resources.jugar;
                 }
             }
         }

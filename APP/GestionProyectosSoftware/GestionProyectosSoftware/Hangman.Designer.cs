@@ -64,25 +64,27 @@ namespace GestionProyectosSoftware
             // 
             this.lblperdiste.AutoSize = true;
             this.lblperdiste.BackColor = System.Drawing.Color.Transparent;
+            this.lblperdiste.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblperdiste.ForeColor = System.Drawing.Color.White;
-            this.lblperdiste.Location = new System.Drawing.Point(536, 83);
+            this.lblperdiste.Location = new System.Drawing.Point(570, 127);
             this.lblperdiste.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblperdiste.Name = "lblperdiste";
-            this.lblperdiste.Size = new System.Drawing.Size(45, 13);
+            this.lblperdiste.Size = new System.Drawing.Size(98, 20);
             this.lblperdiste.TabIndex = 4;
-            this.lblperdiste.Text = "Perdiste";
+            this.lblperdiste.Text = "PERDISTE";
             // 
             // labelAdivina
             // 
             this.labelAdivina.AutoSize = true;
             this.labelAdivina.BackColor = System.Drawing.Color.Transparent;
+            this.labelAdivina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdivina.ForeColor = System.Drawing.Color.White;
-            this.labelAdivina.Location = new System.Drawing.Point(38, 83);
+            this.labelAdivina.Location = new System.Drawing.Point(166, 89);
             this.labelAdivina.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAdivina.Name = "labelAdivina";
-            this.labelAdivina.Size = new System.Drawing.Size(91, 13);
+            this.labelAdivina.Size = new System.Drawing.Size(161, 20);
             this.labelAdivina.TabIndex = 5;
-            this.labelAdivina.Text = "Adivina la palabra";
+            this.labelAdivina.Text = "¡Adivina la palabra!";
             // 
             // button1
             // 
@@ -92,7 +94,7 @@ namespace GestionProyectosSoftware
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(538, 40);
+            this.button1.Location = new System.Drawing.Point(518, 40);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(202, 41);
@@ -104,10 +106,10 @@ namespace GestionProyectosSoftware
             // botoninicio
             // 
             this.botoninicio.BackColor = System.Drawing.Color.Transparent;
-            this.botoninicio.Location = new System.Drawing.Point(41, 40);
+            this.botoninicio.Location = new System.Drawing.Point(134, 40);
             this.botoninicio.Margin = new System.Windows.Forms.Padding(2);
             this.botoninicio.Name = "botoninicio";
-            this.botoninicio.Size = new System.Drawing.Size(479, 41);
+            this.botoninicio.Size = new System.Drawing.Size(230, 41);
             this.botoninicio.TabIndex = 6;
             this.botoninicio.TabStop = false;
             this.botoninicio.Click += new System.EventHandler(this.botoninicio_Click);

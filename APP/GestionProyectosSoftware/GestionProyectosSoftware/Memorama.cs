@@ -98,57 +98,61 @@ namespace GestionProyectosSoftware
                 CartasSeleccionadasUsuario.Image = RecuperarImagen(CartaActual);
                 CartasSeleccionadas.Add(CartasSeleccionadasUsuario);
                 //  2 Veces se realizo el evento del click
-                if (CartasSeleccionadas.Count == 2)
+                if (CartasSeleccionadas.Count == 2 )
                 {
                     CartaTemporal1 = (PictureBox)CartasSeleccionadas[0];
                     CartaTemporal2 = (PictureBox)CartasSeleccionadas[1];
                     int Carta1 = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(CartaTemporal1.Name) - 1]);
                     int Carta2 = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(CartaTemporal2.Name) - 1]);
-
-                    if (Carta1 != Carta2)
+                    if (CartasSeleccionadas[0] == CartasSeleccionadas[1])
                     {
                         timer1.Enabled = true;
                         timer1.Start();
                     }
                     else
                     {
-                        CantidadDeCartasVolteadas++;
-                        if (CantidadDeCartasVolteadas > 9)
+                        if (Carta1 != Carta2)
                         {
-                            tmrTiempo.Stop();
-                            Crono.Stop();
-                            Reproducir(100);
-                            MessageBox.Show("El juego terminó");
-                            if (Convert.ToInt32(lblSegundos.Text) <= 40 && Convert.ToInt32(lblMinutos.Text) == 0)
+                            timer1.Enabled = true;
+                            timer1.Start();
+                        }
+                        else
+                        {
+                            CantidadDeCartasVolteadas++;
+                            if (CantidadDeCartasVolteadas > 9)
                             {
-                                lblPuntos.Visible = true;
-                                lblPuntos.Text = "10";
-                                upload1();
-                            }
-                            else
-                            {
-                                if (Convert.ToInt32(lblSegundos.Text) <= 50 && Convert.ToInt32(lblMinutos.Text) == 0)
+                                tmrTiempo.Stop();
+                                Crono.Stop();
+                                Reproducir(100);
+                                if (Convert.ToInt32(lblSegundos.Text) <= 40 && Convert.ToInt32(lblMinutos.Text) == 0)
                                 {
                                     lblPuntos.Visible = true;
-                                    lblPuntos.Text = "7";
-                                    upload2();
+                                    lblPuntos.Text = "10";
+                                    upload1();
                                 }
                                 else
                                 {
-                                    lblPuntos.Visible = true;
-                                    lblPuntos.Text = "4";
-                                    upload3();
+                                    if (Convert.ToInt32(lblSegundos.Text) <= 50 && Convert.ToInt32(lblMinutos.Text) == 0)
+                                    {
+                                        lblPuntos.Visible = true;
+                                        lblPuntos.Text = "7";
+                                        upload2();
+                                    }
+                                    else
+                                    {
+                                        lblPuntos.Visible = true;
+                                        lblPuntos.Text = "4";
+                                        upload3();
+                                    }
+
                                 }
-
+                                MessageBox.Show("El juego terminó");
                             }
-                            
+                            CartaTemporal1.Enabled = false; CartaTemporal2.Enabled = false;
+                            CartasSeleccionadas.Clear();
+
                         }
-                        CartaTemporal1.Enabled = false; CartaTemporal2.Enabled = false;
-                        CartasSeleccionadas.Clear();
-
                     }
-
-
                 }
             }
 

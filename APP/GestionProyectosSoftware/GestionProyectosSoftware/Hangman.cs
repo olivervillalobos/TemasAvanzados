@@ -37,7 +37,7 @@ namespace GestionProyectosSoftware
 
             botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
             botoninicio.Image = Properties.Resources.jugando;
-            Palabras = new string[] {"Programa","Escuela" };
+            Palabras = new string[] {"Elefante","Escuela","Alfabeto","Letras", "Burro", "Perro", "Cocina", "Dado", "Fuego", "Gallina", "Hueso", "Irlanda", "Jicama", "Lengua", "Museo", "Numero", "Oso", "Pajaro", "Raton", "Sandia" };
             Alfabeto = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".ToCharArray();
 
             Random rnd = new Random();

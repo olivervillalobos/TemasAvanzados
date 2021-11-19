@@ -45,19 +45,19 @@ namespace GestionProyectosSoftware
             // layoutLetras
             // 
             this.layoutLetras.BackColor = System.Drawing.Color.Transparent;
-            this.layoutLetras.Location = new System.Drawing.Point(69, 111);
-            this.layoutLetras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutLetras.Location = new System.Drawing.Point(41, 111);
+            this.layoutLetras.Margin = new System.Windows.Forms.Padding(2);
             this.layoutLetras.Name = "layoutLetras";
-            this.layoutLetras.Size = new System.Drawing.Size(422, 242);
+            this.layoutLetras.Size = new System.Drawing.Size(450, 242);
             this.layoutLetras.TabIndex = 0;
             // 
             // layoutPalabra
             // 
             this.layoutPalabra.BackColor = System.Drawing.Color.Transparent;
             this.layoutPalabra.Location = new System.Drawing.Point(158, 368);
-            this.layoutPalabra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.layoutPalabra.Margin = new System.Windows.Forms.Padding(2);
             this.layoutPalabra.Name = "layoutPalabra";
-            this.layoutPalabra.Size = new System.Drawing.Size(539, 43);
+            this.layoutPalabra.Size = new System.Drawing.Size(582, 88);
             this.layoutPalabra.TabIndex = 2;
             // 
             // lblperdiste
@@ -77,7 +77,7 @@ namespace GestionProyectosSoftware
             this.labelAdivina.AutoSize = true;
             this.labelAdivina.BackColor = System.Drawing.Color.Transparent;
             this.labelAdivina.ForeColor = System.Drawing.Color.White;
-            this.labelAdivina.Location = new System.Drawing.Point(69, 83);
+            this.labelAdivina.Location = new System.Drawing.Point(38, 83);
             this.labelAdivina.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAdivina.Name = "labelAdivina";
             this.labelAdivina.Size = new System.Drawing.Size(91, 13);
@@ -93,9 +93,9 @@ namespace GestionProyectosSoftware
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(538, 40);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 41);
+            this.button1.Size = new System.Drawing.Size(202, 41);
             this.button1.TabIndex = 7;
             this.button1.Text = "REGRESAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -104,10 +104,10 @@ namespace GestionProyectosSoftware
             // botoninicio
             // 
             this.botoninicio.BackColor = System.Drawing.Color.Transparent;
-            this.botoninicio.Location = new System.Drawing.Point(69, 40);
+            this.botoninicio.Location = new System.Drawing.Point(41, 40);
             this.botoninicio.Margin = new System.Windows.Forms.Padding(2);
             this.botoninicio.Name = "botoninicio";
-            this.botoninicio.Size = new System.Drawing.Size(451, 41);
+            this.botoninicio.Size = new System.Drawing.Size(479, 41);
             this.botoninicio.TabIndex = 6;
             this.botoninicio.TabStop = false;
             this.botoninicio.Click += new System.EventHandler(this.botoninicio_Click);
@@ -115,10 +115,10 @@ namespace GestionProyectosSoftware
             // imagenestetica
             // 
             this.imagenestetica.BackColor = System.Drawing.Color.Transparent;
-            this.imagenestetica.Location = new System.Drawing.Point(69, 368);
+            this.imagenestetica.Location = new System.Drawing.Point(41, 368);
             this.imagenestetica.Margin = new System.Windows.Forms.Padding(2);
             this.imagenestetica.Name = "imagenestetica";
-            this.imagenestetica.Size = new System.Drawing.Size(75, 43);
+            this.imagenestetica.Size = new System.Drawing.Size(103, 88);
             this.imagenestetica.TabIndex = 3;
             this.imagenestetica.TabStop = false;
             // 
@@ -128,7 +128,7 @@ namespace GestionProyectosSoftware
             this.ahorcadoPB.Location = new System.Drawing.Point(495, 111);
             this.ahorcadoPB.Margin = new System.Windows.Forms.Padding(2);
             this.ahorcadoPB.Name = "ahorcadoPB";
-            this.ahorcadoPB.Size = new System.Drawing.Size(202, 242);
+            this.ahorcadoPB.Size = new System.Drawing.Size(245, 242);
             this.ahorcadoPB.TabIndex = 1;
             this.ahorcadoPB.TabStop = false;
             // 
@@ -138,7 +138,7 @@ namespace GestionProyectosSoftware
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(752, 449);
+            this.ClientSize = new System.Drawing.Size(782, 491);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.botoninicio);
             this.Controls.Add(this.labelAdivina);
@@ -148,8 +148,9 @@ namespace GestionProyectosSoftware
             this.Controls.Add(this.ahorcadoPB);
             this.Controls.Add(this.layoutLetras);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Hangman";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hangman";
             this.Load += new System.EventHandler(this.Hangman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.botoninicio)).EndInit();

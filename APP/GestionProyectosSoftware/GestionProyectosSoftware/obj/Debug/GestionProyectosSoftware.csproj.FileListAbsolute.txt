@@ -160,3 +160,5 @@ C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProy
 C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.Hangman.resources
 C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\Interop.WMPLib.dll
 C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.ResolveComReference.cache
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\Interop.WMPLib.dll
+C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.ResolveComReference.cache

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using WMPLib;
 
 namespace GestionProyectosSoftware
 {
@@ -15,6 +16,7 @@ namespace GestionProyectosSoftware
     {
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
 
+        WindowsMediaPlayer Sonido;
         char[] PalabrasAdivinidas; int Oportunidades; int value;
         char[] PalabraSeleccionada;
         char[] Alfabeto;
@@ -107,7 +109,8 @@ namespace GestionProyectosSoftware
             }
 
             if(ganaste) 
-            { 
+            {
+                Reproducir(100);
                 MessageBox.Show("Ganaste"); botoninicio.Image = Properties.Resources.verde;
                 if (Oportunidades == 0)
                 {
@@ -161,9 +164,43 @@ namespace GestionProyectosSoftware
             if(!encontrado)
             {
                 Oportunidades = Oportunidades + 1;
-                ahorcadoPB.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("ahorcado" + Oportunidades);
+                switch(Oportunidades)
+                {
+                    case 1:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_1;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 2:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_2;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 3:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_3;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 4:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_4;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 5:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_5;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 6:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_6;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 7:
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_7;
+                        ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    default:
+                        break;
+                }
+                
                 if(Oportunidades == 7)
                 {
+                    Reproducir(100);
                     lblperdiste.Visible = true;
                     for (int i = 0; i < PalabraSeleccionada.Length; i++)
                     {
@@ -234,6 +271,13 @@ namespace GestionProyectosSoftware
             this.Close();
             Menu menu = new Menu();
             menu.Show();
+        }
+
+        public void Reproducir(int Numero)
+        {
+            Sonido = new WindowsMediaPlayer();
+            Sonido.URL = Application.StartupPath + @"\mp3\" + Numero + ".mp3";
+            Sonido.controls.play();
         }
     }
 }

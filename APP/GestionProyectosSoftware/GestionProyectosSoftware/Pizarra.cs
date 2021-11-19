@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using WMPLib;
 
 namespace GestionProyectosSoftware
 {
@@ -23,7 +23,7 @@ namespace GestionProyectosSoftware
         bool Mov = false;
         Pen Lapiz;
         bool borrador = false;
-
+        WindowsMediaPlayer Sonido;
         public Pizarra()
         {
             InitializeComponent();
@@ -70,7 +70,9 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Rojo";
             lblColor.ForeColor = Color.Red;
+            ReproducirColor(lblColor.Text);
             upload();
+
         }
 
         private void btnAzul_Click(object sender, EventArgs e)
@@ -80,6 +82,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Azul";
             lblColor.ForeColor = Color.CornflowerBlue;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -90,6 +93,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Verde";
             lblColor.ForeColor = Color.LimeGreen;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -100,6 +104,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Naranja";
             lblColor.ForeColor = Color.Orange;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -110,6 +115,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Negro";
             lblColor.ForeColor = Color.Black;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -120,6 +126,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Morado";
             lblColor.ForeColor = Color.MediumPurple;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -130,6 +137,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Blanco";
             lblColor.ForeColor = Color.White;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -140,6 +148,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Café";
             lblColor.ForeColor = Color.SaddleBrown;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -150,6 +159,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Amarillo";
             lblColor.ForeColor = Color.Yellow;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -160,6 +170,7 @@ namespace GestionProyectosSoftware
             Lapiz.StartCap = Lapiz.EndCap = LineCap.Round;
             lblColor.Text = "Rosa";
             lblColor.ForeColor = Color.Pink;
+            ReproducirColor(lblColor.Text);
             upload();
         }
 
@@ -250,6 +261,13 @@ namespace GestionProyectosSoftware
                 MessageBox.Show(ex.ToString());
                 connection.Close();
             }
+        }
+
+        public void ReproducirColor(string Color)
+        {
+            Sonido = new WindowsMediaPlayer();
+            Sonido.URL = Application.StartupPath + @"\mp3\Colores\" + Color + ".mp3";
+            Sonido.controls.play();
         }
     }
 }

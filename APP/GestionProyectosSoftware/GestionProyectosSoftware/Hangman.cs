@@ -34,7 +34,9 @@ namespace GestionProyectosSoftware
             lblperdiste.Visible = false;
             Oportunidades = 0;
             value = 0;
-            botoninicio.Image = Properties.Resources.rojo;
+
+            botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
+            botoninicio.Image = Properties.Resources.jugando;
             Palabras = new string[] {"Programa","Escuela" };
             Alfabeto = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".ToCharArray();
 
@@ -67,14 +69,16 @@ namespace GestionProyectosSoftware
                 word.Tag = PalabraSeleccionada[IndiceValorLetra].ToString();
                 word.Width = 46;
                 word.Height = 80;
-                word.ForeColor = Color.Aqua;
+                word.ForeColor = Color.White;
                 word.Text = "-";
                 word.Font = new Font(word.Font.Name, 32, FontStyle.Bold);
                 word.BackgroundImageLayout = ImageLayout.Center;
-                word.BackColor = Color.White;
+                word.BackColor = Color.Transparent;
                 word.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 word.Name = "Adivinado" + IndiceValorLetra.ToString();
-                word.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.azul));
+                word.BackgroundImageLayout = ImageLayout.Stretch;
+                word.FlatAppearance.BorderSize = 0;
+                word.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.button));
                 layoutPalabra.Controls.Add(word);
             }
         }
@@ -86,6 +90,16 @@ namespace GestionProyectosSoftware
             btn.BackColor = Color.White;
             btn.ForeColor = Color.Black;
             btn.Enabled = false;
+            string botonletra = btn.Text;
+            switch (botonletra)
+            {
+                case "A":
+                    ReproducirLetra(botonletra);
+                    break;
+                default:
+                    ReproducirLetra(botonletra);
+                    break;
+            }
 
             for (int IndiceRevisar = 0; IndiceRevisar < PalabrasAdivinidas.Length; IndiceRevisar++)
             {
@@ -111,7 +125,9 @@ namespace GestionProyectosSoftware
             if(ganaste) 
             {
                 Reproducir(100);
-                MessageBox.Show("Ganaste"); botoninicio.Image = Properties.Resources.verde;
+
+                botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
+                MessageBox.Show("Ganaste"); botoninicio.Image = Properties.Resources.jugar;
                 if (Oportunidades == 0)
                 {
                     value = 10;
@@ -167,15 +183,15 @@ namespace GestionProyectosSoftware
                 switch(Oportunidades)
                 {
                     case 1:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_1;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_7;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 2:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_2;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_6;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 3:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_3;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_5;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 4:
@@ -183,15 +199,15 @@ namespace GestionProyectosSoftware
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 5:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_5;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_3;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 6:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_6;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_2;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 7:
-                        ahorcadoPB.Image = Properties.Resources.ahorcado_7;
+                        ahorcadoPB.Image = Properties.Resources.ahorcado_1;
                         ahorcadoPB.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     default:
@@ -209,7 +225,8 @@ namespace GestionProyectosSoftware
                     }
 
                     layoutLetras.Enabled = false;
-                    botoninicio.Image = Properties.Resources.verde;
+                    botoninicio.SizeMode = PictureBoxSizeMode.StretchImage;
+                    botoninicio.Image = Properties.Resources.jugar;
                 }
             }
         }
@@ -279,5 +296,13 @@ namespace GestionProyectosSoftware
             Sonido.URL = Application.StartupPath + @"\mp3\" + Numero + ".mp3";
             Sonido.controls.play();
         }
+
+        public void ReproducirLetra(string Letra)
+        {
+            Sonido = new WindowsMediaPlayer();
+            Sonido.URL = Application.StartupPath + @"\mp3\Alfabeto\" + Letra + ".mp3";
+            Sonido.controls.play();
+        }
+
     }
 }

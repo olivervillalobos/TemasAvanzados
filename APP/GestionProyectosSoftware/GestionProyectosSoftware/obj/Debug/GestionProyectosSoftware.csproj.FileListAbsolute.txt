@@ -162,3 +162,5 @@ C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionPr
 C:\Users\luisa\OneDrive\Desktop\KinderApp\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.ResolveComReference.cache
 C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\Interop.WMPLib.dll
 C:\Users\olive\source\repos\GestionProyectos\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.ResolveComReference.cache
+C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\Interop.WMPLib.dll
+C:\Users\omuri\OneDrive\Escritorio\soft\APP\GestionProyectosSoftware\GestionProyectosSoftware\obj\Debug\GestionProyectosSoftware.csproj.ResolveComReference.cache

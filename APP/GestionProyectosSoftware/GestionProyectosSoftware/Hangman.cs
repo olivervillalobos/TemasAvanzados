@@ -90,6 +90,16 @@ namespace GestionProyectosSoftware
             btn.BackColor = Color.White;
             btn.ForeColor = Color.Black;
             btn.Enabled = false;
+            string botonletra = btn.Text;
+            switch (botonletra)
+            {
+                case "A":
+                    ReproducirLetra(botonletra);
+                    break;
+                default:
+                    ReproducirLetra(botonletra);
+                    break;
+            }
 
             for (int IndiceRevisar = 0; IndiceRevisar < PalabrasAdivinidas.Length; IndiceRevisar++)
             {
@@ -286,5 +296,13 @@ namespace GestionProyectosSoftware
             Sonido.URL = Application.StartupPath + @"\mp3\" + Numero + ".mp3";
             Sonido.controls.play();
         }
+
+        public void ReproducirLetra(string Letra)
+        {
+            Sonido = new WindowsMediaPlayer();
+            Sonido.URL = Application.StartupPath + @"\mp3\Alfabeto\" + Letra + ".mp3";
+            Sonido.controls.play();
+        }
+
     }
 }

@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\APP",
-    "\\APP\\GestionProyectosSoftware",
-    "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware"
+    "\\APP\\GestionProyectosSoftware"
   ],
-  "SelectedNode": "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware\\Hangman.cs",
+  "SelectedNode": "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware.sln",
   "PreviewInSolutionExplorer": false
 }

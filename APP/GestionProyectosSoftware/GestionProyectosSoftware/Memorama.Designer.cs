@@ -30,6 +30,7 @@ namespace GestionProyectosSoftware
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Memorama));
             this.PanelJuego = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblTiempo = new System.Windows.Forms.Label();
@@ -210,6 +211,7 @@ namespace GestionProyectosSoftware
             this.Controls.Add(this.PanelJuego);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Memorama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memorama";

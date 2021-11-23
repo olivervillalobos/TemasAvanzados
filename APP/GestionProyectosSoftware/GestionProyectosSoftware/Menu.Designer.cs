@@ -29,6 +29,7 @@ namespace GestionProyectosSoftware
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.btnColores = new System.Windows.Forms.Button();
             this.btnNumeros = new System.Windows.Forms.Button();
             this.btnLetras = new System.Windows.Forms.Button();
@@ -44,10 +45,9 @@ namespace GestionProyectosSoftware
             this.btnColores.FlatAppearance.BorderSize = 0;
             this.btnColores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColores.ForeColor = System.Drawing.Color.White;
-            this.btnColores.Location = new System.Drawing.Point(320, 309);
-            this.btnColores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnColores.Location = new System.Drawing.Point(240, 251);
             this.btnColores.Name = "btnColores";
-            this.btnColores.Size = new System.Drawing.Size(153, 44);
+            this.btnColores.Size = new System.Drawing.Size(115, 36);
             this.btnColores.TabIndex = 0;
             this.btnColores.Text = "COLORES";
             this.btnColores.UseVisualStyleBackColor = false;
@@ -61,10 +61,9 @@ namespace GestionProyectosSoftware
             this.btnNumeros.FlatAppearance.BorderSize = 0;
             this.btnNumeros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNumeros.ForeColor = System.Drawing.Color.White;
-            this.btnNumeros.Location = new System.Drawing.Point(557, 309);
-            this.btnNumeros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNumeros.Location = new System.Drawing.Point(418, 251);
             this.btnNumeros.Name = "btnNumeros";
-            this.btnNumeros.Size = new System.Drawing.Size(149, 44);
+            this.btnNumeros.Size = new System.Drawing.Size(112, 36);
             this.btnNumeros.TabIndex = 1;
             this.btnNumeros.Text = "NÚMEROS";
             this.btnNumeros.UseVisualStyleBackColor = false;
@@ -78,10 +77,9 @@ namespace GestionProyectosSoftware
             this.btnLetras.FlatAppearance.BorderSize = 0;
             this.btnLetras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLetras.ForeColor = System.Drawing.Color.White;
-            this.btnLetras.Location = new System.Drawing.Point(799, 309);
-            this.btnLetras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLetras.Location = new System.Drawing.Point(599, 251);
             this.btnLetras.Name = "btnLetras";
-            this.btnLetras.Size = new System.Drawing.Size(155, 44);
+            this.btnLetras.Size = new System.Drawing.Size(116, 36);
             this.btnLetras.TabIndex = 2;
             this.btnLetras.Text = "LETRAS";
             this.btnLetras.UseVisualStyleBackColor = false;
@@ -95,10 +93,9 @@ namespace GestionProyectosSoftware
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(1048, 34);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(786, 28);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(169, 49);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(127, 40);
             this.btnCerrarSesion.TabIndex = 3;
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
@@ -106,17 +103,17 @@ namespace GestionProyectosSoftware
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1259, 617);
+            this.ClientSize = new System.Drawing.Size(944, 501);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnLetras);
             this.Controls.Add(this.btnNumeros);
             this.Controls.Add(this.btnColores);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

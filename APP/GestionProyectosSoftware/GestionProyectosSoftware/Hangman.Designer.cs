@@ -29,6 +29,7 @@ namespace GestionProyectosSoftware
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hangman));
             this.layoutLetras = new System.Windows.Forms.FlowLayoutPanel();
             this.layoutPalabra = new System.Windows.Forms.FlowLayoutPanel();
             this.lblperdiste = new System.Windows.Forms.Label();
@@ -150,6 +151,7 @@ namespace GestionProyectosSoftware
             this.Controls.Add(this.ahorcadoPB);
             this.Controls.Add(this.layoutLetras);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Hangman";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

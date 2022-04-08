@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -70,6 +70,7 @@
     <Compile Include="ConfirmarCierreSesion.Designer.cs">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="constantes.cs" />
     <Compile Include="global.cs" />
     <Compile Include="Hangman.cs">
       <SubType>Form</SubType>
@@ -115,6 +116,7 @@
     <Compile Include="Puzzle.Designer.cs">
       <DependentUpon>Puzzle.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimeFormat.cs" />
     <EmbeddedResource Include="ConfirmarCierreSesion.resx">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +219,11 @@
     <None Include="Resources\oso.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\bt21.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\sanrio.jpg" />
+    <Content Include="Resources\spiderman.jpg" />
     <Content Include="Screenshot 2021-11-22 192823.ico" />
     <None Include="Resources\0.png" />
     <None Include="Resources\1.png" />

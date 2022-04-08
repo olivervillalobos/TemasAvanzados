@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,20 +35,7 @@ namespace AppMaestro
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            try
-            {
-                SqlCommand comando = new SqlCommand("SELECT COUNT(Id_Computadora) FROM Computadora", connection);
-                connection.Open();
-                comando.CommandText = "SELECT COUNT(Id_Computadora) FROM Computadora";
-                Object temp = comando.ExecuteScalar();
-                lblComputadoras.Text = temp.ToString();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
+            //Dice la cantidad de alumnos
             try
             {
                 SqlCommand comando = new SqlCommand("SELECT COUNT(Id_Alumno) FROM Alumno", connection);
@@ -66,14 +53,9 @@ namespace AppMaestro
 
         private void button3_Click(object sender, EventArgs e)
         {
-            connection.Open();
-            SqlCommand altas = new SqlCommand("INSERT INTO Computadora(Id_Computadora) VALUES ((SELECT MAX(Id_Computadora)+1 FROM Computadora))", connection);
-            altas.ExecuteNonQuery();
-            MessageBox.Show("Se ha agregado un ordenador con exito.");
-            connection.Close();
-            Form1 form1 = new Form1();
+            Computadoras com = new Computadoras();
+            com.Show();
             this.Hide();
-            form1.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

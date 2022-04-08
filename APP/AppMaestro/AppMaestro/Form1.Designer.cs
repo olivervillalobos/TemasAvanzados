@@ -1,4 +1,4 @@
-﻿
+
 namespace AppMaestro
 {
     partial class Form1
@@ -36,7 +36,6 @@ namespace AppMaestro
             this.button10 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lblAlumno = new System.Windows.Forms.Label();
-            this.lblComputadoras = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -45,10 +44,10 @@ namespace AppMaestro
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(76, 174);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(101, 214);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 26);
+            this.button1.Size = new System.Drawing.Size(89, 32);
             this.button1.TabIndex = 0;
             this.button1.Text = "Alumno";
             this.button1.UseVisualStyleBackColor = false;
@@ -60,10 +59,10 @@ namespace AppMaestro
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(147, 174);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(196, 214);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 26);
+            this.button3.Size = new System.Drawing.Size(105, 32);
             this.button3.TabIndex = 2;
             this.button3.Text = "Computadora";
             this.button3.UseVisualStyleBackColor = false;
@@ -75,10 +74,10 @@ namespace AppMaestro
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(230, 174);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(307, 214);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 26);
+            this.button4.Size = new System.Drawing.Size(89, 32);
             this.button4.TabIndex = 3;
             this.button4.Text = "Docente";
             this.button4.UseVisualStyleBackColor = false;
@@ -90,10 +89,10 @@ namespace AppMaestro
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(301, 174);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(401, 214);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(67, 26);
+            this.button5.Size = new System.Drawing.Size(89, 32);
             this.button5.TabIndex = 4;
             this.button5.Text = "Grupo";
             this.button5.UseVisualStyleBackColor = false;
@@ -104,10 +103,10 @@ namespace AppMaestro
             this.button10.BackColor = System.Drawing.Color.Transparent;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.Tomato;
-            this.button10.Location = new System.Drawing.Point(445, 278);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
+            this.button10.Location = new System.Drawing.Point(593, 342);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(56, 29);
+            this.button10.Size = new System.Drawing.Size(75, 36);
             this.button10.TabIndex = 9;
             this.button10.Text = "Salir";
             this.button10.UseVisualStyleBackColor = false;
@@ -119,10 +118,10 @@ namespace AppMaestro
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(372, 174);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(496, 214);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 26);
+            this.button2.Size = new System.Drawing.Size(89, 32);
             this.button2.TabIndex = 10;
             this.button2.Text = "Consultas";
             this.button2.UseVisualStyleBackColor = false;
@@ -133,33 +132,19 @@ namespace AppMaestro
             this.lblAlumno.AutoSize = true;
             this.lblAlumno.BackColor = System.Drawing.Color.Transparent;
             this.lblAlumno.ForeColor = System.Drawing.Color.White;
-            this.lblAlumno.Location = new System.Drawing.Point(73, 217);
-            this.lblAlumno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAlumno.Location = new System.Drawing.Point(97, 267);
             this.lblAlumno.Name = "lblAlumno";
-            this.lblAlumno.Size = new System.Drawing.Size(50, 13);
+            this.lblAlumno.Size = new System.Drawing.Size(62, 16);
             this.lblAlumno.TabIndex = 11;
             this.lblAlumno.Text = "Contador";
             // 
-            // lblComputadoras
-            // 
-            this.lblComputadoras.AutoSize = true;
-            this.lblComputadoras.BackColor = System.Drawing.Color.Transparent;
-            this.lblComputadoras.ForeColor = System.Drawing.Color.White;
-            this.lblComputadoras.Location = new System.Drawing.Point(144, 217);
-            this.lblComputadoras.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblComputadoras.Name = "lblComputadoras";
-            this.lblComputadoras.Size = new System.Drawing.Size(50, 13);
-            this.lblComputadoras.TabIndex = 12;
-            this.lblComputadoras.Text = "Contador";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AppMaestro.Properties.Resources.bg_maestros;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(512, 318);
-            this.Controls.Add(this.lblComputadoras);
+            this.ClientSize = new System.Drawing.Size(683, 391);
             this.Controls.Add(this.lblAlumno);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button10);
@@ -168,7 +153,8 @@ namespace AppMaestro
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -187,7 +173,5 @@ namespace AppMaestro
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblAlumno;
-        private System.Windows.Forms.Label lblComputadoras;
     }
 }
-

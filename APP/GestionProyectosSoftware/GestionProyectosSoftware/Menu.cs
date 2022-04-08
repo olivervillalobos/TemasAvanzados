@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -140,6 +140,26 @@ namespace GestionProyectosSoftware
                 MessageBox.Show(ex.ToString());
                 connection.Close();
             }
+        }
+
+        private void btnPuzzle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Puzzle set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_Puzzle = @Id_Puzzle", connection);
+                altas.Parameters.AddWithValue("Id_Puzzle", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+            this.Close();
+            Form Puzzle = new Puzzle();
+            Puzzle.Show();
         }
     }
 }

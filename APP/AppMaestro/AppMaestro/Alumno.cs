@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,25 +33,14 @@ namespace AppMaestro
                 }
                 connection.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
 
-            try
+            if (cb_Grupo.SelectedItem == null)
             {
-                SqlCommand comando = new SqlCommand("select C.Id_Computadora FROM Computadora C WHERE NOT EXISTS(SELECT 1 FROM Alumno A WHERE(C.Id_Computadora = A.Id_Computadora))", connection);
-                connection.Open();
-                SqlDataReader registro = comando.ExecuteReader();
-                while (registro.Read())
-                {
-                    cb_IdComputadora.Items.Add(registro["Id_Computadora"].ToString());
-                }
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
+                cb_IdComputadora.Enabled = false;
             }
         }
 
@@ -72,6 +61,35 @@ namespace AppMaestro
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+        private void cb_Grupo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_Grupo.SelectedItem != null)
+            {
+                cb_IdComputadora.Enabled = true; 
+                cb_IdComputadora.Items.Clear();
+                try
+                {
+                    SqlCommand comando = new SqlCommand("SELECT * FROM Computadora except(SELECT C.Id_Computadora FROM Computadora C FULL " +
+                        "JOIN Alumno A ON A.Id_Computadora = C.Id_Computadora WHERE A.Id_Alumno is NOT NULL AND A.Id_Grupo = @Id_Grupo)", connection);
+                    connection.Open();
+                    comando.Parameters.AddWithValue("Id_Grupo", cb_Grupo.Text);
+                    SqlDataReader registro = comando.ExecuteReader();
+                    while (registro.Read())
+                    {
+                        cb_IdComputadora.Items.Add(registro["Id_Computadora"].ToString());
+                    }
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+            else
+            {
+                cb_IdComputadora.Enabled = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -52,9 +52,10 @@ namespace GestionProyectosSoftware
             this.Lienzo.BackColor = System.Drawing.Color.Transparent;
             this.Lienzo.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.poyo;
             this.Lienzo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Lienzo.Location = new System.Drawing.Point(165, 89);
+            this.Lienzo.Location = new System.Drawing.Point(220, 110);
+            this.Lienzo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Lienzo.Name = "Lienzo";
-            this.Lienzo.Size = new System.Drawing.Size(703, 358);
+            this.Lienzo.Size = new System.Drawing.Size(937, 441);
             this.Lienzo.TabIndex = 0;
             this.Lienzo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Lienzo_MouseDown);
             this.Lienzo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Lienzo_MouseMove);
@@ -65,9 +66,10 @@ namespace GestionProyectosSoftware
             this.lblColor.AutoSize = true;
             this.lblColor.BackColor = System.Drawing.Color.Transparent;
             this.lblColor.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(507, 34);
+            this.lblColor.Location = new System.Drawing.Point(676, 42);
+            this.lblColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(114, 41);
+            this.lblColor.Size = new System.Drawing.Size(147, 52);
             this.lblColor.TabIndex = 1;
             this.lblColor.Text = "Negro";
             // 
@@ -77,9 +79,10 @@ namespace GestionProyectosSoftware
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(378, 34);
+            this.label1.Location = new System.Drawing.Point(504, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 41);
+            this.label1.Size = new System.Drawing.Size(155, 52);
             this.label1.TabIndex = 2;
             this.label1.Text = "Color: ";
             // 
@@ -90,9 +93,10 @@ namespace GestionProyectosSoftware
             this.btnRojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRojo.FlatAppearance.BorderSize = 0;
             this.btnRojo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRojo.Location = new System.Drawing.Point(55, 198);
+            this.btnRojo.Location = new System.Drawing.Point(73, 244);
+            this.btnRojo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRojo.Name = "btnRojo";
-            this.btnRojo.Size = new System.Drawing.Size(94, 30);
+            this.btnRojo.Size = new System.Drawing.Size(125, 37);
             this.btnRojo.TabIndex = 3;
             this.btnRojo.UseVisualStyleBackColor = false;
             this.btnRojo.Click += new System.EventHandler(this.btnRojo_Click);
@@ -104,9 +108,10 @@ namespace GestionProyectosSoftware
             this.btnVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnVerde.FlatAppearance.BorderSize = 0;
             this.btnVerde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerde.Location = new System.Drawing.Point(55, 294);
+            this.btnVerde.Location = new System.Drawing.Point(73, 362);
+            this.btnVerde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerde.Name = "btnVerde";
-            this.btnVerde.Size = new System.Drawing.Size(94, 30);
+            this.btnVerde.Size = new System.Drawing.Size(125, 37);
             this.btnVerde.TabIndex = 4;
             this.btnVerde.UseVisualStyleBackColor = false;
             this.btnVerde.Click += new System.EventHandler(this.btnVerde_Click);
@@ -118,9 +123,10 @@ namespace GestionProyectosSoftware
             this.btnPurpura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPurpura.FlatAppearance.BorderSize = 0;
             this.btnPurpura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurpura.Location = new System.Drawing.Point(55, 358);
+            this.btnPurpura.Location = new System.Drawing.Point(73, 441);
+            this.btnPurpura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPurpura.Name = "btnPurpura";
-            this.btnPurpura.Size = new System.Drawing.Size(94, 30);
+            this.btnPurpura.Size = new System.Drawing.Size(125, 37);
             this.btnPurpura.TabIndex = 5;
             this.btnPurpura.UseVisualStyleBackColor = false;
             this.btnPurpura.Click += new System.EventHandler(this.btnPurpura_Click);
@@ -132,9 +138,10 @@ namespace GestionProyectosSoftware
             this.btnAzul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAzul.FlatAppearance.BorderSize = 0;
             this.btnAzul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAzul.Location = new System.Drawing.Point(55, 326);
+            this.btnAzul.Location = new System.Drawing.Point(73, 401);
+            this.btnAzul.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAzul.Name = "btnAzul";
-            this.btnAzul.Size = new System.Drawing.Size(94, 30);
+            this.btnAzul.Size = new System.Drawing.Size(125, 37);
             this.btnAzul.TabIndex = 5;
             this.btnAzul.UseVisualStyleBackColor = false;
             this.btnAzul.Click += new System.EventHandler(this.btnAzul_Click);
@@ -146,9 +153,10 @@ namespace GestionProyectosSoftware
             this.btnNaranja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNaranja.FlatAppearance.BorderSize = 0;
             this.btnNaranja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNaranja.Location = new System.Drawing.Point(55, 230);
+            this.btnNaranja.Location = new System.Drawing.Point(73, 283);
+            this.btnNaranja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNaranja.Name = "btnNaranja";
-            this.btnNaranja.Size = new System.Drawing.Size(94, 30);
+            this.btnNaranja.Size = new System.Drawing.Size(125, 37);
             this.btnNaranja.TabIndex = 6;
             this.btnNaranja.UseVisualStyleBackColor = false;
             this.btnNaranja.Click += new System.EventHandler(this.btnNaranja_Click);
@@ -160,9 +168,10 @@ namespace GestionProyectosSoftware
             this.btnNegro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNegro.FlatAppearance.BorderSize = 0;
             this.btnNegro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNegro.Location = new System.Drawing.Point(55, 134);
+            this.btnNegro.Location = new System.Drawing.Point(73, 165);
+            this.btnNegro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNegro.Name = "btnNegro";
-            this.btnNegro.Size = new System.Drawing.Size(94, 30);
+            this.btnNegro.Size = new System.Drawing.Size(125, 37);
             this.btnNegro.TabIndex = 7;
             this.btnNegro.UseVisualStyleBackColor = false;
             this.btnNegro.Click += new System.EventHandler(this.btnNegro_Click);
@@ -174,9 +183,10 @@ namespace GestionProyectosSoftware
             this.btnCafe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCafe.FlatAppearance.BorderSize = 0;
             this.btnCafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCafe.Location = new System.Drawing.Point(55, 166);
+            this.btnCafe.Location = new System.Drawing.Point(73, 204);
+            this.btnCafe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCafe.Name = "btnCafe";
-            this.btnCafe.Size = new System.Drawing.Size(94, 30);
+            this.btnCafe.Size = new System.Drawing.Size(125, 37);
             this.btnCafe.TabIndex = 11;
             this.btnCafe.UseVisualStyleBackColor = false;
             this.btnCafe.Click += new System.EventHandler(this.btnCafe_Click);
@@ -188,9 +198,10 @@ namespace GestionProyectosSoftware
             this.btnBlanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBlanco.FlatAppearance.BorderSize = 0;
             this.btnBlanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlanco.Location = new System.Drawing.Point(55, 102);
+            this.btnBlanco.Location = new System.Drawing.Point(73, 126);
+            this.btnBlanco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBlanco.Name = "btnBlanco";
-            this.btnBlanco.Size = new System.Drawing.Size(94, 30);
+            this.btnBlanco.Size = new System.Drawing.Size(125, 37);
             this.btnBlanco.TabIndex = 10;
             this.btnBlanco.UseVisualStyleBackColor = false;
             this.btnBlanco.Click += new System.EventHandler(this.btnBlanco_Click);
@@ -202,9 +213,10 @@ namespace GestionProyectosSoftware
             this.btnAmarillo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAmarillo.FlatAppearance.BorderSize = 0;
             this.btnAmarillo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmarillo.Location = new System.Drawing.Point(55, 262);
+            this.btnAmarillo.Location = new System.Drawing.Point(73, 322);
+            this.btnAmarillo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAmarillo.Name = "btnAmarillo";
-            this.btnAmarillo.Size = new System.Drawing.Size(94, 30);
+            this.btnAmarillo.Size = new System.Drawing.Size(125, 37);
             this.btnAmarillo.TabIndex = 8;
             this.btnAmarillo.UseVisualStyleBackColor = false;
             this.btnAmarillo.Click += new System.EventHandler(this.btnAmarillo_Click);
@@ -216,9 +228,10 @@ namespace GestionProyectosSoftware
             this.btnRosa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRosa.FlatAppearance.BorderSize = 0;
             this.btnRosa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRosa.Location = new System.Drawing.Point(55, 390);
+            this.btnRosa.Location = new System.Drawing.Point(73, 480);
+            this.btnRosa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRosa.Name = "btnRosa";
-            this.btnRosa.Size = new System.Drawing.Size(94, 30);
+            this.btnRosa.Size = new System.Drawing.Size(125, 37);
             this.btnRosa.TabIndex = 9;
             this.btnRosa.UseVisualStyleBackColor = false;
             this.btnRosa.Click += new System.EventHandler(this.btnRosa_Click);
@@ -231,9 +244,10 @@ namespace GestionProyectosSoftware
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(55, 34);
+            this.btnRegresar.Location = new System.Drawing.Point(73, 42);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(127, 40);
+            this.btnRegresar.Size = new System.Drawing.Size(169, 49);
             this.btnRegresar.TabIndex = 12;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -247,9 +261,10 @@ namespace GestionProyectosSoftware
             this.btnCambiarFondo.FlatAppearance.BorderSize = 0;
             this.btnCambiarFondo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarFondo.ForeColor = System.Drawing.Color.White;
-            this.btnCambiarFondo.Location = new System.Drawing.Point(759, 34);
+            this.btnCambiarFondo.Location = new System.Drawing.Point(1012, 42);
+            this.btnCambiarFondo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCambiarFondo.Name = "btnCambiarFondo";
-            this.btnCambiarFondo.Size = new System.Drawing.Size(127, 40);
+            this.btnCambiarFondo.Size = new System.Drawing.Size(169, 49);
             this.btnCambiarFondo.TabIndex = 13;
             this.btnCambiarFondo.Text = "Cambiar Fondo";
             this.btnCambiarFondo.UseVisualStyleBackColor = false;
@@ -257,11 +272,11 @@ namespace GestionProyectosSoftware
             // 
             // Pizarra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(944, 501);
+            this.ClientSize = new System.Drawing.Size(1259, 617);
             this.Controls.Add(this.btnCambiarFondo);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCafe);
@@ -279,6 +294,7 @@ namespace GestionProyectosSoftware
             this.Controls.Add(this.Lienzo);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Pizarra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pizarra";

@@ -51,27 +51,26 @@ namespace AppMaestro
             this.lbl_ApellidoPaterno.AutoSize = true;
             this.lbl_ApellidoPaterno.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ApellidoPaterno.ForeColor = System.Drawing.Color.White;
-            this.lbl_ApellidoPaterno.Location = new System.Drawing.Point(22, 22);
-            this.lbl_ApellidoPaterno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_ApellidoPaterno.Location = new System.Drawing.Point(29, 27);
             this.lbl_ApellidoPaterno.Name = "lbl_ApellidoPaterno";
-            this.lbl_ApellidoPaterno.Size = new System.Drawing.Size(84, 13);
+            this.lbl_ApellidoPaterno.Size = new System.Drawing.Size(107, 16);
             this.lbl_ApellidoPaterno.TabIndex = 2;
             this.lbl_ApellidoPaterno.Text = "Apellido Paterno";
             // 
             // txt_ApellidoPaterno
             // 
-            this.txt_ApellidoPaterno.Location = new System.Drawing.Point(22, 46);
-            this.txt_ApellidoPaterno.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_ApellidoPaterno.Location = new System.Drawing.Point(29, 57);
+            this.txt_ApellidoPaterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_ApellidoPaterno.Name = "txt_ApellidoPaterno";
-            this.txt_ApellidoPaterno.Size = new System.Drawing.Size(181, 20);
+            this.txt_ApellidoPaterno.Size = new System.Drawing.Size(240, 22);
             this.txt_ApellidoPaterno.TabIndex = 3;
             // 
             // txt_ApellidoMaterno
             // 
-            this.txt_ApellidoMaterno.Location = new System.Drawing.Point(22, 103);
-            this.txt_ApellidoMaterno.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_ApellidoMaterno.Location = new System.Drawing.Point(29, 127);
+            this.txt_ApellidoMaterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_ApellidoMaterno.Name = "txt_ApellidoMaterno";
-            this.txt_ApellidoMaterno.Size = new System.Drawing.Size(181, 20);
+            this.txt_ApellidoMaterno.Size = new System.Drawing.Size(240, 22);
             this.txt_ApellidoMaterno.TabIndex = 5;
             // 
             // lbl_ApellidoMaterno
@@ -79,19 +78,18 @@ namespace AppMaestro
             this.lbl_ApellidoMaterno.AutoSize = true;
             this.lbl_ApellidoMaterno.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ApellidoMaterno.ForeColor = System.Drawing.Color.White;
-            this.lbl_ApellidoMaterno.Location = new System.Drawing.Point(22, 75);
-            this.lbl_ApellidoMaterno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_ApellidoMaterno.Location = new System.Drawing.Point(29, 92);
             this.lbl_ApellidoMaterno.Name = "lbl_ApellidoMaterno";
-            this.lbl_ApellidoMaterno.Size = new System.Drawing.Size(86, 13);
+            this.lbl_ApellidoMaterno.Size = new System.Drawing.Size(109, 16);
             this.lbl_ApellidoMaterno.TabIndex = 4;
             this.lbl_ApellidoMaterno.Text = "Apellido Materno";
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(22, 162);
-            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Nombre.Location = new System.Drawing.Point(29, 199);
+            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(181, 20);
+            this.txt_Nombre.Size = new System.Drawing.Size(240, 22);
             this.txt_Nombre.TabIndex = 7;
             // 
             // lbl_Nombre
@@ -99,10 +97,9 @@ namespace AppMaestro
             this.lbl_Nombre.AutoSize = true;
             this.lbl_Nombre.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Nombre.ForeColor = System.Drawing.Color.White;
-            this.lbl_Nombre.Location = new System.Drawing.Point(22, 138);
-            this.lbl_Nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Nombre.Location = new System.Drawing.Point(29, 170);
             this.lbl_Nombre.Name = "lbl_Nombre";
-            this.lbl_Nombre.Size = new System.Drawing.Size(55, 13);
+            this.lbl_Nombre.Size = new System.Drawing.Size(71, 16);
             this.lbl_Nombre.TabIndex = 6;
             this.lbl_Nombre.Text = "Nombre(s)";
             // 
@@ -111,10 +108,9 @@ namespace AppMaestro
             this.lbl_Grupo.AutoSize = true;
             this.lbl_Grupo.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Grupo.ForeColor = System.Drawing.Color.White;
-            this.lbl_Grupo.Location = new System.Drawing.Point(22, 195);
-            this.lbl_Grupo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Grupo.Location = new System.Drawing.Point(29, 240);
             this.lbl_Grupo.Name = "lbl_Grupo";
-            this.lbl_Grupo.Size = new System.Drawing.Size(36, 13);
+            this.lbl_Grupo.Size = new System.Drawing.Size(44, 16);
             this.lbl_Grupo.TabIndex = 8;
             this.lbl_Grupo.Text = "Grupo";
             // 
@@ -123,29 +119,29 @@ namespace AppMaestro
             this.lbl_IdComputadora.AutoSize = true;
             this.lbl_IdComputadora.BackColor = System.Drawing.Color.Transparent;
             this.lbl_IdComputadora.ForeColor = System.Drawing.Color.White;
-            this.lbl_IdComputadora.Location = new System.Drawing.Point(22, 256);
-            this.lbl_IdComputadora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_IdComputadora.Location = new System.Drawing.Point(29, 315);
             this.lbl_IdComputadora.Name = "lbl_IdComputadora";
-            this.lbl_IdComputadora.Size = new System.Drawing.Size(82, 13);
+            this.lbl_IdComputadora.Size = new System.Drawing.Size(103, 16);
             this.lbl_IdComputadora.TabIndex = 10;
             this.lbl_IdComputadora.Text = "Id Computadora";
             // 
             // cb_Grupo
             // 
             this.cb_Grupo.FormattingEnabled = true;
-            this.cb_Grupo.Location = new System.Drawing.Point(24, 222);
-            this.cb_Grupo.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_Grupo.Location = new System.Drawing.Point(32, 273);
+            this.cb_Grupo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_Grupo.Name = "cb_Grupo";
-            this.cb_Grupo.Size = new System.Drawing.Size(179, 21);
+            this.cb_Grupo.Size = new System.Drawing.Size(237, 24);
             this.cb_Grupo.TabIndex = 11;
+            this.cb_Grupo.SelectedIndexChanged += new System.EventHandler(this.cb_Grupo_SelectedIndexChanged);
             // 
             // cb_IdComputadora
             // 
             this.cb_IdComputadora.FormattingEnabled = true;
-            this.cb_IdComputadora.Location = new System.Drawing.Point(24, 288);
-            this.cb_IdComputadora.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_IdComputadora.Location = new System.Drawing.Point(32, 354);
+            this.cb_IdComputadora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_IdComputadora.Name = "cb_IdComputadora";
-            this.cb_IdComputadora.Size = new System.Drawing.Size(179, 21);
+            this.cb_IdComputadora.Size = new System.Drawing.Size(237, 24);
             this.cb_IdComputadora.TabIndex = 12;
             // 
             // button1
@@ -154,10 +150,10 @@ namespace AppMaestro
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(37, 325);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(49, 400);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 33);
+            this.button1.Size = new System.Drawing.Size(95, 41);
             this.button1.TabIndex = 13;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
@@ -169,10 +165,10 @@ namespace AppMaestro
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(113, 325);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(151, 400);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(71, 33);
+            this.button4.Size = new System.Drawing.Size(95, 41);
             this.button4.TabIndex = 16;
             this.button4.Text = "Consultar";
             this.button4.UseVisualStyleBackColor = false;
@@ -184,10 +180,10 @@ namespace AppMaestro
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(37, 362);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(49, 446);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(147, 33);
+            this.button5.Size = new System.Drawing.Size(196, 41);
             this.button5.TabIndex = 17;
             this.button5.Text = "Regresar";
             this.button5.UseVisualStyleBackColor = false;
@@ -197,21 +193,21 @@ namespace AppMaestro
             // 
             this.data_Alumno.AllowUserToOrderColumns = true;
             this.data_Alumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_Alumno.Location = new System.Drawing.Point(223, 27);
-            this.data_Alumno.Margin = new System.Windows.Forms.Padding(2);
+            this.data_Alumno.Location = new System.Drawing.Point(297, 33);
+            this.data_Alumno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.data_Alumno.Name = "data_Alumno";
             this.data_Alumno.RowHeadersWidth = 51;
             this.data_Alumno.RowTemplate.Height = 24;
-            this.data_Alumno.Size = new System.Drawing.Size(518, 370);
+            this.data_Alumno.Size = new System.Drawing.Size(691, 455);
             this.data_Alumno.TabIndex = 18;
             // 
             // Alumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AppMaestro.Properties.Resources.bg_maestros_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(757, 422);
+            this.ClientSize = new System.Drawing.Size(1009, 519);
             this.Controls.Add(this.data_Alumno);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -227,7 +223,7 @@ namespace AppMaestro
             this.Controls.Add(this.txt_ApellidoPaterno);
             this.Controls.Add(this.lbl_ApellidoPaterno);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Alumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumno";

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Puzzle));
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.pb_1 = new System.Windows.Forms.PictureBox();
-            this.pb2 = new System.Windows.Forms.PictureBox();
-            this.pb3 = new System.Windows.Forms.PictureBox();
+            this.bt21 = new System.Windows.Forms.PictureBox();
+            this.spiderman = new System.Windows.Forms.PictureBox();
+            this.sanrio = new System.Windows.Forms.PictureBox();
             this.rb_1_facil = new System.Windows.Forms.RadioButton();
             this.rb_2_normal = new System.Windows.Forms.RadioButton();
             this.rb_3_dificil = new System.Windows.Forms.RadioButton();
@@ -46,9 +46,9 @@
             this.lblmilisegundos = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spiderman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanrio)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -68,39 +68,42 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // pb_1
+            // bt21
             // 
-            this.pb_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_1.Image = ((System.Drawing.Image)(resources.GetObject("pb_1.Image")));
-            this.pb_1.Location = new System.Drawing.Point(61, 60);
-            this.pb_1.Name = "pb_1";
-            this.pb_1.Size = new System.Drawing.Size(160, 159);
-            this.pb_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_1.TabIndex = 14;
-            this.pb_1.TabStop = false;
+            this.bt21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bt21.Image = ((System.Drawing.Image)(resources.GetObject("bt21.Image")));
+            this.bt21.Location = new System.Drawing.Point(61, 60);
+            this.bt21.Name = "bt21";
+            this.bt21.Size = new System.Drawing.Size(160, 159);
+            this.bt21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bt21.TabIndex = 14;
+            this.bt21.TabStop = false;
+            this.bt21.Click += new System.EventHandler(this.bt21_Click);
             // 
-            // pb2
+            // spiderman
             // 
-            this.pb2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
-            this.pb2.Location = new System.Drawing.Point(243, 60);
-            this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(160, 159);
-            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb2.TabIndex = 15;
-            this.pb2.TabStop = false;
+            this.spiderman.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.spiderman.Image = ((System.Drawing.Image)(resources.GetObject("spiderman.Image")));
+            this.spiderman.Location = new System.Drawing.Point(243, 60);
+            this.spiderman.Name = "spiderman";
+            this.spiderman.Size = new System.Drawing.Size(160, 159);
+            this.spiderman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.spiderman.TabIndex = 15;
+            this.spiderman.TabStop = false;
+            this.spiderman.Click += new System.EventHandler(this.spiderman_Click);
             // 
-            // pb3
+            // sanrio
             // 
-            this.pb3.BackColor = System.Drawing.SystemColors.Control;
-            this.pb3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
-            this.pb3.Location = new System.Drawing.Point(421, 60);
-            this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(160, 159);
-            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb3.TabIndex = 16;
-            this.pb3.TabStop = false;
+            this.sanrio.BackColor = System.Drawing.SystemColors.Control;
+            this.sanrio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sanrio.Image = ((System.Drawing.Image)(resources.GetObject("sanrio.Image")));
+            this.sanrio.Location = new System.Drawing.Point(421, 60);
+            this.sanrio.Name = "sanrio";
+            this.sanrio.Size = new System.Drawing.Size(160, 159);
+            this.sanrio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sanrio.TabIndex = 16;
+            this.sanrio.TabStop = false;
+            this.sanrio.Click += new System.EventHandler(this.sanrio_Click);
             // 
             // rb_1_facil
             // 
@@ -143,6 +146,7 @@
             // 
             // panel_puzzle
             // 
+            this.panel_puzzle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_puzzle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_puzzle.Location = new System.Drawing.Point(61, 245);
             this.panel_puzzle.Name = "panel_puzzle";
@@ -283,17 +287,20 @@
             this.Controls.Add(this.rb_3_dificil);
             this.Controls.Add(this.rb_2_normal);
             this.Controls.Add(this.rb_1_facil);
-            this.Controls.Add(this.pb3);
-            this.Controls.Add(this.pb2);
-            this.Controls.Add(this.pb_1);
+            this.Controls.Add(this.sanrio);
+            this.Controls.Add(this.spiderman);
+            this.Controls.Add(this.bt21);
             this.Controls.Add(this.btnRegresar);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Puzzle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle";
-            ((System.ComponentModel.ISupportInitialize)(this.pb_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bt21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spiderman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanrio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,9 +309,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.PictureBox pb_1;
-        private System.Windows.Forms.PictureBox pb2;
-        private System.Windows.Forms.PictureBox pb3;
+        private System.Windows.Forms.PictureBox bt21;
+        private System.Windows.Forms.PictureBox spiderman;
+        private System.Windows.Forms.PictureBox sanrio;
         private System.Windows.Forms.RadioButton rb_1_facil;
         private System.Windows.Forms.RadioButton rb_2_normal;
         private System.Windows.Forms.RadioButton rb_3_dificil;

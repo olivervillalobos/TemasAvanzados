@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using WMPLib;
+//using WMPLib;
 
 namespace GestionProyectosSoftware
 {
@@ -16,7 +16,7 @@ namespace GestionProyectosSoftware
     {
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
 
-        WindowsMediaPlayer sonido;
+        //WindowsMediaPlayer sonido;
         public Puzzle()
         {
             InitializeComponent();
@@ -55,6 +55,34 @@ namespace GestionProyectosSoftware
             this.Close();
             Form frmMenu = new Menu();
             frmMenu.Show();
+        }
+
+        private void bt21_Click(object sender, EventArgs e)
+        {
+            panel_puzzle.BackgroundImage = null;
+
+            string folder = Application.StartupPath;
+
+            panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\bt21.jpg");
+            
+        }
+
+        private void spiderman_Click(object sender, EventArgs e)
+        {
+            panel_puzzle.BackgroundImage = null;
+
+            string folder = Application.StartupPath;
+
+            panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\spiderman.jpg");
+        }
+
+        private void sanrio_Click(object sender, EventArgs e)
+        {
+            panel_puzzle.BackgroundImage = null;
+
+            string folder = Application.StartupPath;
+
+            panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\sanrio.jpg");
         }
     }
 }

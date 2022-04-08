@@ -71,6 +71,7 @@
             // pb_1
             // 
             this.pb_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_1.Image = ((System.Drawing.Image)(resources.GetObject("pb_1.Image")));
             this.pb_1.Location = new System.Drawing.Point(61, 60);
             this.pb_1.Name = "pb_1";
             this.pb_1.Size = new System.Drawing.Size(160, 159);
@@ -81,9 +82,11 @@
             // pb2
             // 
             this.pb2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
             this.pb2.Location = new System.Drawing.Point(243, 60);
             this.pb2.Name = "pb2";
             this.pb2.Size = new System.Drawing.Size(160, 159);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb2.TabIndex = 15;
             this.pb2.TabStop = false;
             // 
@@ -91,9 +94,11 @@
             // 
             this.pb3.BackColor = System.Drawing.SystemColors.Control;
             this.pb3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
             this.pb3.Location = new System.Drawing.Point(421, 60);
             this.pb3.Name = "pb3";
             this.pb3.Size = new System.Drawing.Size(160, 159);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb3.TabIndex = 16;
             this.pb3.TabStop = false;
             // 

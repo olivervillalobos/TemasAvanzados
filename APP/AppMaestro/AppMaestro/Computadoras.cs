@@ -28,7 +28,7 @@ namespace AppMaestro
                 comando.CommandText = "SELECT COUNT(Id_Computadora) FROM Computadora";
                 Object temp = comando.ExecuteScalar();
                 Int32 comp = (Int32)comando.ExecuteScalar();
-                if(comp < 1 )
+                if(comp <= 1 )
                 {
                     btn_Disminuir.Enabled = false;
                     btn_Incrementar.Enabled = true;

@@ -100,5 +100,15 @@ namespace AppMaestro
             form1.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //eliminar
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //modificar
+        }
     }
 }

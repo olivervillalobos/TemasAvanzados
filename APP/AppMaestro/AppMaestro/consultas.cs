@@ -27,9 +27,9 @@ namespace AppMaestro
                 if (cbopcion.SelectedIndex == 1)
                 {
                     connection.Open();
-                    SqlCommand consulta = new SqlCommand("SELECT A.Id_Alumno, A.Apellido_Paterno, A.Apellido_Materno, A.Nombres, A.Id_Grupo, A.Id_Computadora, CO. Veces_Jugadas as 'Colores Jugadas', CO. Puntos_Colores as 'Colores Puntos', NU. Veces_Jugadas as 'Numeros Jugadas', NU. Puntos_Numeros as 'Numeros Puntos',LE. Veces_Jugadas as 'Letras Jugadas', LE. Puntos_Letras as 'Letras Puntos', P. Promedio FROM Puntajes P FULL JOIN Alumno A ON A.Id_Puntaje = P.Id_Puntaje FULL JOIN Colores CO ON CO. Id_Colores = P. Id_Colores FULL JOIN Numeros NU ON NU. Id_Numeros = P. Id_Numeros FULL JOIN Letras LE ON LE. Id_Letras = P. Id_Letras WHERE P.Id_Puntaje = @Id_Puntaje", connection);
+                    SqlCommand consulta = new SqlCommand("SELECT * FROM Alumno WHERE Id_Alumno=@Id_Alumno", connection);
                     SqlDataAdapter adaptador = new SqlDataAdapter();
-                    consulta.Parameters.AddWithValue("@Id_Puntaje", txtconsulta.Text);
+                    consulta.Parameters.AddWithValue("@Id_Alumno", txtconsulta.Text);
                     adaptador.SelectCommand = consulta;
                     DataTable tabla = new DataTable();
                     adaptador.Fill(tabla);

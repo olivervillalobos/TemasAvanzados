@@ -134,11 +134,52 @@ namespace AppMaestro
                 MessageBox.Show("Ha ingresado valores no permitidos o a ingresado un valor en una llave secundaria no autorizado. Numeros");
                 connection.Close();
             }
+            //Crear Id Completa frases
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("INSERT INTO CompletaFrases(Id_CompletaFrases,Veces_Jugadas,Puntos_CompletaFrases) VALUES ((SELECT MAX(Id_CompletaFrases)+1 FROM CompletaFrases),0,0)", connection);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Ha ingresado valores no permitidos o a ingresado un valor en una llave secundaria no autorizado. Completa Frases");
+                connection.Close();
+            }
+            //Crear Id Piano
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("INSERT INTO Piano(Id_Piano,Veces_Jugadas,Puntos_Piano) VALUES ((SELECT MAX(Id_Piano)+1 FROM Piano),0,0)", connection);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Ha ingresado valores no permitidos o a ingresado un valor en una llave secundaria no autorizado. Piano");
+                connection.Close();
+            }
+            //Crear Id Puzzle
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("INSERT INTO Puzzle(Id_Puzzle,Veces_Jugadas,Puntos_Puzzle) VALUES ((SELECT MAX(Id_Puzzle)+1 FROM Puzzle),0,0)", connection);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Ha ingresado valores no permitidos o a ingresado un valor en una llave secundaria no autorizado. Puzzle");
+                connection.Close();
+            }
             //Crear ID Puntaje
             try
             {
                 connection.Open();
-                SqlCommand altas = new SqlCommand("INSERT INTO Puntajes(Id_Puntaje, Id_Colores, Id_Numeros, Id_Letras,Promedio) VALUES ((SELECT MAX(Id_Puntaje)+1 FROM Puntajes),(SELECT MAX(Id_Colores) FROM Colores) , (SELECT MAX(Id_Numeros) FROM Numeros), (SELECT MAX(Id_Letras) FROM Letras), 0)", connection);
+                SqlCommand altas = new SqlCommand("INSERT INTO Puntajes(Id_Puntaje, Id_Colores, Id_Numeros, Id_Letras,Id_CompletaFrases,Id_Piano,Id_Puzzle,Promedio) " +
+                    "VALUES ((SELECT MAX(Id_Puntaje)+1 FROM Puntajes), (SELECT MAX(Id_Colores) FROM Colores) , (SELECT MAX(Id_Numeros) FROM Numeros), (SELECT MAX(Id_Letras) FROM Letras)," +
+                    "(SELECT MAX(Id_CompletaFrases) FROM CompletaFrases), (SELECT MAX(Id_Piano) FROM Piano),(SELECT MAX(Id_Puzzle) FROM Puzzle), 0)", connection);
                 altas.ExecuteNonQuery();
                 connection.Close();
             }
@@ -187,6 +228,16 @@ namespace AppMaestro
                 MessageBox.Show("Ha ingresado valores no permitidos o a ingresado un valor en una llave secundaria no autorizado. Inicio Sesion");
                 connection.Close();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //eliminar
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //modificar
         }
     }
 }

@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\APP",
+    "\\APP\\AppMaestro",
     "\\APP\\GestionProyectosSoftware",
-    "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware",
-    "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware\\Resources"
+    "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware"
   ],
-  "SelectedNode": "\\APP\\GestionProyectosSoftware\\GestionProyectosSoftware.sln",
   "PreviewInSolutionExplorer": false
 }

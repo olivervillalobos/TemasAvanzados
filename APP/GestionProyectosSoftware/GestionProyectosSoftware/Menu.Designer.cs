@@ -1,4 +1,3 @@
-﻿
 namespace GestionProyectosSoftware
 {
     partial class Menu

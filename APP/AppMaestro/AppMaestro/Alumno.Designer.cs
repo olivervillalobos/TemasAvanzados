@@ -1,4 +1,3 @@
-﻿
 namespace AppMaestro
 {
     partial class Alumno

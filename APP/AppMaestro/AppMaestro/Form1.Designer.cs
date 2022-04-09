@@ -1,4 +1,4 @@
-﻿
+
 namespace AppMaestro
 {
     partial class Form1
@@ -175,4 +175,3 @@ namespace AppMaestro
         private System.Windows.Forms.Label lblAlumno;
     }
 }
-

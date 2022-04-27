@@ -69,8 +69,10 @@ namespace GestionProyectosSoftware
             /*string folder = Application.StartupPath;
             panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\bt21.jpg");
             */
-            panel_puzzle.BackgroundImage = Properties.Resources.bt21;
-            
+            //panel_puzzle.BackgroundImage = Properties.Resources.bt21;
+            string img_temp = "";
+            img_temp = "bt21";
+
         }
 
         private void spiderman_Click(object sender, EventArgs e)
@@ -82,7 +84,9 @@ namespace GestionProyectosSoftware
 
             panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\spiderman.jpg");
             */
-            panel_puzzle.BackgroundImage = Properties.Resources.spiderman;
+            //panel_puzzle.BackgroundImage = Properties.Resources.spiderman;
+            string img_temp = "";
+            img_temp = "spiderman";
         }
 
         private void sanrio_Click(object sender, EventArgs e)
@@ -94,7 +98,9 @@ namespace GestionProyectosSoftware
 
             panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\sanrio.jpg");
             */
-            panel_puzzle.BackgroundImage = Properties.Resources.sanrio;
+            //panel_puzzle.BackgroundImage = Properties.Resources.sanrio;
+            string img_temp = "";
+            img_temp = "sanrio";
         }
 
         private void timer_Tick(object sender, EventArgs e)

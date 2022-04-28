@@ -16,9 +16,9 @@ namespace GestionProyectosSoftware
     {
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
         int estadoDelJuego = ((int)constantes.EstadoDelJuego.AntesInicio);
-        // 2 minutos de prueba
-        double minutosPartida = 2;
-        
+        // 5 minutos de prueba
+        double minutosPartida = 5;
+        // Esta instancia maneja el label del timer en la ventana
         TimeFormat formato;
 
         //WindowsMediaPlayer sonido;
@@ -108,10 +108,13 @@ namespace GestionProyectosSoftware
             
             if (estadoDelJuego == ((int)constantes.EstadoDelJuego.Inicio))
             {
+                /*Resta 100 milisengudos al timer*/
                 formato.update(100);
+                /*Cuando se acaba el tiempo se termina el juego*/
                 if (formato.GetTiempo() < 0)
                 {
                     estadoDelJuego = ((int)constantes.EstadoDelJuego.GameOver);
+                    MessageBox.Show("Game Over");
                 }
                 else
                 {
@@ -119,14 +122,29 @@ namespace GestionProyectosSoftware
                     lblSegundos.Text = formato.Segundos();
                     lblmilisegundos.Text = formato.Milisegundos();
                 }
- 
             }
-            if (estadoDelJuego == ((int)constantes.EstadoDelJuego.AntesInicio))
+
+        }
+
+        private void buttonComenzar_Click(object sender, EventArgs e)
+        {
+            /*Cuando el juego aun no ha iniciado y presionas el botón
+             comenzar, entonces comienza el juego*/
+            /*Si el juego acabó, darle la oportunidad al usuario de 
+            volver a comenzar el juego*/
+
+            if (estadoDelJuego == (int)constantes.EstadoDelJuego.AntesInicio
+                || estadoDelJuego == (int)constantes.EstadoDelJuego.GameOver)
             {
-                double milisegundosPartida = minutosPartida * 60000;
+                IniciarTemporizador();
                 estadoDelJuego = ((int)constantes.EstadoDelJuego.Inicio);
-                formato = new TimeFormat((int)milisegundosPartida);
             }
+        }
+
+        private void IniciarTemporizador()
+        {
+            double milisegundosPartida = minutosPartida * 60000;
+            formato = new TimeFormat((int)milisegundosPartida);
         }
     }
 }

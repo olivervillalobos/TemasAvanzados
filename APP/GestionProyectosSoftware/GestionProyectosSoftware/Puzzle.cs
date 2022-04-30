@@ -20,7 +20,8 @@ namespace GestionProyectosSoftware
         double minutosPartida = 5;
         // Esta instancia maneja el label del timer en la ventana
         TimeFormat formato;
-
+        //Imagenseleccionada para el rompecabezas
+        Image imagen;
         //WindowsMediaPlayer sonido;
         public Puzzle()
         {
@@ -72,13 +73,12 @@ namespace GestionProyectosSoftware
             //panel_puzzle.BackgroundImage = Properties.Resources.bt21;
             string img_temp = "";
             img_temp = "bt21";
-
+            imagen = bt21.Image;
         }
 
         private void spiderman_Click(object sender, EventArgs e)
         {
             panel_puzzle.BackgroundImage = null;
-
             /*
             string folder = Application.StartupPath;
 
@@ -87,6 +87,7 @@ namespace GestionProyectosSoftware
             //panel_puzzle.BackgroundImage = Properties.Resources.spiderman;
             string img_temp = "";
             img_temp = "spiderman";
+            imagen = spiderman.Image;
         }
 
         private void sanrio_Click(object sender, EventArgs e)
@@ -101,6 +102,7 @@ namespace GestionProyectosSoftware
             //panel_puzzle.BackgroundImage = Properties.Resources.sanrio;
             string img_temp = "";
             img_temp = "sanrio";
+            imagen = sanrio.Image;
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -138,6 +140,7 @@ namespace GestionProyectosSoftware
             {
                 IniciarTemporizador();
                 estadoDelJuego = ((int)constantes.EstadoDelJuego.Inicio);
+                CrearPiezas(9);
             }
         }
 
@@ -145,6 +148,37 @@ namespace GestionProyectosSoftware
         {
             double milisegundosPartida = minutosPartida * 60000;
             formato = new TimeFormat((int)milisegundosPartida);
+        }
+
+        private void CrearPiezas(int piezas)
+        {
+            var imgArray = new Image[piezas];
+            var img = imagen;
+            
+            for (int i = 0; i < 3; i++)
+            {
+	            for (int j = 0; j < 3; j++)
+	            {
+		            var index = i * 3 + j;
+		            imgArray[index] = new Bitmap(img.Width/30, img.Height/30);
+		            var graphics = Graphics.FromImage(imgArray[index]);
+		            graphics.DrawImage(img, new Rectangle(0, 0, img.Width/30, img.Height/30), new Rectangle(i * img.Width/30, j * img.Height/30, img.Width/30, img.Height/30), GraphicsUnit.Pixel);
+		            graphics.Dispose();
+	            }
+            }
+
+            for(int i = 0; i < 9; i++)
+            {
+	            PictureBox temp = new PictureBox();
+	            panel_pieces.Controls.Add(temp);
+	            temp.Width = img.Width/3;
+	            temp.Height = img.Height/3;
+	            temp.SizeMode = PictureBoxSizeMode.StretchImage;
+	            temp.BorderStyle = BorderStyle.FixedSingle;
+	            temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
+	            //temp.Left = 30;
+	            temp.Image = imgArray[i];
+            }
         }
     }
 }

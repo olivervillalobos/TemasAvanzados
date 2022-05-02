@@ -49,6 +49,11 @@ namespace GestionProyectosSoftware
             return milisegundosPartida;
         }
 
+        public int GetMinuto()
+        {
+            return minutos;
+        }
+
         private string DosDigitos(int numero)
         {
             string numeroString = "";

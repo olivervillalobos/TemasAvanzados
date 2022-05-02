@@ -541,6 +541,99 @@ namespace GestionProyectosSoftware
                 e.Effect = DragDropEffects.None;
         }
 
+        private void pictureBox2_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox2.Width;
+            int alto = pictureBox2.Height;
+            pictureBox2.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox2.Width = ancho;
+            pictureBox2.Height = alto;
+            pictureBox2.Refresh();
+
+        }
+
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox1.Width;
+            int alto = pictureBox1.Height;
+            pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox1.Width = ancho;
+            pictureBox1.Height = alto;
+            pictureBox1.Refresh();
+
+        }
+
+        private void pictureBox3_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox3.Width;
+            int alto = pictureBox3.Height;
+            pictureBox3.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox3.Width = ancho;
+            pictureBox3.Height = alto;
+            pictureBox3.Refresh();
+        }
+
+        private void pictureBox4_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox4.Width;
+            int alto = pictureBox4.Height;
+            pictureBox4.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox4.Width = ancho;
+            pictureBox4.Height = alto;
+            pictureBox4.Refresh();
+        }
+
+        private void pictureBox5_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox5.Width;
+            int alto = pictureBox5.Height;
+            pictureBox5.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox5.Width = ancho;
+            pictureBox5.Height = alto;
+            pictureBox5.Refresh();
+        }
+
+        private void pictureBox6_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox6.Width;
+            int alto = pictureBox6.Height;
+            pictureBox6.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox6.Width = ancho;
+            pictureBox6.Height = alto;
+            pictureBox6.Refresh();
+        }
+
+        private void pictureBox7_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox7.Width;
+            int alto = pictureBox7.Height;
+            pictureBox7.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox7.Width = ancho;
+            pictureBox7.Height = alto;
+            pictureBox7.Refresh();
+        }
+
+        private void pictureBox8_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox8.Width;
+            int alto = pictureBox8.Height;
+            pictureBox8.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox8.Width = ancho;
+            pictureBox8.Height = alto;
+            pictureBox8.Refresh();
+        }
+
+        private void pictureBox9_DoubleClick(object sender, EventArgs e)
+        {
+            int ancho = pictureBox9.Width;
+            int alto = pictureBox9.Height;
+            pictureBox9.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pictureBox9.Width = ancho;
+            pictureBox9.Height = alto;
+            pictureBox9.Refresh();
+        }
+
         
     }
 }

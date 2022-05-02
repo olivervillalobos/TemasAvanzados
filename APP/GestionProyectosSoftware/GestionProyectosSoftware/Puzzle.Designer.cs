@@ -38,6 +38,15 @@
             this.rb_2_normal = new System.Windows.Forms.RadioButton();
             this.rb_3_dificil = new System.Windows.Forms.RadioButton();
             this.panel_puzzle = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_pieces = new System.Windows.Forms.Panel();
             this.lblPuntos = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +61,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.bt21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spiderman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanrio)).BeginInit();
+            this.panel_puzzle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -62,9 +81,10 @@
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(776, 132);
+            this.btnRegresar.Location = new System.Drawing.Point(1035, 162);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(80, 37);
+            this.btnRegresar.Size = new System.Drawing.Size(107, 46);
             this.btnRegresar.TabIndex = 13;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -74,10 +94,10 @@
             // 
             this.bt21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bt21.Image = ((System.Drawing.Image)(resources.GetObject("bt21.Image")));
-            this.bt21.Location = new System.Drawing.Point(46, 49);
-            this.bt21.Margin = new System.Windows.Forms.Padding(2);
+            this.bt21.Location = new System.Drawing.Point(61, 60);
+            this.bt21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt21.Name = "bt21";
-            this.bt21.Size = new System.Drawing.Size(120, 130);
+            this.bt21.Size = new System.Drawing.Size(159, 160);
             this.bt21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bt21.TabIndex = 14;
             this.bt21.TabStop = false;
@@ -87,10 +107,10 @@
             // 
             this.spiderman.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.spiderman.Image = ((System.Drawing.Image)(resources.GetObject("spiderman.Image")));
-            this.spiderman.Location = new System.Drawing.Point(182, 49);
-            this.spiderman.Margin = new System.Windows.Forms.Padding(2);
+            this.spiderman.Location = new System.Drawing.Point(243, 60);
+            this.spiderman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spiderman.Name = "spiderman";
-            this.spiderman.Size = new System.Drawing.Size(120, 130);
+            this.spiderman.Size = new System.Drawing.Size(159, 160);
             this.spiderman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.spiderman.TabIndex = 15;
             this.spiderman.TabStop = false;
@@ -101,10 +121,10 @@
             this.sanrio.BackColor = System.Drawing.SystemColors.Control;
             this.sanrio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sanrio.Image = ((System.Drawing.Image)(resources.GetObject("sanrio.Image")));
-            this.sanrio.Location = new System.Drawing.Point(316, 49);
-            this.sanrio.Margin = new System.Windows.Forms.Padding(2);
+            this.sanrio.Location = new System.Drawing.Point(421, 60);
+            this.sanrio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sanrio.Name = "sanrio";
-            this.sanrio.Size = new System.Drawing.Size(120, 130);
+            this.sanrio.Size = new System.Drawing.Size(159, 160);
             this.sanrio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sanrio.TabIndex = 16;
             this.sanrio.TabStop = false;
@@ -115,10 +135,10 @@
             this.rb_1_facil.AutoSize = true;
             this.rb_1_facil.BackColor = System.Drawing.Color.Transparent;
             this.rb_1_facil.ForeColor = System.Drawing.Color.White;
-            this.rb_1_facil.Location = new System.Drawing.Point(506, 62);
-            this.rb_1_facil.Margin = new System.Windows.Forms.Padding(2);
+            this.rb_1_facil.Location = new System.Drawing.Point(675, 76);
+            this.rb_1_facil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb_1_facil.Name = "rb_1_facil";
-            this.rb_1_facil.Size = new System.Drawing.Size(47, 17);
+            this.rb_1_facil.Size = new System.Drawing.Size(57, 20);
             this.rb_1_facil.TabIndex = 17;
             this.rb_1_facil.TabStop = true;
             this.rb_1_facil.Text = "Facil";
@@ -129,10 +149,10 @@
             this.rb_2_normal.AutoSize = true;
             this.rb_2_normal.BackColor = System.Drawing.Color.Transparent;
             this.rb_2_normal.ForeColor = System.Drawing.Color.White;
-            this.rb_2_normal.Location = new System.Drawing.Point(506, 102);
-            this.rb_2_normal.Margin = new System.Windows.Forms.Padding(2);
+            this.rb_2_normal.Location = new System.Drawing.Point(675, 126);
+            this.rb_2_normal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb_2_normal.Name = "rb_2_normal";
-            this.rb_2_normal.Size = new System.Drawing.Size(58, 17);
+            this.rb_2_normal.Size = new System.Drawing.Size(72, 20);
             this.rb_2_normal.TabIndex = 18;
             this.rb_2_normal.TabStop = true;
             this.rb_2_normal.Text = "Normal";
@@ -143,10 +163,10 @@
             this.rb_3_dificil.AutoSize = true;
             this.rb_3_dificil.BackColor = System.Drawing.Color.Transparent;
             this.rb_3_dificil.ForeColor = System.Drawing.Color.White;
-            this.rb_3_dificil.Location = new System.Drawing.Point(506, 143);
-            this.rb_3_dificil.Margin = new System.Windows.Forms.Padding(2);
+            this.rb_3_dificil.Location = new System.Drawing.Point(675, 176);
+            this.rb_3_dificil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb_3_dificil.Name = "rb_3_dificil";
-            this.rb_3_dificil.Size = new System.Drawing.Size(50, 17);
+            this.rb_3_dificil.Size = new System.Drawing.Size(60, 20);
             this.rb_3_dificil.TabIndex = 19;
             this.rb_3_dificil.TabStop = true;
             this.rb_3_dificil.Text = "Dificil";
@@ -156,20 +176,114 @@
             // 
             this.panel_puzzle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_puzzle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_puzzle.Location = new System.Drawing.Point(46, 199);
-            this.panel_puzzle.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_puzzle.Controls.Add(this.pictureBox8);
+            this.panel_puzzle.Controls.Add(this.pictureBox4);
+            this.panel_puzzle.Controls.Add(this.pictureBox9);
+            this.panel_puzzle.Controls.Add(this.pictureBox7);
+            this.panel_puzzle.Controls.Add(this.pictureBox6);
+            this.panel_puzzle.Controls.Add(this.pictureBox5);
+            this.panel_puzzle.Controls.Add(this.pictureBox3);
+            this.panel_puzzle.Controls.Add(this.pictureBox2);
+            this.panel_puzzle.Controls.Add(this.pictureBox1);
+            this.panel_puzzle.Location = new System.Drawing.Point(61, 245);
+            this.panel_puzzle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_puzzle.Name = "panel_puzzle";
-            this.panel_puzzle.Size = new System.Drawing.Size(557, 547);
+            this.panel_puzzle.Size = new System.Drawing.Size(660, 660);
             this.panel_puzzle.TabIndex = 20;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(438, 439);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(438, 220);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(438, 0);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(220, 438);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(219, 219);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(220, -1);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(0, 438);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 218);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox2_DragDrop);
+            this.pictureBox2.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox2_DragEnter);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
+            this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
             // 
             // panel_pieces
             // 
             this.panel_pieces.AutoScroll = true;
             this.panel_pieces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_pieces.Location = new System.Drawing.Point(628, 199);
-            this.panel_pieces.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_pieces.Location = new System.Drawing.Point(783, 245);
+            this.panel_pieces.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_pieces.Name = "panel_pieces";
-            this.panel_pieces.Size = new System.Drawing.Size(282, 547);
+            this.panel_pieces.Size = new System.Drawing.Size(429, 660);
             this.panel_pieces.TabIndex = 21;
             // 
             // lblPuntos
@@ -178,9 +292,10 @@
             this.lblPuntos.BackColor = System.Drawing.Color.Transparent;
             this.lblPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuntos.ForeColor = System.Drawing.Color.White;
-            this.lblPuntos.Location = new System.Drawing.Point(780, 96);
+            this.lblPuntos.Location = new System.Drawing.Point(1040, 118);
+            this.lblPuntos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPuntos.Name = "lblPuntos";
-            this.lblPuntos.Size = new System.Drawing.Size(70, 20);
+            this.lblPuntos.Size = new System.Drawing.Size(85, 25);
             this.lblPuntos.TabIndex = 23;
             this.lblPuntos.Text = "Puntaje";
             this.lblPuntos.Visible = false;
@@ -191,9 +306,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(780, 58);
+            this.label3.Location = new System.Drawing.Point(1040, 71);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(85, 25);
             this.label3.TabIndex = 22;
             this.label3.Text = "Puntaje";
             // 
@@ -203,9 +319,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(650, 93);
+            this.label1.Location = new System.Drawing.Point(867, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 20);
+            this.label1.Size = new System.Drawing.Size(19, 25);
             this.label1.TabIndex = 28;
             this.label1.Text = ":";
             // 
@@ -215,9 +332,10 @@
             this.lblMinutos.BackColor = System.Drawing.Color.Transparent;
             this.lblMinutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinutos.ForeColor = System.Drawing.Color.White;
-            this.lblMinutos.Location = new System.Drawing.Point(625, 93);
+            this.lblMinutos.Location = new System.Drawing.Point(833, 114);
+            this.lblMinutos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinutos.Name = "lblMinutos";
-            this.lblMinutos.Size = new System.Drawing.Size(29, 20);
+            this.lblMinutos.Size = new System.Drawing.Size(36, 25);
             this.lblMinutos.TabIndex = 27;
             this.lblMinutos.Text = "00";
             // 
@@ -227,9 +345,10 @@
             this.lblSegundos.BackColor = System.Drawing.Color.Transparent;
             this.lblSegundos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSegundos.ForeColor = System.Drawing.Color.White;
-            this.lblSegundos.Location = new System.Drawing.Point(660, 93);
+            this.lblSegundos.Location = new System.Drawing.Point(880, 114);
+            this.lblSegundos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSegundos.Name = "lblSegundos";
-            this.lblSegundos.Size = new System.Drawing.Size(29, 20);
+            this.lblSegundos.Size = new System.Drawing.Size(36, 25);
             this.lblSegundos.TabIndex = 26;
             this.lblSegundos.Text = "00";
             // 
@@ -239,9 +358,10 @@
             this.lblmilisegundos.BackColor = System.Drawing.Color.Transparent;
             this.lblmilisegundos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmilisegundos.ForeColor = System.Drawing.Color.White;
-            this.lblmilisegundos.Location = new System.Drawing.Point(695, 93);
+            this.lblmilisegundos.Location = new System.Drawing.Point(927, 114);
+            this.lblmilisegundos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmilisegundos.Name = "lblmilisegundos";
-            this.lblmilisegundos.Size = new System.Drawing.Size(39, 20);
+            this.lblmilisegundos.Size = new System.Drawing.Size(48, 25);
             this.lblmilisegundos.TabIndex = 25;
             this.lblmilisegundos.Text = "000";
             // 
@@ -251,9 +371,10 @@
             this.lblTiempo.BackColor = System.Drawing.Color.Transparent;
             this.lblTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTiempo.ForeColor = System.Drawing.Color.White;
-            this.lblTiempo.Location = new System.Drawing.Point(647, 62);
+            this.lblTiempo.Location = new System.Drawing.Point(863, 76);
+            this.lblTiempo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(67, 20);
+            this.lblTiempo.Size = new System.Drawing.Size(84, 25);
             this.lblTiempo.TabIndex = 24;
             this.lblTiempo.Text = "Tiempo";
             // 
@@ -263,9 +384,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(683, 93);
+            this.label2.Location = new System.Drawing.Point(911, 114);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 20);
+            this.label2.Size = new System.Drawing.Size(19, 25);
             this.label2.TabIndex = 29;
             this.label2.Text = ":";
             // 
@@ -282,9 +404,10 @@
             this.buttonComenzar.FlatAppearance.BorderSize = 0;
             this.buttonComenzar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComenzar.ForeColor = System.Drawing.Color.White;
-            this.buttonComenzar.Location = new System.Drawing.Point(608, 132);
+            this.buttonComenzar.Location = new System.Drawing.Point(811, 162);
+            this.buttonComenzar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonComenzar.Name = "buttonComenzar";
-            this.buttonComenzar.Size = new System.Drawing.Size(149, 37);
+            this.buttonComenzar.Size = new System.Drawing.Size(199, 46);
             this.buttonComenzar.TabIndex = 30;
             this.buttonComenzar.Text = "Comenzar";
             this.buttonComenzar.UseVisualStyleBackColor = false;
@@ -292,11 +415,11 @@
             // 
             // Puzzle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(946, 794);
+            this.ClientSize = new System.Drawing.Size(1261, 977);
             this.Controls.Add(this.buttonComenzar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMinutos);
@@ -318,14 +441,25 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Puzzle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puzzle";
+            this.Load += new System.EventHandler(this.Puzzle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bt21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spiderman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanrio)).EndInit();
+            this.panel_puzzle.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,5 +486,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Button buttonComenzar;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

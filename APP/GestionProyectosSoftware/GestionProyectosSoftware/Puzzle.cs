@@ -14,6 +14,8 @@ namespace GestionProyectosSoftware
 {
     public partial class Puzzle : Form
     {
+        static int p;
+        static string lp;
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
         int estadoDelJuego = ((int)constantes.EstadoDelJuego.AntesInicio);
         // 5 minutos de prueba
@@ -149,6 +151,11 @@ namespace GestionProyectosSoftware
             double milisegundosPartida = minutosPartida * 60000;
             formato = new TimeFormat((int)milisegundosPartida);
         }
+        private void pictureBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            ((PictureBox)sender).DoDragDrop(((PictureBox)sender).Image, DragDropEffects.Copy);
+
+        }
 
         private void CrearPiezas(int piezas)
         {
@@ -161,13 +168,14 @@ namespace GestionProyectosSoftware
 	            {
 		            var index = i * 3 + j;
 		            imgArray[index] = new Bitmap(img.Width/30, img.Height/30);
+                    imgArray[index].Tag = "picture" + index.ToString();
 		            var graphics = Graphics.FromImage(imgArray[index]);
 		            graphics.DrawImage(img, new Rectangle(0, 0, img.Width/30, img.Height/30), new Rectangle(i * img.Width/30, j * img.Height/30, img.Width/30, img.Height/30), GraphicsUnit.Pixel);
 		            graphics.Dispose();
 	            }
             }
 
-            for(int i = 0; i < 9; i++)
+            for(p = 0; p < 9; p++)
             {
 	            PictureBox temp = new PictureBox();
 	            panel_pieces.Controls.Add(temp);
@@ -176,9 +184,54 @@ namespace GestionProyectosSoftware
 	            temp.SizeMode = PictureBoxSizeMode.StretchImage;
 	            temp.BorderStyle = BorderStyle.FixedSingle;
 	            temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
-	            //temp.Left = 30;
-	            temp.Image = imgArray[i];
+                //temp.Left = 30;
+                temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
+                temp.Image = imgArray[p];
             }
+        }
+
+        private void Puzzle_Load(object sender, EventArgs e)
+        {
+            pictureBox1.AllowDrop = true;
+            pictureBox2.AllowDrop = true;
+        }
+
+        private void pictureBox1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Bitmap) && (e.AllowedEffect & DragDropEffects.Copy) != 0)
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void pictureBox1_DragDrop(object sender, DragEventArgs e)
+        {
+            
+            lp = "picture0";
+            if(lp == (((Bitmap)e.Data.GetData((DataFormats.Bitmap), true)).Tag).ToString())
+            {
+                pictureBox1.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
+                ((PictureBox)panel_pieces.Controls[0]).Image = null;
+            }
+
+        }
+
+        private void pictureBox2_DragDrop(object sender, DragEventArgs e)
+        {
+            lp = "picture1";
+            if (lp == (((Bitmap)e.Data.GetData((DataFormats.Bitmap), true)).Tag).ToString())
+            {
+                pictureBox2.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
+                ((PictureBox)panel_pieces.Controls[1]).Image = null;
+            }
+        }
+
+        private void pictureBox2_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Bitmap) && (e.AllowedEffect & DragDropEffects.Copy) != 0)
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
         }
     }
 }

@@ -168,5 +168,45 @@ namespace GestionProyectosSoftware
             Form Puzzle = new Puzzle();
             Puzzle.Show();
         }
+
+        private void btnPiano_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Piano set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_Piano = @Id_Piano", connection);
+                altas.Parameters.AddWithValue("Id_Piano", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+            this.Close();
+            Form Piano = new Piano();
+            Piano.Show();
+        }
+
+        private void btnCompletaFrases_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE CompletaFrases set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_CompletaFrases = @Id_CompletaFrases", connection);
+                altas.Parameters.AddWithValue("Id_CompletaFrases", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+            this.Close();
+            Form CompletaFrases = new CompletaFrases();
+            CompletaFrases.Show();
+        }
     }
 }

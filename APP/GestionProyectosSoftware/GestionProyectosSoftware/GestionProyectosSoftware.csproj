@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompletaFrases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletaFrases.Designer.cs">
+      <DependentUpon>CompletaFrases.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmarCierreSesion.cs">
       <SubType>Form</SubType>
     </Compile>

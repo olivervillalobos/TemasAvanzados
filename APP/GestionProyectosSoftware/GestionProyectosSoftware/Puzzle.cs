@@ -361,11 +361,11 @@ namespace GestionProyectosSoftware
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    var index = i * 3 + j;
-                    imgArray[index] = new Bitmap(img.Width / 30, img.Height / 30);
+                    var index = i * 4 + j;
+                    imgArray[index] = new Bitmap(img.Width / 4, img.Height / 4);
                     imgArray[index].Tag = "picture" + index.ToString();
                     var graphics = Graphics.FromImage(imgArray[index]);
-                    graphics.DrawImage(img, new Rectangle(0, 0, img.Width / 30, img.Height / 30), new Rectangle(i * img.Width / 30, j * img.Height / 30, img.Width / 30, img.Height / 30), GraphicsUnit.Pixel);
+                    graphics.DrawImage(img, new Rectangle(0, 0, img.Width / 4, img.Height / 4), new Rectangle(i * img.Width / 4, j * img.Height / 4, img.Width / 4, img.Height / 4), GraphicsUnit.Pixel);
                     graphics.Dispose();
                 }
             }
@@ -374,12 +374,12 @@ namespace GestionProyectosSoftware
             {
                 PictureBox temp = new PictureBox();
                 panel_pieces.Controls.Add(temp);
-                temp.Width = img.Width / 3;
-                temp.Height = img.Height / 3;
+                temp.Width = img.Width / 4;
+                temp.Height = img.Height / 4;
                 temp.SizeMode = PictureBoxSizeMode.StretchImage;
                 temp.BorderStyle = BorderStyle.FixedSingle;
                 temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
-                //temp.Left = 30;
+                //temp.Left = 40;
                 temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
                 temp.Image = imgArray[p];
             }
@@ -395,11 +395,11 @@ namespace GestionProyectosSoftware
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    var index = i * 3 + j;
-                    imgArray[index] = new Bitmap(img.Width / 30, img.Height / 30);
+                    var index = i * 5 + j;
+                    imgArray[index] = new Bitmap(img.Width / 5, img.Height / 5);
                     imgArray[index].Tag = "picture" + index.ToString();
                     var graphics = Graphics.FromImage(imgArray[index]);
-                    graphics.DrawImage(img, new Rectangle(0, 0, img.Width / 30, img.Height / 30), new Rectangle(i * img.Width / 30, j * img.Height / 30, img.Width / 30, img.Height / 30), GraphicsUnit.Pixel);
+                    graphics.DrawImage(img, new Rectangle(0, 0, img.Width / 5, img.Height / 5), new Rectangle(i * img.Width / 5, j * img.Height / 5, img.Width / 5, img.Height / 5), GraphicsUnit.Pixel);
                     graphics.Dispose();
                 }
             }
@@ -408,12 +408,12 @@ namespace GestionProyectosSoftware
             {
                 PictureBox temp = new PictureBox();
                 panel_pieces.Controls.Add(temp);
-                temp.Width = img.Width / 3;
-                temp.Height = img.Height / 3;
+                temp.Width = img.Width / 5;
+                temp.Height = img.Height / 5;
                 temp.SizeMode = PictureBoxSizeMode.StretchImage;
                 temp.BorderStyle = BorderStyle.FixedSingle;
                 temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
-                //temp.Left = 30;
+                //temp.Left = 50;
                 temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
                 temp.Image = imgArray[p];
             }

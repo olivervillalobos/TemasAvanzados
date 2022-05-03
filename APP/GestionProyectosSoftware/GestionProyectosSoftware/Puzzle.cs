@@ -328,10 +328,10 @@ namespace GestionProyectosSoftware
 	            for (int j = 0; j < 3; j++)
 	            {
 		            var index = i * 3 + j;
-		            imgArray[index] = new Bitmap(img.Width/30, img.Height/30);
+		            imgArray[index] = new Bitmap(img.Width/3, img.Height/3);
                     imgArray[index].Tag = "picture" + index.ToString();
 		            var graphics = Graphics.FromImage(imgArray[index]);
-		            graphics.DrawImage(img, new Rectangle(0, 0, img.Width/30, img.Height/30), new Rectangle(i * img.Width/30, j * img.Height/30, img.Width/30, img.Height/30), GraphicsUnit.Pixel);
+		            graphics.DrawImage(img, new Rectangle(0, 0, img.Width/3, img.Height/3), new Rectangle(i * img.Width/3, j * img.Height/3, img.Width/3, img.Height/3), GraphicsUnit.Pixel);
 		            graphics.Dispose();
 	            }
             }

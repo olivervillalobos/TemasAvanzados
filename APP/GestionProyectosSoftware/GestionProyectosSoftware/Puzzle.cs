@@ -1809,5 +1809,6 @@ namespace GestionProyectosSoftware
             else
                 e.Effect = DragDropEffects.None;
         }
+        //jalara o nel hm
     }
 }

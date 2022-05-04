@@ -15,6 +15,8 @@ namespace GestionProyectosSoftware
 {
     public partial class Puzzle : Form
     {
+        static bool flag = false;
+        static string img_temp;
         static int p;
         static string lp;
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
@@ -74,9 +76,9 @@ namespace GestionProyectosSoftware
             panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\bt21.jpg");
             */
             //panel_puzzle.BackgroundImage = Properties.Resources.bt21;
-            string img_temp = "";
             img_temp = "bt21";
             imagen = bt21.Image;
+            flag = true;
 
             spiderman.BorderStyle = BorderStyle.None;
             bt21.BorderStyle = BorderStyle.Fixed3D;
@@ -92,9 +94,9 @@ namespace GestionProyectosSoftware
             panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\spiderman.jpg");
             */
             //panel_puzzle.BackgroundImage = Properties.Resources.spiderman;
-            string img_temp = "";
             img_temp = "spiderman";
             imagen = spiderman.Image;
+            flag = true;
 
             spiderman.BorderStyle = BorderStyle.Fixed3D;
             bt21.BorderStyle = BorderStyle.None;
@@ -111,10 +113,9 @@ namespace GestionProyectosSoftware
             panel_puzzle.BackgroundImage = Image.FromFile(folder + "\\sanrio.jpg");
             */
             //panel_puzzle.BackgroundImage = Properties.Resources.sanrio;
-            string img_temp = "";
             img_temp = "sanrio";
             imagen = sanrio.Image;
-
+            flag = true;
             spiderman.BorderStyle = BorderStyle.None;
             bt21.BorderStyle = BorderStyle.None;
             sanrio.BorderStyle = BorderStyle.Fixed3D;
@@ -258,52 +259,59 @@ namespace GestionProyectosSoftware
 
             pictureboxes_Null();
 
-
-            if (estadoDelJuego == (int)constantes.EstadoDelJuego.AntesInicio
-                || estadoDelJuego == (int)constantes.EstadoDelJuego.GameOver || estadoDelJuego == (int)constantes.EstadoDelJuego.Inicio)
+            if(flag != false && (rb_1_facil.Checked || rb_2_normal.Checked || rb_3_dificil.Checked))
             {
-                IniciarTemporizador();
-                estadoDelJuego = ((int)constantes.EstadoDelJuego.Inicio);
+                if (estadoDelJuego == (int)constantes.EstadoDelJuego.AntesInicio
+                                || estadoDelJuego == (int)constantes.EstadoDelJuego.GameOver || estadoDelJuego == (int)constantes.EstadoDelJuego.Inicio)
+                {
+                    IniciarTemporizador();
+                    estadoDelJuego = ((int)constantes.EstadoDelJuego.Inicio);
+                }
+                if (rb_1_facil.Checked)
+                {
+                    panel_pieces.Controls.Clear();
+                    CrearPiezas(9);
+                    pictureboxesEasy_Visible();
+                    pictureboxesEasy_Enable();
+
+                    pictureboxesNorm_NonEnable();
+                    pictureboxesNorm_NonVisible();
+
+                    pictureboxesHard_NonEnable();
+                    pictureboxesHard_NonVisible();
+                }
+                else if (rb_2_normal.Checked)
+                {
+                    panel_pieces.Controls.Clear();
+                    CrearPiezasNORMAL(16);
+                    pictureboxesNorm_Enable();
+                    pictureboxesNorm_Visible();
+
+                    pictureboxesEasy_NonVisible();
+                    pictureboxesEasy_NonEnable();
+
+                    pictureboxesHard_NonEnable();
+                    pictureboxesHard_NonVisible();
+                }
+                else if (rb_3_dificil.Checked)
+                {
+                    panel_pieces.Controls.Clear();
+                    CrearPiezasDIFICIL(25);
+                    pictureboxesHard_Enable();
+                    pictureboxesHard_Visible();
+
+                    pictureboxesEasy_NonVisible();
+                    pictureboxesEasy_NonEnable();
+
+                    pictureboxesNorm_NonEnable();
+                    pictureboxesNorm_NonVisible();
+                }
             }
-            if(rb_1_facil.Checked)
+            else
             {
-                panel_pieces.Controls.Clear();
-                CrearPiezas(9);
-                pictureboxesEasy_Visible();
-                pictureboxesEasy_Enable();
-
-                pictureboxesNorm_NonEnable();
-                pictureboxesNorm_NonVisible();
-
-                pictureboxesHard_NonEnable();
-                pictureboxesHard_NonVisible();
+                MessageBox.Show("Seleccione imagen y dificultad para empezar.");
             }
-            else if(rb_2_normal.Checked)
-            {
-                panel_pieces.Controls.Clear();
-                CrearPiezasNORMAL(16);
-                pictureboxesNorm_Enable();
-                pictureboxesNorm_Visible();
-
-                pictureboxesEasy_NonVisible();
-                pictureboxesEasy_NonEnable();
-
-                pictureboxesHard_NonEnable();
-                pictureboxesHard_NonVisible();
-            }
-            else if(rb_3_dificil.Checked)
-            {
-                panel_pieces.Controls.Clear();
-                CrearPiezasDIFICIL(25);
-                pictureboxesHard_Enable();
-                pictureboxesHard_Visible();
-
-                pictureboxesEasy_NonVisible();
-                pictureboxesEasy_NonEnable();
-
-                pictureboxesNorm_NonEnable();
-                pictureboxesNorm_NonVisible();
-            }
+            
         }
 
         private void IniciarTemporizador()

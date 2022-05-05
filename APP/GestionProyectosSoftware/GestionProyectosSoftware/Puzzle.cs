@@ -121,6 +121,23 @@ namespace GestionProyectosSoftware
             sanrio.BorderStyle = BorderStyle.Fixed3D;
         }
 
+        public void times_played()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Puzzle set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_Puzzle = @Id_Puzzle", connection);
+                altas.Parameters.AddWithValue("Id_Puzzle", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             
@@ -135,6 +152,9 @@ namespace GestionProyectosSoftware
                     MessageBox.Show("Game Over");
                     lblPuntos.Visible = true;
                     lblPuntos.Text = "50";
+                    upload(50);
+                    times_played();
+
                 }
                 else
                 {
@@ -154,23 +174,35 @@ namespace GestionProyectosSoftware
                     if(formato.GetMinuto() >= 4)
                     {
                         lblPuntos.Text = "100";
+                        upload(100);
+
                     }
                     else if (formato.GetMinuto() >= 3)
                     {
                         lblPuntos.Text = "90";
+                        upload(90);
+
                     }
                     else if (formato.GetMinuto() >= 2)
                     {
                         lblPuntos.Text = "80";
+                        upload(80);
+
                     }
                     else if (formato.GetMinuto() >= 1)
                     {
                         lblPuntos.Text = "70";
+                        upload(70);
+
                     }
                     else if (formato.GetMinuto() >= 0)
                     {
                         lblPuntos.Text = "60";
+                        upload(60);
+
                     }
+                    times_played();
+
 
                 }
 
@@ -188,23 +220,35 @@ namespace GestionProyectosSoftware
                     if (formato.GetMinuto() >= 4)
                     {
                         lblPuntos.Text = "200";
+                        upload(200);
+
                     }
                     else if (formato.GetMinuto() >= 3)
                     {
                         lblPuntos.Text = "180";
+                        upload(180);
+
                     }
                     else if (formato.GetMinuto() >= 2)
                     {
                         lblPuntos.Text = "160";
+                        upload(160);
+
                     }
                     else if (formato.GetMinuto() >= 1)
                     {
                         lblPuntos.Text = "140";
+                        upload(140);
+
                     }
                     else if (formato.GetMinuto() >= 0)
                     {
                         lblPuntos.Text = "120";
+                        upload(120);
+
                     }
+                    times_played();
+
 
                 }
 
@@ -223,24 +267,36 @@ namespace GestionProyectosSoftware
                     MessageBox.Show("Felicidades, completaste el rompecabezas.");
                     if (formato.GetMinuto() >= 4)
                     {
-                        lblPuntos.Text = "100";
+                        lblPuntos.Text = "300";
+                        upload(300);
+
                     }
                     else if (formato.GetMinuto() >= 3)
                     {
-                        lblPuntos.Text = "90";
+                        lblPuntos.Text = "270";
+                        upload(270);
+
                     }
                     else if (formato.GetMinuto() >= 2)
                     {
-                        lblPuntos.Text = "80";
+                        lblPuntos.Text = "240";
+                        upload(240);
+
                     }
                     else if (formato.GetMinuto() >= 1)
                     {
-                        lblPuntos.Text = "70";
+                        lblPuntos.Text = "210";
+                        upload(210);
+
                     }
                     else if (formato.GetMinuto() >= 0)
                     {
-                        lblPuntos.Text = "60";
+                        lblPuntos.Text = "180";
+                        upload(180);
+
                     }
+                    times_played();
+
 
                 }
             }
@@ -1818,5 +1874,22 @@ namespace GestionProyectosSoftware
                 e.Effect = DragDropEffects.None;
         }
         //jalara o nel hm
+
+        public void upload(int valor)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE Puzzle set Puntos_Puzzle = (Puntos_Puzzle + " + valor + ") WHERE Id_Puzzle = @Id_Puzzle", connection);
+                altas.Parameters.AddWithValue("Id_Puzzle", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
     }
 }

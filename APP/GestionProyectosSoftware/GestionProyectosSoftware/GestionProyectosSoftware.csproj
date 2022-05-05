@@ -123,6 +123,9 @@
       <DependentUpon>Puzzle.cs</DependentUpon>
     </Compile>
     <Compile Include="TimeFormat.cs" />
+    <EmbeddedResource Include="CompletaFrases.resx">
+      <DependentUpon>CompletaFrases.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmarCierreSesion.resx">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Piano.resx">
+      <DependentUpon>Piano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pizarra.resx">
       <DependentUpon>Pizarra.cs</DependentUpon>

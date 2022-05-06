@@ -232,12 +232,9 @@ namespace AppMaestro
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //eliminar
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //modificar
+            Alumno_MD md = new Alumno_MD();
+            md.Show();
+            this.Hide();
         }
     }
 }

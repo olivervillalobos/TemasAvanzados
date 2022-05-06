@@ -43,7 +43,7 @@ namespace AppMaestro
         {
             try
             {
-                SqlCommand consulta = new SqlCommand("SELECT D.Apellido_Paterno, D.Apellido_Materno, D.Nombres, G.Id_Grupo from Docente D left outer join Grupo G ON D.Id_Docente = G.Id_Docente", connection);
+                SqlCommand consulta = new SqlCommand("SELECT D.Id_Docente, D.Apellido_Paterno, D.Apellido_Materno, D.Nombres, G.Id_Grupo from Docente D left outer join Grupo G ON D.Id_Docente = G.Id_Docente", connection);
                 connection.Open();
                 SqlDataAdapter adaptador = new SqlDataAdapter();
                 adaptador.SelectCommand = consulta;
@@ -101,14 +101,13 @@ namespace AppMaestro
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //eliminar
-        }
 
         private void button5_Click(object sender, EventArgs e)
         {
             //modificar
+            Grupo_MD md = new Grupo_MD();
+            this.Hide();
+            md.Show();
         }
     }
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -52,6 +52,12 @@
     <Compile Include="Alumno.Designer.cs">
       <DependentUpon>Alumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumno_MD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno_MD.Designer.cs">
+      <DependentUpon>Alumno_MD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Computadoras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,10 +88,25 @@
     <Compile Include="Grupo.Designer.cs">
       <DependentUpon>Grupo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grupo_MD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grupo_MD.Designer.cs">
+      <DependentUpon>Grupo_MD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maestro_MD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maestro_MD.Designer.cs">
+      <DependentUpon>Maestro_MD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alumno.resx">
       <DependentUpon>Alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumno_MD.resx">
+      <DependentUpon>Alumno_MD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Computadoras.resx">
       <DependentUpon>Computadoras.cs</DependentUpon>
@@ -101,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Grupo.resx">
       <DependentUpon>Grupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grupo_MD.resx">
+      <DependentUpon>Grupo_MD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maestro_MD.resx">
+      <DependentUpon>Maestro_MD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

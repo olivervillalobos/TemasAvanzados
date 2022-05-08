@@ -386,6 +386,8 @@ namespace GestionProyectosSoftware
         {
             var imgArray = new Image[piezas];
             var img = imagen;
+            Random rnd = new Random();
+            List<int> orden = Enumerable.Range(0, piezas).OrderBy(i => rnd.Next()).Take(piezas).ToList();
             
             for (int i = 0; i < 3; i++)
             {
@@ -400,18 +402,18 @@ namespace GestionProyectosSoftware
 	            }
             }
 
-            for(p = 0; p < 9; p++)
+            for(p = 0; p < piezas; p++)
             {
 	            PictureBox temp = new PictureBox();
 	            panel_pieces.Controls.Add(temp);
-	            temp.Width = img.Width/3;
-	            temp.Height = img.Height/3;
+	            temp.Width = 280;
+	            temp.Height = 280;
 	            temp.SizeMode = PictureBoxSizeMode.StretchImage;
 	            temp.BorderStyle = BorderStyle.FixedSingle;
-	            temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
+	            temp.Top = temp.Height * (orden[p]);
                 //temp.Left = 30;
                 temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
-                temp.Image = imgArray[p];
+                temp.Image = imgArray[p];                
             }
         }
 
@@ -420,6 +422,8 @@ namespace GestionProyectosSoftware
         {
             var imgArray = new Image[piezas];
             var img = imagen;
+            Random rnd = new Random();
+            List<int> orden = Enumerable.Range(0, piezas).OrderBy(i => rnd.Next()).Take(piezas).ToList();
 
             for (int i = 0; i < 4; i++)
             {
@@ -438,11 +442,11 @@ namespace GestionProyectosSoftware
             {
                 PictureBox temp = new PictureBox();
                 panel_pieces.Controls.Add(temp);
-                temp.Width = img.Width / 4;
-                temp.Height = img.Height / 4;
+                temp.Width = 280;
+                temp.Height = 280;
                 temp.SizeMode = PictureBoxSizeMode.StretchImage;
                 temp.BorderStyle = BorderStyle.FixedSingle;
-                temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
+                temp.Top = temp.Height * (orden[p]);
                 //temp.Left = 40;
                 temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
                 temp.Image = imgArray[p];
@@ -454,6 +458,8 @@ namespace GestionProyectosSoftware
         {
             var imgArray = new Image[piezas];
             var img = imagen;
+            Random rnd = new Random();
+            List<int> orden = Enumerable.Range(0, piezas).OrderBy(i => rnd.Next()).Take(piezas).ToList();
 
             for (int i = 0; i < 5; i++)
             {
@@ -472,11 +478,11 @@ namespace GestionProyectosSoftware
             {
                 PictureBox temp = new PictureBox();
                 panel_pieces.Controls.Add(temp);
-                temp.Width = img.Width / 5;
-                temp.Height = img.Height / 5;
+                temp.Width = 280;
+                temp.Height = 280;
                 temp.SizeMode = PictureBoxSizeMode.StretchImage;
                 temp.BorderStyle = BorderStyle.FixedSingle;
-                temp.Top = temp.Height * (panel_pieces.Controls.Count - 1);
+                temp.Top = temp.Height * (orden[p]);
                 //temp.Left = 50;
                 temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDown);
                 temp.Image = imgArray[p];

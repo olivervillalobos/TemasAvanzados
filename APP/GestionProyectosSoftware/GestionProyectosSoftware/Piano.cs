@@ -11,6 +11,8 @@ using System.Data.SqlClient;
 using System.Media;
 using WMPLib;
 using System.Threading;
+using System.Windows;
+
 namespace GestionProyectosSoftware
 {
     public partial class Piano : Form
@@ -19,6 +21,17 @@ namespace GestionProyectosSoftware
         SoundPlayer player = new SoundPlayer();
         Queue<Thread> threadQueue = new Queue<Thread>();
         int SustainMiliseconds = 2000;
+        //Para saber si la tecla ingresada es mayuscula
+        int asciiMinus = 32;
+        //Arreglo para la relacion con el teclado y los botones
+        string[,] TecladoSonido = new string[25, 2]
+        {
+          {"A","d4"},{"B", "d5"},{"C","g4"},{"D", "a4"},{"E","fs4"},{"F", "c5"},{"G","e5"},{"H", "g5"},
+          {"I","fs5"},{"J", "b5"},{"K","c6"},{"M", "a5"},{"N", "f5"},{"O","gs5"},{"P", "as5"},{"Q","cs4"},
+          {"R", "gs4"},{"S","f4"},{"T", "as4"},{"U","ds4"},{"V", "b4"},{"W","ds4"},{"X", "e4"},{"Y","cs5"},
+          {"Z", "c4"}
+        };
+        String nombreBoton;
         WindowsMediaPlayer mediaplayer = new WindowsMediaPlayer();
         public Piano()
         {
@@ -242,6 +255,60 @@ namespace GestionProyectosSoftware
         private void as5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TeclaPresionada(object sender, KeyEventArgs e)
+        {
+            //Convierte a String el valor de la tecla presionada
+            String myCharValue = Char.ConvertFromUtf32(e.KeyValue);
+
+                //Recorre el arreglo para buscar la letra
+                for (int x = 0; x < 25; x++)
+                {
+                    /*En caso de encontrar la letra, se le asigna el nombre que tiene
+                    asignado el boton con la tecla*/
+                   if (TecladoSonido[x, 0].Equals(myCharValue))
+                    {
+                        nombreBoton = TecladoSonido[x, 1];
+                        Console.WriteLine(nombreBoton);
+                    }   
+                }
+                //MessageBox.Show("Tecla Presionada");
+                //Cambiar de color el boton para hacer efecto de "Presionado"
+                foreach (Button boton in panel1.Controls)
+                {
+                    if(boton.Name == nombreBoton)
+                    {
+                        boton.BackColor = Color.Gray;
+                        /*Reproduce la nota utilizando el metodo utilizado
+                        cuando se da clic al boton*/
+                        TocarNota(boton,null);
+                    }
+                }
+        }
+
+        private void TeclaLiberada(object sender, KeyEventArgs e)
+        {
+            //Volver al color original la tecla presionada
+            foreach (Button boton in panel1.Controls)
+            {
+                if (boton.Name == nombreBoton)
+                {
+                    boton.BackColor = Color.White;
+                }
+            }
+
+            //Solo para las teclas negras
+            cs4.BackColor = Color.Black;
+            ds4.BackColor = Color.Black;
+            fs4.BackColor = Color.Black;
+            gs4.BackColor = Color.Black;
+            as4.BackColor = Color.Black;
+            cs5.BackColor = Color.Black;
+            ds5.BackColor = Color.Black;
+            fs5.BackColor = Color.Black;
+            gs5.BackColor = Color.Black;
+            as5.BackColor = Color.Black;
         }
     }
 }

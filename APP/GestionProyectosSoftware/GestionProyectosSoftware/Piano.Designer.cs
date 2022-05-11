@@ -105,7 +105,7 @@
             this.panel1.Controls.Add(this.c4);
             this.panel1.Location = new System.Drawing.Point(38, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(737, 304);
+            this.panel1.Size = new System.Drawing.Size(730, 301);
             this.panel1.TabIndex = 50;
             // 
             // as5
@@ -491,13 +491,21 @@
             // 
             // SustainCheck
             // 
-            this.SustainCheck.AutoSize = true;
-            this.SustainCheck.Location = new System.Drawing.Point(38, 372);
+            this.SustainCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SustainCheck.BackColor = System.Drawing.Color.Transparent;
+            this.SustainCheck.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
+            this.SustainCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SustainCheck.ForeColor = System.Drawing.Color.White;
+            this.SustainCheck.Location = new System.Drawing.Point(62, 372);
             this.SustainCheck.Name = "SustainCheck";
-            this.SustainCheck.Size = new System.Drawing.Size(61, 17);
+            this.SustainCheck.Size = new System.Drawing.Size(80, 37);
             this.SustainCheck.TabIndex = 51;
             this.SustainCheck.Text = "Sustain";
-            this.SustainCheck.UseVisualStyleBackColor = true;
+            this.SustainCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SustainCheck.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.SustainCheck.UseVisualStyleBackColor = false;
             // 
             // Piano
             // 
@@ -519,7 +527,6 @@
             this.Load += new System.EventHandler(this.Piano_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

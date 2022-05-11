@@ -118,5 +118,130 @@ namespace GestionProyectosSoftware
 
             }
         }
+        //OLIVER PONER EN PANTALLA QUE NOTA ES
+        private void c4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void d4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void e4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void f4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void a4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void c5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void d5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void e5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void f5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void g5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void a5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void c6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cs4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ds4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fs4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gs4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void as4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cs5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ds5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fs5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gs5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void as5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

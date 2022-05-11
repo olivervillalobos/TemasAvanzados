@@ -124,6 +124,7 @@
             this.as5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.as5.UseMnemonic = false;
             this.as5.UseVisualStyleBackColor = false;
+            this.as5.Click += new System.EventHandler(this.as5_Click);
             // 
             // gs5
             // 
@@ -141,6 +142,7 @@
             this.gs5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.gs5.UseMnemonic = false;
             this.gs5.UseVisualStyleBackColor = false;
+            this.gs5.Click += new System.EventHandler(this.gs5_Click);
             // 
             // fs5
             // 
@@ -158,6 +160,7 @@
             this.fs5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.fs5.UseMnemonic = false;
             this.fs5.UseVisualStyleBackColor = false;
+            this.fs5.Click += new System.EventHandler(this.fs5_Click);
             // 
             // ds5
             // 
@@ -175,6 +178,7 @@
             this.ds5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ds5.UseMnemonic = false;
             this.ds5.UseVisualStyleBackColor = false;
+            this.ds5.Click += new System.EventHandler(this.ds5_Click);
             // 
             // cs5
             // 
@@ -192,6 +196,7 @@
             this.cs5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.cs5.UseMnemonic = false;
             this.cs5.UseVisualStyleBackColor = false;
+            this.cs5.Click += new System.EventHandler(this.cs5_Click);
             // 
             // as4
             // 
@@ -209,6 +214,7 @@
             this.as4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.as4.UseMnemonic = false;
             this.as4.UseVisualStyleBackColor = false;
+            this.as4.Click += new System.EventHandler(this.as4_Click);
             // 
             // gs4
             // 
@@ -226,6 +232,7 @@
             this.gs4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.gs4.UseMnemonic = false;
             this.gs4.UseVisualStyleBackColor = false;
+            this.gs4.Click += new System.EventHandler(this.gs4_Click);
             // 
             // fs4
             // 
@@ -243,6 +250,7 @@
             this.fs4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.fs4.UseMnemonic = false;
             this.fs4.UseVisualStyleBackColor = false;
+            this.fs4.Click += new System.EventHandler(this.fs4_Click);
             // 
             // ds4
             // 
@@ -260,6 +268,7 @@
             this.ds4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ds4.UseMnemonic = false;
             this.ds4.UseVisualStyleBackColor = false;
+            this.ds4.Click += new System.EventHandler(this.ds4_Click);
             // 
             // cs4
             // 
@@ -277,6 +286,7 @@
             this.cs4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.cs4.UseMnemonic = false;
             this.cs4.UseVisualStyleBackColor = false;
+            this.cs4.Click += new System.EventHandler(this.cs4_Click);
             // 
             // c6
             // 
@@ -292,6 +302,7 @@
             this.c6.TabIndex = 64;
             this.c6.UseMnemonic = false;
             this.c6.UseVisualStyleBackColor = false;
+            this.c6.Click += new System.EventHandler(this.c6_Click);
             // 
             // b5
             // 
@@ -306,6 +317,7 @@
             this.b5.TabIndex = 63;
             this.b5.UseMnemonic = false;
             this.b5.UseVisualStyleBackColor = false;
+            this.b5.Click += new System.EventHandler(this.b5_Click);
             // 
             // a5
             // 
@@ -320,6 +332,7 @@
             this.a5.TabIndex = 62;
             this.a5.UseMnemonic = false;
             this.a5.UseVisualStyleBackColor = false;
+            this.a5.Click += new System.EventHandler(this.a5_Click);
             // 
             // g5
             // 
@@ -334,6 +347,7 @@
             this.g5.TabIndex = 61;
             this.g5.UseMnemonic = false;
             this.g5.UseVisualStyleBackColor = false;
+            this.g5.Click += new System.EventHandler(this.g5_Click);
             // 
             // f5
             // 
@@ -348,6 +362,7 @@
             this.f5.TabIndex = 60;
             this.f5.UseMnemonic = false;
             this.f5.UseVisualStyleBackColor = false;
+            this.f5.Click += new System.EventHandler(this.f5_Click);
             // 
             // e5
             // 
@@ -362,6 +377,7 @@
             this.e5.TabIndex = 59;
             this.e5.UseMnemonic = false;
             this.e5.UseVisualStyleBackColor = false;
+            this.e5.Click += new System.EventHandler(this.e5_Click);
             // 
             // d5
             // 
@@ -376,6 +392,7 @@
             this.d5.TabIndex = 58;
             this.d5.UseMnemonic = false;
             this.d5.UseVisualStyleBackColor = false;
+            this.d5.Click += new System.EventHandler(this.d5_Click);
             // 
             // c5
             // 
@@ -390,6 +407,7 @@
             this.c5.TabIndex = 57;
             this.c5.UseMnemonic = false;
             this.c5.UseVisualStyleBackColor = false;
+            this.c5.Click += new System.EventHandler(this.c5_Click);
             // 
             // b4
             // 
@@ -404,6 +422,7 @@
             this.b4.TabIndex = 56;
             this.b4.UseMnemonic = false;
             this.b4.UseVisualStyleBackColor = false;
+            this.b4.Click += new System.EventHandler(this.b4_Click);
             // 
             // a4
             // 
@@ -418,6 +437,7 @@
             this.a4.TabIndex = 55;
             this.a4.UseMnemonic = false;
             this.a4.UseVisualStyleBackColor = false;
+            this.a4.Click += new System.EventHandler(this.a4_Click);
             // 
             // g4
             // 
@@ -432,6 +452,7 @@
             this.g4.TabIndex = 54;
             this.g4.UseMnemonic = false;
             this.g4.UseVisualStyleBackColor = false;
+            this.g4.Click += new System.EventHandler(this.g4_Click);
             // 
             // f4
             // 
@@ -446,6 +467,7 @@
             this.f4.TabIndex = 53;
             this.f4.UseMnemonic = false;
             this.f4.UseVisualStyleBackColor = false;
+            this.f4.Click += new System.EventHandler(this.f4_Click);
             // 
             // e4
             // 
@@ -460,6 +482,7 @@
             this.e4.TabIndex = 52;
             this.e4.UseMnemonic = false;
             this.e4.UseVisualStyleBackColor = false;
+            this.e4.Click += new System.EventHandler(this.e4_Click);
             // 
             // d4
             // 
@@ -474,6 +497,7 @@
             this.d4.TabIndex = 51;
             this.d4.UseMnemonic = false;
             this.d4.UseVisualStyleBackColor = false;
+            this.d4.Click += new System.EventHandler(this.d4_Click);
             // 
             // c4
             // 
@@ -488,6 +512,7 @@
             this.c4.TabIndex = 50;
             this.c4.UseMnemonic = false;
             this.c4.UseVisualStyleBackColor = false;
+            this.c4.Click += new System.EventHandler(this.c4_Click);
             // 
             // SustainCheck
             // 

@@ -69,7 +69,7 @@
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegresar.Location = new System.Drawing.Point(979, 562);
+            this.btnRegresar.Location = new System.Drawing.Point(943, 562);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(107, 46);
@@ -517,7 +517,7 @@
             this.d4.FlatAppearance.BorderSize = 3;
             this.d4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.d4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.d4.Location = new System.Drawing.Point(71, 4);
+            this.d4.Location = new System.Drawing.Point(69, 4);
             this.d4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.d4.Name = "d4";
             this.d4.Size = new System.Drawing.Size(68, 364);
@@ -533,7 +533,7 @@
             this.c4.FlatAppearance.BorderSize = 3;
             this.c4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.c4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.c4.Location = new System.Drawing.Point(7, 5);
+            this.c4.Location = new System.Drawing.Point(4, 4);
             this.c4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(68, 364);
@@ -551,7 +551,7 @@
             this.SustainCheck.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
             this.SustainCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SustainCheck.ForeColor = System.Drawing.Color.White;
-            this.SustainCheck.Location = new System.Drawing.Point(58, 562);
+            this.SustainCheck.Location = new System.Drawing.Point(77, 562);
             this.SustainCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SustainCheck.Name = "SustainCheck";
             this.SustainCheck.Size = new System.Drawing.Size(107, 46);
@@ -565,12 +565,12 @@
             // 
             this.lbl_Nota.AutoSize = true;
             this.lbl_Nota.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Nota.ForeColor = System.Drawing.Color.White;
             this.lbl_Nota.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_Nota.Location = new System.Drawing.Point(789, 51);
+            this.lbl_Nota.Location = new System.Drawing.Point(428, 540);
             this.lbl_Nota.Name = "lbl_Nota";
-            this.lbl_Nota.Size = new System.Drawing.Size(261, 91);
+            this.lbl_Nota.Size = new System.Drawing.Size(218, 76);
             this.lbl_Nota.TabIndex = 52;
             this.lbl_Nota.Text = "NOTA";
             this.lbl_Nota.TextAlign = System.Drawing.ContentAlignment.TopCenter;

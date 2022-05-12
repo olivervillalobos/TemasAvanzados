@@ -151,6 +151,7 @@ namespace GestionProyectosSoftware
                 if (formato.GetTiempo() < 0)
                 {
                     estadoDelJuego = ((int)constantes.EstadoDelJuego.GameOver);
+                    miSonido.reproducirSonido("NoAprobado");
                     MessageBox.Show("Game Over");
                     lblPuntos.Visible = true;
                     lblPuntos.Text = "50";

@@ -81,6 +81,8 @@ namespace GestionProyectosSoftware
             {
                 ((Button)control).Click += TocarNota;
             }
+
+            lbl_Nota.Visible = false;
         }
         public void TocarNota(Object sender, EventArgs e)
         {
@@ -134,126 +136,176 @@ namespace GestionProyectosSoftware
         //OLIVER PONER EN PANTALLA QUE NOTA ES
         private void c4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Do";
 
         }
 
         private void d4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Re";
 
         }
 
         private void e4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Mi";
 
         }
 
         private void f4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Fa";
 
         }
 
         private void g4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Sol";
 
         }
 
         private void a4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "La";
 
         }
 
         private void b4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Si";
 
         }
 
         private void c5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Do";
 
         }
 
         private void d5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Re";
 
         }
 
         private void e5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Mi";
 
         }
 
         private void f5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Fa";
 
         }
 
         private void g5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Sol";
 
         }
 
         private void a5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "La";
 
         }
 
         private void b5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Si";
 
         }
 
         private void c6_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Do";
 
         }
 
         private void cs4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Reb";
 
         }
 
         private void ds4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Mib";
 
         }
 
         private void fs4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Solb";
 
         }
 
         private void gs4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Lab";
 
         }
 
         private void as4_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Sib";
 
         }
 
         private void cs5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Reb";
 
         }
 
         private void ds5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Mib";
 
         }
 
         private void fs5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Solb";
 
         }
 
         private void gs5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Lab";
 
         }
 
         private void as5_Click(object sender, EventArgs e)
         {
+            lbl_Nota.Visible = true;
+            lbl_Nota.Text = "Sib";
 
         }
 
@@ -262,29 +314,166 @@ namespace GestionProyectosSoftware
             //Convierte a String el valor de la tecla presionada
             String myCharValue = Char.ConvertFromUtf32(e.KeyValue);
 
-                //Recorre el arreglo para buscar la letra
-                for (int x = 0; x < 25; x++)
+            //Recorre el arreglo para buscar la letra
+            for (int x = 0; x < 25; x++)
+            {
+                /*En caso de encontrar la letra, se le asigna el nombre que tiene
+                asignado el boton con la tecla*/
+                if (TecladoSonido[x, 0].Equals(myCharValue))
                 {
-                    /*En caso de encontrar la letra, se le asigna el nombre que tiene
-                    asignado el boton con la tecla*/
-                   if (TecladoSonido[x, 0].Equals(myCharValue))
+                    lbl_Nota.Visible = true;
+                    nombreBoton = TecladoSonido[x, 1];
+                    Console.WriteLine(nombreBoton);
+                    string temp;
+                    if(nombreBoton == "c4")
                     {
-                        nombreBoton = TecladoSonido[x, 1];
-                        Console.WriteLine(nombreBoton);
-                    }   
-                }
-                //MessageBox.Show("Tecla Presionada");
-                //Cambiar de color el boton para hacer efecto de "Presionado"
-                foreach (Button boton in panel1.Controls)
-                {
-                    if(boton.Name == nombreBoton)
-                    {
-                        boton.BackColor = Color.Gray;
-                        /*Reproduce la nota utilizando el metodo utilizado
-                        cuando se da clic al boton*/
-                        TocarNota(boton,null);
+                        temp = "Do";
+                        lbl_Nota.Text = temp;
                     }
+                    else if(nombreBoton == "d4")
+                    {
+                        temp = "Re";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "e4")
+                    {
+                        temp = "Mi";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "f4")
+                    {
+                        temp = "Fa";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "g4")
+                    {
+                        temp = "Sol";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "a4")
+                    {
+                        temp = "La";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "b4")
+                    {
+                        temp = "Si";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "c5")
+                    {
+                        temp = "Do";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "d5")
+                    {
+                        temp = "Re";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "e5")
+                    {
+                        temp = "Mi";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "f5")
+                    {
+                        temp = "Fa";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "g5")
+                    {
+                        temp = "Sol";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "a5")
+                    {
+                        temp = "La";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "b5")
+                    {
+                        temp = "Si";
+                        lbl_Nota.Text = temp;
+                    }
+                    else if (nombreBoton == "c6")
+                    {
+                        temp = "Do";
+                        lbl_Nota.Text = temp;
+                    }
+                    //Q
+                    else if (nombreBoton == "cs4")
+                    {
+                        temp = "Reb";
+                        lbl_Nota.Text = temp;
+                    }
+                    //W
+                    else if (nombreBoton == "ds4")
+                    {
+                        temp = "Mib";
+                        lbl_Nota.Text = temp;
+                    }
+                    //E
+                    else if (nombreBoton == "fs4")
+                    {
+                        temp = "Solb";
+                        lbl_Nota.Text = temp;
+                    }
+                    //R
+                    else if (nombreBoton == "gs4")
+                    {
+                        temp = "Lab";
+                        lbl_Nota.Text = temp;
+                    }
+                    //T
+                    else if (nombreBoton == "as4")
+                    {
+                        temp = "Sib";
+                        lbl_Nota.Text = temp;
+                    }
+                    //Y
+                    else if (nombreBoton == "cs4")
+                    {
+                        temp = "Reb";
+                        lbl_Nota.Text = temp;
+                    }
+                    //U
+                    else if (nombreBoton == "ds4")
+                    {
+                        temp = "Mib";
+                        lbl_Nota.Text = temp;
+                    }
+                    //I
+                    else if (nombreBoton == "fs5")
+                    {
+                        temp = "Solb";
+                        lbl_Nota.Text = temp;
+                    }
+                    //O
+                    else if (nombreBoton == "gs5")
+                    {
+                        temp = "Lab";
+                        lbl_Nota.Text = temp;
+                    }
+                    //P
+                    else if (nombreBoton == "as5")
+                    {
+                        temp = "Sib";
+                        lbl_Nota.Text = temp;
+                    }
+                }   
+            }
+            //MessageBox.Show("Tecla Presionada");
+            //Cambiar de color el boton para hacer efecto de "Presionado"
+            foreach (Button boton in panel1.Controls)
+            {
+                if(boton.Name == nombreBoton)
+                {
+                    boton.BackColor = Color.Gray;
+                    /*Reproduce la nota utilizando el metodo utilizado
+                    cuando se da clic al boton*/
+                    TocarNota(boton,null);
                 }
+            }
         }
 
         private void TeclaLiberada(object sender, KeyEventArgs e)

@@ -566,6 +566,7 @@
             this.lbl_Nota.AutoSize = true;
             this.lbl_Nota.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Nota.ForeColor = System.Drawing.Color.White;
             this.lbl_Nota.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.lbl_Nota.Location = new System.Drawing.Point(789, 51);
             this.lbl_Nota.Name = "lbl_Nota";

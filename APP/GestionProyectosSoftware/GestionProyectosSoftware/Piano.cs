@@ -309,6 +309,8 @@ namespace GestionProyectosSoftware
             fs5.BackColor = Color.Black;
             gs5.BackColor = Color.Black;
             as5.BackColor = Color.Black;
+
+            nombreBoton = "";
         }
     }
 }

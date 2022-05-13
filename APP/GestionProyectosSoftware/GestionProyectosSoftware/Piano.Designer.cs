@@ -57,6 +57,7 @@
             this.d4 = new System.Windows.Forms.Button();
             this.c4 = new System.Windows.Forms.Button();
             this.SustainCheck = new System.Windows.Forms.CheckBox();
+            this.lbl_Nota = new System.Windows.Forms.Label();
             this.buttonAlternar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,9 +70,10 @@
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegresar.Location = new System.Drawing.Point(353, 372);
+            this.btnRegresar.Location = new System.Drawing.Point(943, 562);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(80, 37);
+            this.btnRegresar.Size = new System.Drawing.Size(107, 46);
             this.btnRegresar.TabIndex = 14;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -104,9 +106,10 @@
             this.panel1.Controls.Add(this.e4);
             this.panel1.Controls.Add(this.d4);
             this.panel1.Controls.Add(this.c4);
-            this.panel1.Location = new System.Drawing.Point(38, 38);
+            this.panel1.Location = new System.Drawing.Point(77, 166);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(730, 301);
+            this.panel1.Size = new System.Drawing.Size(973, 370);
             this.panel1.TabIndex = 50;
             // 
             // as5
@@ -119,9 +122,10 @@
             this.as5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.as5.ForeColor = System.Drawing.Color.White;
             this.as5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.as5.Location = new System.Drawing.Point(616, 3);
+            this.as5.Location = new System.Drawing.Point(821, 4);
+            this.as5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.as5.Name = "as5";
-            this.as5.Size = new System.Drawing.Size(30, 187);
+            this.as5.Size = new System.Drawing.Size(40, 230);
             this.as5.TabIndex = 74;
             this.as5.Text = "La#";
             this.as5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -139,9 +143,10 @@
             this.gs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gs5.ForeColor = System.Drawing.Color.White;
             this.gs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.gs5.Location = new System.Drawing.Point(567, 4);
+            this.gs5.Location = new System.Drawing.Point(756, 5);
+            this.gs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gs5.Name = "gs5";
-            this.gs5.Size = new System.Drawing.Size(30, 187);
+            this.gs5.Size = new System.Drawing.Size(40, 230);
             this.gs5.TabIndex = 73;
             this.gs5.Text = "Sol#";
             this.gs5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -159,9 +164,10 @@
             this.fs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fs5.ForeColor = System.Drawing.Color.White;
             this.fs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.fs5.Location = new System.Drawing.Point(519, 4);
+            this.fs5.Location = new System.Drawing.Point(692, 5);
+            this.fs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fs5.Name = "fs5";
-            this.fs5.Size = new System.Drawing.Size(30, 187);
+            this.fs5.Size = new System.Drawing.Size(40, 230);
             this.fs5.TabIndex = 72;
             this.fs5.Text = "Fa#";
             this.fs5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -179,9 +185,10 @@
             this.ds5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ds5.ForeColor = System.Drawing.Color.White;
             this.ds5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ds5.Location = new System.Drawing.Point(424, 4);
+            this.ds5.Location = new System.Drawing.Point(565, 5);
+            this.ds5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ds5.Name = "ds5";
-            this.ds5.Size = new System.Drawing.Size(30, 187);
+            this.ds5.Size = new System.Drawing.Size(40, 230);
             this.ds5.TabIndex = 71;
             this.ds5.Text = "Re#";
             this.ds5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -199,9 +206,10 @@
             this.cs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cs5.ForeColor = System.Drawing.Color.White;
             this.cs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cs5.Location = new System.Drawing.Point(375, 2);
+            this.cs5.Location = new System.Drawing.Point(500, 5);
+            this.cs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cs5.Name = "cs5";
-            this.cs5.Size = new System.Drawing.Size(30, 187);
+            this.cs5.Size = new System.Drawing.Size(40, 230);
             this.cs5.TabIndex = 70;
             this.cs5.Text = "Do#";
             this.cs5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -219,9 +227,10 @@
             this.as4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.as4.ForeColor = System.Drawing.Color.White;
             this.as4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.as4.Location = new System.Drawing.Point(280, 3);
+            this.as4.Location = new System.Drawing.Point(373, 4);
+            this.as4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.as4.Name = "as4";
-            this.as4.Size = new System.Drawing.Size(30, 187);
+            this.as4.Size = new System.Drawing.Size(40, 230);
             this.as4.TabIndex = 69;
             this.as4.Text = "La#";
             this.as4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -239,9 +248,10 @@
             this.gs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gs4.ForeColor = System.Drawing.Color.White;
             this.gs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.gs4.Location = new System.Drawing.Point(232, 4);
+            this.gs4.Location = new System.Drawing.Point(309, 5);
+            this.gs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gs4.Name = "gs4";
-            this.gs4.Size = new System.Drawing.Size(30, 185);
+            this.gs4.Size = new System.Drawing.Size(40, 228);
             this.gs4.TabIndex = 68;
             this.gs4.Text = "Sol#";
             this.gs4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -259,9 +269,10 @@
             this.fs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fs4.ForeColor = System.Drawing.Color.White;
             this.fs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.fs4.Location = new System.Drawing.Point(184, 3);
+            this.fs4.Location = new System.Drawing.Point(245, 4);
+            this.fs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fs4.Name = "fs4";
-            this.fs4.Size = new System.Drawing.Size(30, 187);
+            this.fs4.Size = new System.Drawing.Size(40, 230);
             this.fs4.TabIndex = 67;
             this.fs4.Text = "Fa#";
             this.fs4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -279,9 +290,10 @@
             this.ds4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ds4.ForeColor = System.Drawing.Color.White;
             this.ds4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ds4.Location = new System.Drawing.Point(93, 3);
+            this.ds4.Location = new System.Drawing.Point(124, 4);
+            this.ds4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ds4.Name = "ds4";
-            this.ds4.Size = new System.Drawing.Size(30, 187);
+            this.ds4.Size = new System.Drawing.Size(40, 230);
             this.ds4.TabIndex = 66;
             this.ds4.Text = "Re#";
             this.ds4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -299,9 +311,10 @@
             this.cs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cs4.ForeColor = System.Drawing.Color.White;
             this.cs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cs4.Location = new System.Drawing.Point(37, 3);
+            this.cs4.Location = new System.Drawing.Point(49, 4);
+            this.cs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cs4.Name = "cs4";
-            this.cs4.Size = new System.Drawing.Size(30, 187);
+            this.cs4.Size = new System.Drawing.Size(40, 230);
             this.cs4.TabIndex = 65;
             this.cs4.Text = "Do#";
             this.cs4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -318,9 +331,10 @@
             this.c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c6.ForeColor = System.Drawing.Color.Black;
             this.c6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.c6.Location = new System.Drawing.Point(676, 3);
+            this.c6.Location = new System.Drawing.Point(901, 4);
+            this.c6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c6.Name = "c6";
-            this.c6.Size = new System.Drawing.Size(51, 296);
+            this.c6.Size = new System.Drawing.Size(68, 364);
             this.c6.TabIndex = 64;
             this.c6.Text = "Do";
             this.c6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -338,7 +352,7 @@
             this.b5.ForeColor = System.Drawing.Color.Black;
             this.b5.Location = new System.Drawing.Point(628, 3);
             this.b5.Name = "b5";
-            this.b5.Size = new System.Drawing.Size(51, 296);
+            this.b5.Size = new System.Drawing.Size(68, 364);
             this.b5.TabIndex = 63;
             this.b5.Text = "Si";
             this.b5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -356,7 +370,7 @@
             this.a5.ForeColor = System.Drawing.Color.Black;
             this.a5.Location = new System.Drawing.Point(580, 3);
             this.a5.Name = "a5";
-            this.a5.Size = new System.Drawing.Size(51, 296);
+            this.a5.Size = new System.Drawing.Size(68, 364);
             this.a5.TabIndex = 62;
             this.a5.Text = "La";
             this.a5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -374,7 +388,7 @@
             this.g5.ForeColor = System.Drawing.Color.Black;
             this.g5.Location = new System.Drawing.Point(532, 3);
             this.g5.Name = "g5";
-            this.g5.Size = new System.Drawing.Size(51, 296);
+            this.g5.Size = new System.Drawing.Size(68, 364);
             this.g5.TabIndex = 61;
             this.g5.Text = "Sol";
             this.g5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -392,7 +406,7 @@
             this.f5.ForeColor = System.Drawing.Color.Black;
             this.f5.Location = new System.Drawing.Point(484, 3);
             this.f5.Name = "f5";
-            this.f5.Size = new System.Drawing.Size(51, 296);
+            this.f5.Size = new System.Drawing.Size(68, 364);
             this.f5.TabIndex = 60;
             this.f5.Text = "Fa";
             this.f5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -410,7 +424,7 @@
             this.e5.ForeColor = System.Drawing.Color.Black;
             this.e5.Location = new System.Drawing.Point(436, 3);
             this.e5.Name = "e5";
-            this.e5.Size = new System.Drawing.Size(51, 296);
+            this.e5.Size = new System.Drawing.Size(68, 364);
             this.e5.TabIndex = 59;
             this.e5.Text = "Mi";
             this.e5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -428,7 +442,7 @@
             this.d5.ForeColor = System.Drawing.Color.Black;
             this.d5.Location = new System.Drawing.Point(388, 3);
             this.d5.Name = "d5";
-            this.d5.Size = new System.Drawing.Size(51, 296);
+            this.d5.Size = new System.Drawing.Size(68, 364);
             this.d5.TabIndex = 58;
             this.d5.Text = "Re";
             this.d5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -446,7 +460,7 @@
             this.c5.ForeColor = System.Drawing.Color.Black;
             this.c5.Location = new System.Drawing.Point(340, 3);
             this.c5.Name = "c5";
-            this.c5.Size = new System.Drawing.Size(51, 296);
+            this.c5.Size = new System.Drawing.Size(68, 364);
             this.c5.TabIndex = 57;
             this.c5.Text = "Do";
             this.c5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -464,7 +478,7 @@
             this.b4.ForeColor = System.Drawing.Color.Black;
             this.b4.Location = new System.Drawing.Point(292, 3);
             this.b4.Name = "b4";
-            this.b4.Size = new System.Drawing.Size(51, 296);
+            this.b4.Size = new System.Drawing.Size(68, 364);
             this.b4.TabIndex = 56;
             this.b4.Text = "Si";
             this.b4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -482,7 +496,7 @@
             this.a4.ForeColor = System.Drawing.Color.Black;
             this.a4.Location = new System.Drawing.Point(244, 3);
             this.a4.Name = "a4";
-            this.a4.Size = new System.Drawing.Size(51, 296);
+            this.a4.Size = new System.Drawing.Size(68, 364);
             this.a4.TabIndex = 55;
             this.a4.Text = "La";
             this.a4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -500,7 +514,7 @@
             this.g4.ForeColor = System.Drawing.Color.Black;
             this.g4.Location = new System.Drawing.Point(196, 3);
             this.g4.Name = "g4";
-            this.g4.Size = new System.Drawing.Size(51, 296);
+            this.g4.Size = new System.Drawing.Size(68, 364);
             this.g4.TabIndex = 54;
             this.g4.Text = "Sol";
             this.g4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -518,7 +532,7 @@
             this.f4.ForeColor = System.Drawing.Color.Black;
             this.f4.Location = new System.Drawing.Point(148, 3);
             this.f4.Name = "f4";
-            this.f4.Size = new System.Drawing.Size(51, 296);
+            this.f4.Size = new System.Drawing.Size(68, 364);
             this.f4.TabIndex = 53;
             this.f4.Text = "Fa";
             this.f4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -536,7 +550,7 @@
             this.e4.ForeColor = System.Drawing.Color.Black;
             this.e4.Location = new System.Drawing.Point(101, 3);
             this.e4.Name = "e4";
-            this.e4.Size = new System.Drawing.Size(51, 296);
+            this.e4.Size = new System.Drawing.Size(68, 364);
             this.e4.TabIndex = 52;
             this.e4.Text = "Mi";
             this.e4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -554,7 +568,7 @@
             this.d4.ForeColor = System.Drawing.Color.Black;
             this.d4.Location = new System.Drawing.Point(53, 3);
             this.d4.Name = "d4";
-            this.d4.Size = new System.Drawing.Size(51, 296);
+            this.d4.Size = new System.Drawing.Size(68, 364);
             this.d4.TabIndex = 51;
             this.d4.Text = "Re";
             this.d4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -572,7 +586,7 @@
             this.c4.ForeColor = System.Drawing.Color.Black;
             this.c4.Location = new System.Drawing.Point(5, 3);
             this.c4.Name = "c4";
-            this.c4.Size = new System.Drawing.Size(51, 296);
+            this.c4.Size = new System.Drawing.Size(68, 364);
             this.c4.TabIndex = 50;
             this.c4.Text = "Do";
             this.c4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -589,9 +603,10 @@
             this.SustainCheck.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
             this.SustainCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SustainCheck.ForeColor = System.Drawing.Color.White;
-            this.SustainCheck.Location = new System.Drawing.Point(62, 372);
+            this.SustainCheck.Location = new System.Drawing.Point(77, 562);
+            this.SustainCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SustainCheck.Name = "SustainCheck";
-            this.SustainCheck.Size = new System.Drawing.Size(80, 37);
+            this.SustainCheck.Size = new System.Drawing.Size(107, 46);
             this.SustainCheck.TabIndex = 51;
             this.SustainCheck.Text = "Sustain";
             this.SustainCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -614,27 +629,49 @@
             this.buttonAlternar.UseVisualStyleBackColor = false;
             this.buttonAlternar.Click += new System.EventHandler(this.buttonAlternar_Click);
             // 
+            // lbl_Nota
+            // 
+            this.lbl_Nota.AutoSize = true;
+            this.lbl_Nota.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Nota.ForeColor = System.Drawing.Color.White;
+            this.lbl_Nota.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_Nota.Location = new System.Drawing.Point(428, 540);
+            this.lbl_Nota.Name = "lbl_Nota";
+            this.lbl_Nota.Size = new System.Drawing.Size(218, 76);
+            this.lbl_Nota.TabIndex = 52;
+            this.lbl_Nota.Text = "NOTA";
+            this.lbl_Nota.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_Nota.Visible = false;
+            // 
             // Piano
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonAlternar);
+            this.ClientSize = new System.Drawing.Size(1116, 654);
+            this.Controls.Add(this.lbl_Nota);
             this.Controls.Add(this.SustainCheck);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegresar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Piano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Piano";
             this.Load += new System.EventHandler(this.Piano_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TeclaPresionada);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TeclaLiberada);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -669,5 +706,6 @@
         private System.Windows.Forms.Button c4;
         private System.Windows.Forms.CheckBox SustainCheck;
         private System.Windows.Forms.Button buttonAlternar;
+        private System.Windows.Forms.Label lbl_Nota;
     }
 }

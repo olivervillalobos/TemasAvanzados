@@ -122,6 +122,7 @@
     <Compile Include="Puzzle.Designer.cs">
       <DependentUpon>Puzzle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sonido.cs" />
     <Compile Include="TimeFormat.cs" />
     <EmbeddedResource Include="CompletaFrases.resx">
       <DependentUpon>CompletaFrases.cs</DependentUpon>
@@ -231,9 +232,13 @@
     <None Include="Resources\oso.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Aprobado.wav" />
     <Content Include="Resources\bt21.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Correcto.wav" />
+    <None Include="Resources\Incorrecto.wav" />
+    <None Include="Resources\NoAprobado.wav" />
     <Content Include="Resources\sanrio.jpg" />
     <Content Include="Resources\spiderman.jpg" />
     <Content Include="Screenshot 2021-11-22 192823.ico" />

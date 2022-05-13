@@ -27,6 +27,8 @@ namespace GestionProyectosSoftware
         TimeFormat formato;
         //Imagenseleccionada para el rompecabezas
         Image imagen;
+        //Para reproducir el sonido
+        Sonido miSonido = new Sonido();
         //WindowsMediaPlayer sonido;
         public Puzzle()
         {
@@ -149,6 +151,7 @@ namespace GestionProyectosSoftware
                 if (formato.GetTiempo() < 0)
                 {
                     estadoDelJuego = ((int)constantes.EstadoDelJuego.GameOver);
+                    miSonido.reproducirSonido("NoAprobado");
                     MessageBox.Show("Game Over");
                     lblPuntos.Visible = true;
                     lblPuntos.Text = "50";
@@ -170,6 +173,7 @@ namespace GestionProyectosSoftware
                 {
                     lblPuntos.Visible = true;
                     estadoDelJuego = ((int)constantes.EstadoDelJuego.GameOver);
+                    miSonido.reproducirSonido("Aprobado");
                     MessageBox.Show("Felicidades, completaste el rompecabezas.");
                     if(formato.GetMinuto() >= 4)
                     {
@@ -216,6 +220,7 @@ namespace GestionProyectosSoftware
                 {
                     lblPuntos.Visible = true;
                     estadoDelJuego = ((int)constantes.EstadoDelJuego.GameOver);
+                    miSonido.reproducirSonido("Aprobado");
                     MessageBox.Show("Felicidades, completaste el rompecabezas.");
                     if (formato.GetMinuto() >= 4)
                     {
@@ -264,6 +269,7 @@ namespace GestionProyectosSoftware
                 {
                     lblPuntos.Visible = true;
                     estadoDelJuego = ((int)constantes.EstadoDelJuego.GameOver);
+                    miSonido.reproducirSonido("Aprobado");
                     MessageBox.Show("Felicidades, completaste el rompecabezas.");
                     if (formato.GetMinuto() >= 4)
                     {
@@ -516,10 +522,16 @@ namespace GestionProyectosSoftware
         {
             
             lp = "picture0";
-            if(lp == (((Bitmap)e.Data.GetData((DataFormats.Bitmap), true)).Tag).ToString())
+            if (lp == (((Bitmap)e.Data.GetData((DataFormats.Bitmap), true)).Tag).ToString())
             {
                 pictureBox1.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[0]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
 
         }
@@ -531,6 +543,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox2.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[1]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -549,6 +567,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox3.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[2]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -567,6 +591,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox4.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[3]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -585,6 +615,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox5.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[4]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -603,6 +639,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox6.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[5]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -621,6 +663,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox7.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[6]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -639,6 +687,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox8.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[7]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -657,6 +711,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox9.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[8]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1153,6 +1213,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox10.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[0]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1171,6 +1237,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox11.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[1]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1189,6 +1261,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox12.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[2]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1207,6 +1285,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox13.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[3]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1225,6 +1309,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox14.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[4]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1243,6 +1333,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox15.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[5]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1261,6 +1357,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox16.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[6]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1279,6 +1381,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox17.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[7]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1297,6 +1405,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox18.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[8]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1315,6 +1429,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox19.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[9]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1333,6 +1453,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox20.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[10]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1351,6 +1477,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox21.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[11]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1369,6 +1501,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox22.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[12]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1387,6 +1525,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox23.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[13]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1405,6 +1549,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox24.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[14]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1423,6 +1573,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox25.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[15]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1442,6 +1598,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox26.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[0]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1460,6 +1622,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox27.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[1]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1478,6 +1646,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox28.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[2]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1496,6 +1670,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox29.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[3]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1514,6 +1694,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox30.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[4]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1531,6 +1717,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox31.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[5]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1548,6 +1740,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox32.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[6]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1565,6 +1763,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox33.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[7]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1582,6 +1786,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox34.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[8]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1599,6 +1809,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox35.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[9]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1617,6 +1833,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox36.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[10]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1635,6 +1857,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox37.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[11]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1653,6 +1881,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox38.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[12]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1671,6 +1905,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox39.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[13]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1689,6 +1929,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox40.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[14]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1707,6 +1953,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox41.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[15]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1725,6 +1977,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox42.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[16]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1743,6 +2001,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox43.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[17]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1761,6 +2025,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox44.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[18]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1779,6 +2049,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox45.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[19]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1797,6 +2073,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox46.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[20]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1815,6 +2097,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox47.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[21]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1833,6 +2121,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox48.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[22]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1851,6 +2145,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox49.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[23]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 
@@ -1869,6 +2169,12 @@ namespace GestionProyectosSoftware
             {
                 pictureBox50.Image = (Bitmap)e.Data.GetData((DataFormats.Bitmap), true);
                 ((PictureBox)panel_pieces.Controls[24]).Image = null;
+                miSonido.reproducirSonido("Correcto");
+            }
+
+            else
+            {
+                miSonido.reproducirSonido("Incorrecto");
             }
         }
 

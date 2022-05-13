@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Media;
 using WMPLib;
 using System.Threading;
+
 namespace GestionProyectosSoftware
 {
     public partial class Piano : Form
@@ -19,7 +20,44 @@ namespace GestionProyectosSoftware
         SoundPlayer player = new SoundPlayer();
         Queue<Thread> threadQueue = new Queue<Thread>();
         int SustainMiliseconds = 2000;
-        WindowsMediaPlayer mediaplayer = new WindowsMediaPlayer();
+        bool SeMuestranNotas = true;
+        WindowsMediaPlayer mediaplayer = new WindowsMediaPlayer();       
+
+        Dictionary<String, String> NotasTecladoOctava1 = new Dictionary<string, string> {
+            {"Do","Z"},
+            {"Do#","S"},
+            {"Re","X"},
+            {"Re#","D"},
+            {"Mi","C"},
+            {"Fa","V"},
+            {"Fa#","G"},
+            {"Sol","B"},
+            {"Sol#","H"},
+            {"La","N"},
+            {"La#","J"},
+            {"Si","M"},
+        };
+
+        Dictionary<String, String> NotasTecladoOctava2 = new Dictionary<string, string> {
+            {"Do","Q"},
+            {"Do#","2"},
+            {"Re","W"},
+            {"Re#","3"},
+            {"Mi","E"},
+            {"Fa","R"},
+            {"Fa#","5"},
+            {"Sol","T"},
+            {"Sol#","6"},
+            {"La","Y"},
+            {"La#","7"},
+            {"Si","U"},
+        };
+
+        Dictionary<String, String> NotasTecladoOctava3 = new Dictionary<string, string>
+        {
+                {"Do","I"}
+        };
+
         public Piano()
         {
             InitializeComponent();
@@ -68,6 +106,7 @@ namespace GestionProyectosSoftware
             {
                 ((Button)control).Click += TocarNota;
             }
+
         }
         public void TocarNota(Object sender, EventArgs e)
         {
@@ -242,6 +281,39 @@ namespace GestionProyectosSoftware
         private void as5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonAlternar_Click(object sender, EventArgs e)
+        {
+            foreach (Button btn in panel1.Controls)
+            {
+                if (SeMuestranNotas) {
+                    if (NotasTecladoOctava1.ContainsKey(btn.Text))
+                    {
+                        btn.Text = getKey(NotasTecladoOctava1, btn.Text);
+                    }
+                    SeMuestranNotas = false;
+                }
+                else
+                {
+                    if (NotasTecladoOctava1.ContainsValue(btn.Text)) {
+                        btn.Text = getKey(NotasTecladoOctava1,btn.Text);
+                    }
+                }
+            }
+        }
+
+        public string getKey(Dictionary<String,String> dictionary, string value)
+        {
+            var keys = dictionary.Keys;
+            foreach(string key in keys)
+            {
+                if (dictionary[key] == value)
+                {
+                    return key;
+                }
+            }
+            return "";
         }
     }
 }

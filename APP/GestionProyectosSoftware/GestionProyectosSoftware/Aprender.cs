@@ -16,5 +16,12 @@ namespace GestionProyectosSoftware
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Piano p = new Piano();
+            p.Show();
+        }
     }
 }

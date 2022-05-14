@@ -130,6 +130,9 @@
     </Compile>
     <Compile Include="Sonido.cs" />
     <Compile Include="TimeFormat.cs" />
+    <EmbeddedResource Include="Aprender.resx">
+      <DependentUpon>Aprender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CompletaFrases.resx">
       <DependentUpon>CompletaFrases.cs</DependentUpon>
     </EmbeddedResource>

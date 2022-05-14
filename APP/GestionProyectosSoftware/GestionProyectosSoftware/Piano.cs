@@ -600,6 +600,11 @@ namespace GestionProyectosSoftware
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Aprender ap = new Aprender();
+            ap.Show();
+        }
     }  
 
 }

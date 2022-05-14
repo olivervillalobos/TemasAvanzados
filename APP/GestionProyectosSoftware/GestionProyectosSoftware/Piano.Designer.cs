@@ -72,7 +72,7 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnRegresar.Location = new System.Drawing.Point(828, 562);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(107, 46);
             this.btnRegresar.TabIndex = 14;
@@ -108,7 +108,7 @@
             this.panel1.Controls.Add(this.d4);
             this.panel1.Controls.Add(this.c4);
             this.panel1.Location = new System.Drawing.Point(77, 166);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(973, 370);
             this.panel1.TabIndex = 50;
@@ -124,7 +124,7 @@
             this.as5.ForeColor = System.Drawing.Color.White;
             this.as5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.as5.Location = new System.Drawing.Point(821, 4);
-            this.as5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.as5.Margin = new System.Windows.Forms.Padding(4);
             this.as5.Name = "as5";
             this.as5.Size = new System.Drawing.Size(40, 230);
             this.as5.TabIndex = 74;
@@ -146,7 +146,7 @@
             this.gs5.ForeColor = System.Drawing.Color.White;
             this.gs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.gs5.Location = new System.Drawing.Point(756, 5);
-            this.gs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gs5.Margin = new System.Windows.Forms.Padding(4);
             this.gs5.Name = "gs5";
             this.gs5.Size = new System.Drawing.Size(40, 230);
             this.gs5.TabIndex = 73;
@@ -168,7 +168,7 @@
             this.fs5.ForeColor = System.Drawing.Color.White;
             this.fs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fs5.Location = new System.Drawing.Point(692, 5);
-            this.fs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fs5.Margin = new System.Windows.Forms.Padding(4);
             this.fs5.Name = "fs5";
             this.fs5.Size = new System.Drawing.Size(40, 230);
             this.fs5.TabIndex = 72;
@@ -190,7 +190,7 @@
             this.ds5.ForeColor = System.Drawing.Color.White;
             this.ds5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ds5.Location = new System.Drawing.Point(565, 5);
-            this.ds5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ds5.Margin = new System.Windows.Forms.Padding(4);
             this.ds5.Name = "ds5";
             this.ds5.Size = new System.Drawing.Size(40, 230);
             this.ds5.TabIndex = 71;
@@ -212,7 +212,7 @@
             this.cs5.ForeColor = System.Drawing.Color.White;
             this.cs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.cs5.Location = new System.Drawing.Point(500, 5);
-            this.cs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cs5.Margin = new System.Windows.Forms.Padding(4);
             this.cs5.Name = "cs5";
             this.cs5.Size = new System.Drawing.Size(40, 230);
             this.cs5.TabIndex = 70;
@@ -234,7 +234,7 @@
             this.as4.ForeColor = System.Drawing.Color.White;
             this.as4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.as4.Location = new System.Drawing.Point(373, 4);
-            this.as4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.as4.Margin = new System.Windows.Forms.Padding(4);
             this.as4.Name = "as4";
             this.as4.Size = new System.Drawing.Size(40, 230);
             this.as4.TabIndex = 69;
@@ -256,7 +256,7 @@
             this.gs4.ForeColor = System.Drawing.Color.White;
             this.gs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.gs4.Location = new System.Drawing.Point(309, 5);
-            this.gs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gs4.Margin = new System.Windows.Forms.Padding(4);
             this.gs4.Name = "gs4";
             this.gs4.Size = new System.Drawing.Size(40, 228);
             this.gs4.TabIndex = 68;
@@ -278,7 +278,7 @@
             this.fs4.ForeColor = System.Drawing.Color.White;
             this.fs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fs4.Location = new System.Drawing.Point(245, 4);
-            this.fs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fs4.Margin = new System.Windows.Forms.Padding(4);
             this.fs4.Name = "fs4";
             this.fs4.Size = new System.Drawing.Size(40, 230);
             this.fs4.TabIndex = 67;
@@ -300,7 +300,7 @@
             this.ds4.ForeColor = System.Drawing.Color.White;
             this.ds4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ds4.Location = new System.Drawing.Point(124, 4);
-            this.ds4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ds4.Margin = new System.Windows.Forms.Padding(4);
             this.ds4.Name = "ds4";
             this.ds4.Size = new System.Drawing.Size(40, 230);
             this.ds4.TabIndex = 66;
@@ -322,7 +322,7 @@
             this.cs4.ForeColor = System.Drawing.Color.White;
             this.cs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.cs4.Location = new System.Drawing.Point(49, 4);
-            this.cs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cs4.Margin = new System.Windows.Forms.Padding(4);
             this.cs4.Name = "cs4";
             this.cs4.Size = new System.Drawing.Size(40, 230);
             this.cs4.TabIndex = 65;
@@ -343,7 +343,7 @@
             this.c6.ForeColor = System.Drawing.Color.Black;
             this.c6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.c6.Location = new System.Drawing.Point(901, 4);
-            this.c6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.c6.Margin = new System.Windows.Forms.Padding(4);
             this.c6.Name = "c6";
             this.c6.Size = new System.Drawing.Size(68, 364);
             this.c6.TabIndex = 64;
@@ -644,7 +644,7 @@
             this.SustainCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SustainCheck.ForeColor = System.Drawing.Color.White;
             this.SustainCheck.Location = new System.Drawing.Point(77, 562);
-            this.SustainCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SustainCheck.Margin = new System.Windows.Forms.Padding(4);
             this.SustainCheck.Name = "SustainCheck";
             this.SustainCheck.Size = new System.Drawing.Size(107, 46);
             this.SustainCheck.TabIndex = 51;
@@ -700,6 +700,7 @@
             this.button1.TabIndex = 53;
             this.button1.Text = "Aprender";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Piano
             // 
@@ -718,7 +719,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Piano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

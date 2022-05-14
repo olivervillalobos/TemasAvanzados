@@ -245,6 +245,9 @@
     <None Include="Resources\Correcto.wav" />
     <None Include="Resources\Incorrecto.wav" />
     <None Include="Resources\NoAprobado.wav" />
+    <None Include="Resources\Martinillo1.png" />
+    <None Include="Resources\Granja1.png" />
+    <None Include="Resources\Estrellita1.png" />
     <Content Include="Resources\sanrio.jpg" />
     <Content Include="Resources\spiderman.jpg" />
     <Content Include="Screenshot 2021-11-22 192823.ico" />

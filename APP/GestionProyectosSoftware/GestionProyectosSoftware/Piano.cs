@@ -600,6 +600,20 @@ namespace GestionProyectosSoftware
             }
         }
 
+        private void lbEstrellita_Click(object sender, EventArgs e)
+        {
+            pbPartitura.Image = Properties.Resources.Estrellita;
+        }
+
+        private void lbMartinillo_Click(object sender, EventArgs e)
+        {
+            pbPartitura.Image = Properties.Resources.Martinillo;
+        }
+
+        private void lbGranja_Click(object sender, EventArgs e)
+        {
+            pbPartitura.Image = Properties.Resources.Granja;
+        }
     }  
 
 }

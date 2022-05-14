@@ -614,6 +614,11 @@ namespace GestionProyectosSoftware
         {
             pbPartitura.Image = Properties.Resources.Granja;
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Aprender ap = new Aprender();
+            ap.Show();
+        }
     }  
 
 }

@@ -122,7 +122,7 @@ namespace GestionProyectosSoftware
             {
                 ((Button)control).Click += TocarNota;
             }
-
+            lbEstrellita.Font = new Font(this.lbEstrellita.Font, FontStyle.Underline);
             lbl_Nota.Visible = false;
         }
         public void TocarNota(Object sender, EventArgs e)
@@ -603,16 +603,25 @@ namespace GestionProyectosSoftware
         private void lbEstrellita_Click(object sender, EventArgs e)
         {
             pbPartitura.Image = Properties.Resources.Estrellita;
+            lbEstrellita.Font = new Font(this.lbEstrellita.Font, FontStyle.Underline);
+            lbMartinillo.Font = new Font(this.lbEstrellita.Font, FontStyle.Regular);
+            lbGranja.Font = new Font(this.lbEstrellita.Font, FontStyle.Regular);
         }
 
         private void lbMartinillo_Click(object sender, EventArgs e)
         {
             pbPartitura.Image = Properties.Resources.Martinillo;
+            lbEstrellita.Font = new Font(this.lbEstrellita.Font, FontStyle.Regular);
+            lbMartinillo.Font = new Font(this.lbEstrellita.Font, FontStyle.Underline);
+            lbGranja.Font = new Font(this.lbEstrellita.Font, FontStyle.Regular);
         }
 
         private void lbGranja_Click(object sender, EventArgs e)
         {
             pbPartitura.Image = Properties.Resources.Granja;
+            lbEstrellita.Font = new Font(this.lbEstrellita.Font, FontStyle.Regular);
+            lbMartinillo.Font = new Font(this.lbEstrellita.Font, FontStyle.Regular);
+            lbGranja.Font = new Font(this.lbEstrellita.Font, FontStyle.Underline);
         }
         private void button1_Click(object sender, EventArgs e)
         {

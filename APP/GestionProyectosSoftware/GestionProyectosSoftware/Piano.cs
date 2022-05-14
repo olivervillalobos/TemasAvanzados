@@ -70,7 +70,6 @@ namespace GestionProyectosSoftware
           {"Z", "c4"}
         };
         String nombreBoton;
-        WindowsMediaPlayer mediaplayer = new WindowsMediaPlayer();
         public Piano()
         {
             InitializeComponent();
@@ -538,6 +537,7 @@ namespace GestionProyectosSoftware
             as5.BackColor = Color.Black;
 
             nombreBoton = "";
+        }
         public string getKey(Dictionary<String,String> dictionary, string value)
         {
             var keys = dictionary.Keys;
@@ -550,5 +550,52 @@ namespace GestionProyectosSoftware
             }
             return "";
         }
-    }
+
+        private void buttonAlternar_Click(object sender, EventArgs e)
+        {
+ 
+            foreach (Control boton in panel1.Controls)
+            {
+                string key = ((Button)boton).Text;
+                string tag = ((Button)boton).Tag.ToString();
+                if ( tag == "4")
+                {
+                    if (NotasTecladoOctava1.ContainsKey(key))
+                    {
+                        ((Button)boton).Text = NotasTecladoOctava1[key];
+                    }
+                    else 
+                    {
+                        ((Button)boton).Text = getKey(NotasTecladoOctava1, key);
+                    }
+                }
+                if (tag == "5")
+                {
+                    if (NotasTecladoOctava2.ContainsKey(key))
+                    {
+                        ((Button)boton).Text = NotasTecladoOctava2[key];
+
+                    }
+                    else
+                    {
+                        ((Button)boton).Text = getKey(NotasTecladoOctava2, key);
+                    }
+                }
+                if (tag == "6")
+                {
+                    if (NotasTecladoOctava3.ContainsKey(key))
+                    {
+                        ((Button)boton).Text = NotasTecladoOctava3[key];
+
+                    }
+                    else
+                    {
+                        ((Button)boton).Text = getKey(NotasTecladoOctava3, key);
+                    }
+                }
+            }
+        }
+
+    }  
+
 }

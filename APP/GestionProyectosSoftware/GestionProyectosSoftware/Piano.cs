@@ -283,70 +283,70 @@ namespace GestionProyectosSoftware
         private void cs4_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Reb";
+            lbl_Nota.Text = "Do#";
 
         }
 
         private void ds4_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Mib";
+            lbl_Nota.Text = "Re#";
 
         }
 
         private void fs4_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Solb";
+            lbl_Nota.Text = "Fa#";
 
         }
 
         private void gs4_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Lab";
+            lbl_Nota.Text = "Sol#";
 
         }
 
         private void as4_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Sib";
+            lbl_Nota.Text = "La#";
 
         }
 
         private void cs5_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Reb";
+            lbl_Nota.Text = "Do#";
 
         }
 
         private void ds5_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Mib";
+            lbl_Nota.Text = "Re#";
 
         }
 
         private void fs5_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Solb";
+            lbl_Nota.Text = "Fa#";
 
         }
 
         private void gs5_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Lab";
+            lbl_Nota.Text = "Sol#";
 
         }
 
         private void as5_Click(object sender, EventArgs e)
         {
             lbl_Nota.Visible = true;
-            lbl_Nota.Text = "Sib";
+            lbl_Nota.Text = "La#";
 
         }
 
@@ -441,64 +441,64 @@ namespace GestionProyectosSoftware
                         temp = "Do";
                         lbl_Nota.Text = temp;
                     }
-                    //Q
+                    //S
                     else if (nombreBoton == "cs4")
                     {
-                        temp = "Reb";
+                        temp = "Do#";
                         lbl_Nota.Text = temp;
                     }
-                    //W
+                    //D
                     else if (nombreBoton == "ds4")
                     {
-                        temp = "Mib";
+                        temp = "Re#";
                         lbl_Nota.Text = temp;
                     }
-                    //E
+                    //G
                     else if (nombreBoton == "fs4")
                     {
-                        temp = "Solb";
+                        temp = "Fa#";
                         lbl_Nota.Text = temp;
                     }
-                    //R
+                    //H
                     else if (nombreBoton == "gs4")
                     {
-                        temp = "Lab";
+                        temp = "Sol#";
                         lbl_Nota.Text = temp;
                     }
-                    //T
+                    //J
                     else if (nombreBoton == "as4")
                     {
-                        temp = "Sib";
+                        temp = "La#";
                         lbl_Nota.Text = temp;
                     }
-                    //Y
-                    else if (nombreBoton == "cs4")
+                    //2
+                    else if (nombreBoton == "cs5")
                     {
-                        temp = "Reb";
+                        temp = "Do#";
                         lbl_Nota.Text = temp;
                     }
-                    //U
-                    else if (nombreBoton == "ds4")
+                    //3
+                    else if (nombreBoton == "ds5")
                     {
-                        temp = "Mib";
+                        temp = "Re#";
                         lbl_Nota.Text = temp;
                     }
-                    //I
+                    //5
                     else if (nombreBoton == "fs5")
                     {
-                        temp = "Solb";
+                        temp = "Fa#";
                         lbl_Nota.Text = temp;
                     }
-                    //O
+                    //6
                     else if (nombreBoton == "gs5")
                     {
-                        temp = "Lab";
+                        temp = "Sol#";
                         lbl_Nota.Text = temp;
                     }
-                    //P
+                    //7
                     else if (nombreBoton == "as5")
                     {
-                        temp = "Sib";
+                        temp = "La#";
                         lbl_Nota.Text = temp;
                     }
                 }   

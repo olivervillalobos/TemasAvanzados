@@ -64,10 +64,14 @@ namespace GestionProyectosSoftware
         //Arreglo para la relacion con el teclado y los botones
         string[,] TecladoSonido = new string[25, 2]
         {
-          {"A","d4"},{"B", "d5"},{"C","g4"},{"D", "a4"},{"E","fs4"},{"F", "c5"},{"G","e5"},{"H", "g5"},
-          {"I","fs5"},{"J", "b5"},{"K","c6"},{"M", "a5"},{"N", "f5"},{"O","gs5"},{"P", "as5"},{"Q","cs4"},
-          {"R", "gs4"},{"S","f4"},{"T", "as4"},{"U","ds4"},{"V", "b4"},{"W","ds4"},{"X", "e4"},{"Y","cs5"},
-          {"Z", "c4"}
+          {"Z", "c4"},{"S","cs4"},{"X","d4"},{"D","ds4"},
+          {"C", "e4"},{"V","f4"},{"G","fs4"},{"B","g4"},
+          {"H", "gs4"},{"N", "a4"},{"J", "as4"},{"M", "b4"},
+          {"Q", "c5"},{"2","cs5"},{"W", "d5"},{"3","ds5"},
+          {"E","e5"},{"R", "f5"},{"5","fs5"},{"T", "g5"},
+          {"6","gs5"},{"Y", "a5"},{"7", "as5"},{"U", "b5"},{"I","c6"},
+          
+          
         };
         String nombreBoton;
         public Piano()
@@ -150,7 +154,7 @@ namespace GestionProyectosSoftware
             }
             catch(Exception exp)
             {
-                MessageBox.Show(exp.ToString());
+                MessageBox.Show("Ocurrió un error!");
             }
         }
 
@@ -166,7 +170,7 @@ namespace GestionProyectosSoftware
                 player.close();
             }catch(Exception exp)
             {
-                MessageBox.Show(exp.ToString());
+                MessageBox.Show("Ocurrió un error!");
 
             }
         }

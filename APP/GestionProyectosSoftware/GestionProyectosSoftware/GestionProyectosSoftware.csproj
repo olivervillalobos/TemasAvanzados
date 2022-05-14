@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aprender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender.Designer.cs">
+      <DependentUpon>Aprender.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompletaFrases.cs">
       <SubType>Form</SubType>
     </Compile>

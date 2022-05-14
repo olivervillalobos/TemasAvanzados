@@ -76,10 +76,10 @@
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegresar.Location = new System.Drawing.Point(828, 562);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar.Location = new System.Drawing.Point(828, 882);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(80, 37);
+            this.btnRegresar.Size = new System.Drawing.Size(107, 46);
             this.btnRegresar.TabIndex = 14;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -112,9 +112,10 @@
             this.panel1.Controls.Add(this.e4);
             this.panel1.Controls.Add(this.d4);
             this.panel1.Controls.Add(this.c4);
-            this.panel1.Location = new System.Drawing.Point(58, 396);
+            this.panel1.Location = new System.Drawing.Point(77, 487);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(730, 301);
+            this.panel1.Size = new System.Drawing.Size(973, 370);
             this.panel1.TabIndex = 50;
             // 
             // as5
@@ -127,9 +128,10 @@
             this.as5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.as5.ForeColor = System.Drawing.Color.White;
             this.as5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.as5.Location = new System.Drawing.Point(616, 3);
+            this.as5.Location = new System.Drawing.Point(821, 4);
+            this.as5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.as5.Name = "as5";
-            this.as5.Size = new System.Drawing.Size(30, 187);
+            this.as5.Size = new System.Drawing.Size(40, 230);
             this.as5.TabIndex = 74;
             this.as5.Tag = "5";
             this.as5.Text = "La#";
@@ -148,9 +150,10 @@
             this.gs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gs5.ForeColor = System.Drawing.Color.White;
             this.gs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.gs5.Location = new System.Drawing.Point(567, 4);
+            this.gs5.Location = new System.Drawing.Point(756, 5);
+            this.gs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gs5.Name = "gs5";
-            this.gs5.Size = new System.Drawing.Size(30, 187);
+            this.gs5.Size = new System.Drawing.Size(40, 230);
             this.gs5.TabIndex = 73;
             this.gs5.Tag = "5";
             this.gs5.Text = "Sol#";
@@ -169,9 +172,10 @@
             this.fs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fs5.ForeColor = System.Drawing.Color.White;
             this.fs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.fs5.Location = new System.Drawing.Point(519, 4);
+            this.fs5.Location = new System.Drawing.Point(692, 5);
+            this.fs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fs5.Name = "fs5";
-            this.fs5.Size = new System.Drawing.Size(30, 187);
+            this.fs5.Size = new System.Drawing.Size(40, 230);
             this.fs5.TabIndex = 72;
             this.fs5.Tag = "5";
             this.fs5.Text = "Fa#";
@@ -190,9 +194,10 @@
             this.ds5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ds5.ForeColor = System.Drawing.Color.White;
             this.ds5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ds5.Location = new System.Drawing.Point(424, 4);
+            this.ds5.Location = new System.Drawing.Point(565, 5);
+            this.ds5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ds5.Name = "ds5";
-            this.ds5.Size = new System.Drawing.Size(30, 187);
+            this.ds5.Size = new System.Drawing.Size(40, 230);
             this.ds5.TabIndex = 71;
             this.ds5.Tag = "5";
             this.ds5.Text = "Re#";
@@ -211,9 +216,10 @@
             this.cs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cs5.ForeColor = System.Drawing.Color.White;
             this.cs5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cs5.Location = new System.Drawing.Point(375, 4);
+            this.cs5.Location = new System.Drawing.Point(500, 5);
+            this.cs5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cs5.Name = "cs5";
-            this.cs5.Size = new System.Drawing.Size(30, 187);
+            this.cs5.Size = new System.Drawing.Size(40, 230);
             this.cs5.TabIndex = 70;
             this.cs5.Tag = "5";
             this.cs5.Text = "Do#";
@@ -232,9 +238,10 @@
             this.as4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.as4.ForeColor = System.Drawing.Color.White;
             this.as4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.as4.Location = new System.Drawing.Point(280, 3);
+            this.as4.Location = new System.Drawing.Point(373, 4);
+            this.as4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.as4.Name = "as4";
-            this.as4.Size = new System.Drawing.Size(30, 187);
+            this.as4.Size = new System.Drawing.Size(40, 230);
             this.as4.TabIndex = 69;
             this.as4.Tag = "4";
             this.as4.Text = "La#";
@@ -253,9 +260,10 @@
             this.gs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gs4.ForeColor = System.Drawing.Color.White;
             this.gs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.gs4.Location = new System.Drawing.Point(232, 4);
+            this.gs4.Location = new System.Drawing.Point(309, 5);
+            this.gs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gs4.Name = "gs4";
-            this.gs4.Size = new System.Drawing.Size(30, 185);
+            this.gs4.Size = new System.Drawing.Size(40, 228);
             this.gs4.TabIndex = 68;
             this.gs4.Tag = "4";
             this.gs4.Text = "Sol#";
@@ -274,9 +282,10 @@
             this.fs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fs4.ForeColor = System.Drawing.Color.White;
             this.fs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.fs4.Location = new System.Drawing.Point(184, 3);
+            this.fs4.Location = new System.Drawing.Point(245, 4);
+            this.fs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fs4.Name = "fs4";
-            this.fs4.Size = new System.Drawing.Size(30, 187);
+            this.fs4.Size = new System.Drawing.Size(40, 230);
             this.fs4.TabIndex = 67;
             this.fs4.Tag = "4";
             this.fs4.Text = "Fa#";
@@ -295,9 +304,10 @@
             this.ds4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ds4.ForeColor = System.Drawing.Color.White;
             this.ds4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ds4.Location = new System.Drawing.Point(93, 3);
+            this.ds4.Location = new System.Drawing.Point(124, 4);
+            this.ds4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ds4.Name = "ds4";
-            this.ds4.Size = new System.Drawing.Size(30, 187);
+            this.ds4.Size = new System.Drawing.Size(40, 230);
             this.ds4.TabIndex = 66;
             this.ds4.Tag = "4";
             this.ds4.Text = "Re#";
@@ -316,9 +326,10 @@
             this.cs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cs4.ForeColor = System.Drawing.Color.White;
             this.cs4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cs4.Location = new System.Drawing.Point(37, 3);
+            this.cs4.Location = new System.Drawing.Point(49, 4);
+            this.cs4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cs4.Name = "cs4";
-            this.cs4.Size = new System.Drawing.Size(30, 187);
+            this.cs4.Size = new System.Drawing.Size(40, 230);
             this.cs4.TabIndex = 65;
             this.cs4.Tag = "4";
             this.cs4.Text = "Do#";
@@ -336,9 +347,10 @@
             this.c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c6.ForeColor = System.Drawing.Color.Black;
             this.c6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.c6.Location = new System.Drawing.Point(676, 3);
+            this.c6.Location = new System.Drawing.Point(901, 4);
+            this.c6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c6.Name = "c6";
-            this.c6.Size = new System.Drawing.Size(51, 296);
+            this.c6.Size = new System.Drawing.Size(68, 364);
             this.c6.TabIndex = 64;
             this.c6.Tag = "6";
             this.c6.Text = "Do";
@@ -355,10 +367,10 @@
             this.b5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b5.ForeColor = System.Drawing.Color.Black;
-            this.b5.Location = new System.Drawing.Point(628, 3);
-            this.b5.Margin = new System.Windows.Forms.Padding(2);
+            this.b5.Location = new System.Drawing.Point(837, 4);
+            this.b5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b5.Name = "b5";
-            this.b5.Size = new System.Drawing.Size(51, 296);
+            this.b5.Size = new System.Drawing.Size(68, 364);
             this.b5.TabIndex = 63;
             this.b5.Tag = "5";
             this.b5.Text = "Si";
@@ -375,10 +387,10 @@
             this.a5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.a5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a5.ForeColor = System.Drawing.Color.Black;
-            this.a5.Location = new System.Drawing.Point(580, 3);
-            this.a5.Margin = new System.Windows.Forms.Padding(2);
+            this.a5.Location = new System.Drawing.Point(773, 4);
+            this.a5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.a5.Name = "a5";
-            this.a5.Size = new System.Drawing.Size(51, 296);
+            this.a5.Size = new System.Drawing.Size(68, 364);
             this.a5.TabIndex = 62;
             this.a5.Tag = "5";
             this.a5.Text = "La";
@@ -395,10 +407,10 @@
             this.g5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.g5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g5.ForeColor = System.Drawing.Color.Black;
-            this.g5.Location = new System.Drawing.Point(532, 3);
-            this.g5.Margin = new System.Windows.Forms.Padding(2);
+            this.g5.Location = new System.Drawing.Point(709, 4);
+            this.g5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.g5.Name = "g5";
-            this.g5.Size = new System.Drawing.Size(51, 296);
+            this.g5.Size = new System.Drawing.Size(68, 364);
             this.g5.TabIndex = 61;
             this.g5.Tag = "5";
             this.g5.Text = "Sol";
@@ -415,10 +427,10 @@
             this.f5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.f5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.f5.ForeColor = System.Drawing.Color.Black;
-            this.f5.Location = new System.Drawing.Point(484, 3);
-            this.f5.Margin = new System.Windows.Forms.Padding(2);
+            this.f5.Location = new System.Drawing.Point(645, 4);
+            this.f5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.f5.Name = "f5";
-            this.f5.Size = new System.Drawing.Size(51, 296);
+            this.f5.Size = new System.Drawing.Size(68, 364);
             this.f5.TabIndex = 60;
             this.f5.Tag = "5";
             this.f5.Text = "Fa";
@@ -435,10 +447,10 @@
             this.e5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.e5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.e5.ForeColor = System.Drawing.Color.Black;
-            this.e5.Location = new System.Drawing.Point(436, 3);
-            this.e5.Margin = new System.Windows.Forms.Padding(2);
+            this.e5.Location = new System.Drawing.Point(581, 4);
+            this.e5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.e5.Name = "e5";
-            this.e5.Size = new System.Drawing.Size(51, 296);
+            this.e5.Size = new System.Drawing.Size(68, 364);
             this.e5.TabIndex = 59;
             this.e5.Tag = "5";
             this.e5.Text = "Mi";
@@ -455,10 +467,10 @@
             this.d5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.d5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d5.ForeColor = System.Drawing.Color.Black;
-            this.d5.Location = new System.Drawing.Point(388, 3);
-            this.d5.Margin = new System.Windows.Forms.Padding(2);
+            this.d5.Location = new System.Drawing.Point(517, 4);
+            this.d5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.d5.Name = "d5";
-            this.d5.Size = new System.Drawing.Size(51, 296);
+            this.d5.Size = new System.Drawing.Size(68, 364);
             this.d5.TabIndex = 58;
             this.d5.Tag = "5";
             this.d5.Text = "Re";
@@ -475,10 +487,10 @@
             this.c5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c5.ForeColor = System.Drawing.Color.Black;
-            this.c5.Location = new System.Drawing.Point(340, 3);
-            this.c5.Margin = new System.Windows.Forms.Padding(2);
+            this.c5.Location = new System.Drawing.Point(453, 4);
+            this.c5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c5.Name = "c5";
-            this.c5.Size = new System.Drawing.Size(51, 296);
+            this.c5.Size = new System.Drawing.Size(68, 364);
             this.c5.TabIndex = 57;
             this.c5.Tag = "5";
             this.c5.Text = "Do";
@@ -495,10 +507,10 @@
             this.b4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b4.ForeColor = System.Drawing.Color.Black;
-            this.b4.Location = new System.Drawing.Point(292, 3);
-            this.b4.Margin = new System.Windows.Forms.Padding(2);
+            this.b4.Location = new System.Drawing.Point(389, 4);
+            this.b4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b4.Name = "b4";
-            this.b4.Size = new System.Drawing.Size(51, 296);
+            this.b4.Size = new System.Drawing.Size(68, 364);
             this.b4.TabIndex = 56;
             this.b4.Tag = "4";
             this.b4.Text = "Si";
@@ -515,10 +527,10 @@
             this.a4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.a4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a4.ForeColor = System.Drawing.Color.Black;
-            this.a4.Location = new System.Drawing.Point(244, 3);
-            this.a4.Margin = new System.Windows.Forms.Padding(2);
+            this.a4.Location = new System.Drawing.Point(325, 4);
+            this.a4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.a4.Name = "a4";
-            this.a4.Size = new System.Drawing.Size(51, 296);
+            this.a4.Size = new System.Drawing.Size(68, 364);
             this.a4.TabIndex = 55;
             this.a4.Tag = "4";
             this.a4.Text = "La";
@@ -535,10 +547,10 @@
             this.g4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.g4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g4.ForeColor = System.Drawing.Color.Black;
-            this.g4.Location = new System.Drawing.Point(196, 3);
-            this.g4.Margin = new System.Windows.Forms.Padding(2);
+            this.g4.Location = new System.Drawing.Point(261, 4);
+            this.g4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.g4.Name = "g4";
-            this.g4.Size = new System.Drawing.Size(51, 296);
+            this.g4.Size = new System.Drawing.Size(68, 364);
             this.g4.TabIndex = 54;
             this.g4.Tag = "4";
             this.g4.Text = "Sol";
@@ -555,10 +567,10 @@
             this.f4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.f4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.f4.ForeColor = System.Drawing.Color.Black;
-            this.f4.Location = new System.Drawing.Point(148, 3);
-            this.f4.Margin = new System.Windows.Forms.Padding(2);
+            this.f4.Location = new System.Drawing.Point(197, 4);
+            this.f4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.f4.Name = "f4";
-            this.f4.Size = new System.Drawing.Size(51, 296);
+            this.f4.Size = new System.Drawing.Size(68, 364);
             this.f4.TabIndex = 53;
             this.f4.Tag = "4";
             this.f4.Text = "Fa";
@@ -575,10 +587,10 @@
             this.e4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.e4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.e4.ForeColor = System.Drawing.Color.Black;
-            this.e4.Location = new System.Drawing.Point(101, 3);
-            this.e4.Margin = new System.Windows.Forms.Padding(2);
+            this.e4.Location = new System.Drawing.Point(135, 4);
+            this.e4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.e4.Name = "e4";
-            this.e4.Size = new System.Drawing.Size(51, 296);
+            this.e4.Size = new System.Drawing.Size(68, 364);
             this.e4.TabIndex = 52;
             this.e4.Tag = "4";
             this.e4.Text = "Mi";
@@ -595,10 +607,10 @@
             this.d4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.d4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d4.ForeColor = System.Drawing.Color.Black;
-            this.d4.Location = new System.Drawing.Point(53, 3);
-            this.d4.Margin = new System.Windows.Forms.Padding(2);
+            this.d4.Location = new System.Drawing.Point(71, 4);
+            this.d4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.d4.Name = "d4";
-            this.d4.Size = new System.Drawing.Size(51, 296);
+            this.d4.Size = new System.Drawing.Size(68, 364);
             this.d4.TabIndex = 51;
             this.d4.Tag = "4";
             this.d4.Text = "Re";
@@ -615,10 +627,10 @@
             this.c4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c4.ForeColor = System.Drawing.Color.Black;
-            this.c4.Location = new System.Drawing.Point(4, 3);
-            this.c4.Margin = new System.Windows.Forms.Padding(2);
+            this.c4.Location = new System.Drawing.Point(5, 4);
+            this.c4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c4.Name = "c4";
-            this.c4.Size = new System.Drawing.Size(51, 296);
+            this.c4.Size = new System.Drawing.Size(68, 364);
             this.c4.TabIndex = 50;
             this.c4.Tag = "4";
             this.c4.Text = "Do";
@@ -635,9 +647,10 @@
             this.SustainCheck.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
             this.SustainCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SustainCheck.ForeColor = System.Drawing.Color.White;
-            this.SustainCheck.Location = new System.Drawing.Point(58, 718);
+            this.SustainCheck.Location = new System.Drawing.Point(77, 884);
+            this.SustainCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SustainCheck.Name = "SustainCheck";
-            this.SustainCheck.Size = new System.Drawing.Size(80, 37);
+            this.SustainCheck.Size = new System.Drawing.Size(107, 46);
             this.SustainCheck.TabIndex = 51;
             this.SustainCheck.Text = "Sustain";
             this.SustainCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -651,10 +664,9 @@
             this.lbl_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Nota.ForeColor = System.Drawing.Color.White;
             this.lbl_Nota.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_Nota.Location = new System.Drawing.Point(321, 700);
-            this.lbl_Nota.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Nota.Location = new System.Drawing.Point(428, 862);
             this.lbl_Nota.Name = "lbl_Nota";
-            this.lbl_Nota.Size = new System.Drawing.Size(177, 63);
+            this.lbl_Nota.Size = new System.Drawing.Size(218, 76);
             this.lbl_Nota.TabIndex = 52;
             this.lbl_Nota.Text = "NOTA";
             this.lbl_Nota.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -668,10 +680,10 @@
             this.buttonAlternar.FlatAppearance.BorderSize = 0;
             this.buttonAlternar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAlternar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonAlternar.Location = new System.Drawing.Point(542, 717);
-            this.buttonAlternar.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAlternar.Location = new System.Drawing.Point(723, 882);
+            this.buttonAlternar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAlternar.Name = "buttonAlternar";
-            this.buttonAlternar.Size = new System.Drawing.Size(73, 37);
+            this.buttonAlternar.Size = new System.Drawing.Size(97, 46);
             this.buttonAlternar.TabIndex = 52;
             this.buttonAlternar.Text = "Alternar";
             this.buttonAlternar.UseVisualStyleBackColor = false;
@@ -685,9 +697,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(707, 718);
+            this.button1.Location = new System.Drawing.Point(943, 884);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 37);
+            this.button1.Size = new System.Drawing.Size(107, 46);
             this.button1.TabIndex = 53;
             this.button1.Text = "Aprender";
             this.button1.UseVisualStyleBackColor = false;
@@ -696,9 +709,10 @@
             // pbPartitura
             // 
             this.pbPartitura.Image = global::GestionProyectosSoftware.Properties.Resources.Estrellita;
-            this.pbPartitura.Location = new System.Drawing.Point(58, 85);
+            this.pbPartitura.Location = new System.Drawing.Point(77, 105);
+            this.pbPartitura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbPartitura.Name = "pbPartitura";
-            this.pbPartitura.Size = new System.Drawing.Size(730, 287);
+            this.pbPartitura.Size = new System.Drawing.Size(973, 353);
             this.pbPartitura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPartitura.TabIndex = 54;
             this.pbPartitura.TabStop = false;
@@ -706,9 +720,10 @@
             // lbEstrellita
             // 
             this.lbEstrellita.AutoSize = true;
-            this.lbEstrellita.Location = new System.Drawing.Point(62, 46);
+            this.lbEstrellita.Location = new System.Drawing.Point(83, 57);
+            this.lbEstrellita.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEstrellita.Name = "lbEstrellita";
-            this.lbEstrellita.Size = new System.Drawing.Size(119, 13);
+            this.lbEstrellita.Size = new System.Drawing.Size(150, 16);
             this.lbEstrellita.TabIndex = 55;
             this.lbEstrellita.Text = "¿Estrellita dónde estás?";
             this.lbEstrellita.Click += new System.EventHandler(this.lbEstrellita_Click);
@@ -716,9 +731,10 @@
             // lbMartinillo
             // 
             this.lbMartinillo.AutoSize = true;
-            this.lbMartinillo.Location = new System.Drawing.Point(282, 46);
+            this.lbMartinillo.Location = new System.Drawing.Point(376, 57);
+            this.lbMartinillo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMartinillo.Name = "lbMartinillo";
-            this.lbMartinillo.Size = new System.Drawing.Size(48, 13);
+            this.lbMartinillo.Size = new System.Drawing.Size(60, 16);
             this.lbMartinillo.TabIndex = 56;
             this.lbMartinillo.Text = "Martinillo";
             this.lbMartinillo.Click += new System.EventHandler(this.lbMartinillo_Click);
@@ -726,20 +742,21 @@
             // lbGranja
             // 
             this.lbGranja.AutoSize = true;
-            this.lbGranja.Location = new System.Drawing.Point(496, 46);
+            this.lbGranja.Location = new System.Drawing.Point(661, 57);
+            this.lbGranja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGranja.Name = "lbGranja";
-            this.lbGranja.Size = new System.Drawing.Size(145, 13);
+            this.lbGranja.Size = new System.Drawing.Size(182, 16);
             this.lbGranja.TabIndex = 57;
             this.lbGranja.Text = "La granja del viejo McDonald";
             this.lbGranja.Click += new System.EventHandler(this.lbGranja_Click);
             // 
             // Piano
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(837, 799);
+            this.ClientSize = new System.Drawing.Size(1116, 983);
             this.Controls.Add(this.lbGranja);
             this.Controls.Add(this.lbMartinillo);
             this.Controls.Add(this.lbEstrellita);
@@ -754,7 +771,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.Name = "Piano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

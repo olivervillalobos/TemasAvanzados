@@ -59,9 +59,9 @@ namespace GestionProyectosSoftware
 
         private void buttonQ_Click(object sender, EventArgs e)
         {
-          
+
             txtbox.Text = txtbox.Text + "Q";
-            
+
         }
 
         private void buttonW_Click(object sender, EventArgs e)
@@ -192,6 +192,24 @@ namespace GestionProyectosSoftware
         private void buttonM_Click(object sender, EventArgs e)
         {
             txtbox.Text = txtbox.Text + "M";
+        }
+
+        //Funcion que retorna un arreglo de 10 palabras random sacadas de un arreglo previamente establecido
+        private String[] palabraRandom(String[] array)
+        {
+            Random rnd = new Random();
+            List<int> orden = Enumerable.Range(0, 20).OrderBy(i => rnd.Next()).Take(10).ToList();
+            String[] palabras = new String[10];
+            for(int i = 0; i < 10; i++)
+            {
+                palabras[i] = array[orden[i]];
+            }
+            return palabras;
+        }
+
+        private void bt_Verificar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

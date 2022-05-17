@@ -211,5 +211,10 @@ namespace GestionProyectosSoftware
         {
 
         }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = "";
+        }
     }
 }

@@ -56,5 +56,142 @@ namespace GestionProyectosSoftware
             Form frmMenu = new Menu();
             frmMenu.Show();
         }
+
+        private void buttonQ_Click(object sender, EventArgs e)
+        {
+          
+            txtbox.Text = txtbox.Text + "Q";
+            
+        }
+
+        private void buttonW_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "W";
+        }
+
+        private void buttonE_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "E";
+        }
+
+        private void buttonR_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "R";
+        }
+
+        private void buttonT_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "T";
+        }
+
+        private void buttonY_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "Y";
+        }
+
+        private void buttonU_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "U";
+        }
+
+        private void buttonI_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "I";
+        }
+
+        private void buttonO_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "O";
+        }
+
+        private void buttonP_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "P";
+        }
+
+        private void buttonA_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "A";
+        }
+
+        private void buttonS_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "S";
+        }
+
+        private void buttonD_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "D";
+        }
+
+        private void buttonF_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "F";
+        }
+
+        private void buttonG_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "G";
+        }
+
+        private void buttonH_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "H";
+        }
+
+        private void buttonJ_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "J";
+        }
+
+        private void buttonK_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "K";
+        }
+
+        private void buttonL_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "L";
+        }
+
+        private void buttonÑ_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "Ñ";
+        }
+
+        private void buttonZ_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "Z";
+        }
+
+        private void buttonX_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "X";
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "C";
+        }
+
+        private void buttonV_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "V";
+        }
+
+        private void buttonB_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "B";
+        }
+
+        private void buttonN_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "N";
+        }
+
+        private void buttonM_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = txtbox.Text + "M";
+        }
     }
 }

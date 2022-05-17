@@ -60,138 +60,163 @@ namespace GestionProyectosSoftware
         private void buttonQ_Click(object sender, EventArgs e)
         {
           
-            txtbox.Text = txtbox.Text + "Q";
+            txtbox.Text = txtbox.Text + buttonQ.Text;
             
         }
 
         private void buttonW_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "W";
+            txtbox.Text = txtbox.Text + buttonW.Text;
         }
 
         private void buttonE_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "E";
+            txtbox.Text = txtbox.Text + buttonE.Text;
         }
 
         private void buttonR_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "R";
+            txtbox.Text = txtbox.Text + buttonR.Text;
         }
 
         private void buttonT_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "T";
+            txtbox.Text = txtbox.Text + buttonT.Text;
         }
 
         private void buttonY_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "Y";
+            txtbox.Text = txtbox.Text + buttonY.Text;
         }
 
         private void buttonU_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "U";
+            txtbox.Text = txtbox.Text + buttonU.Text;
         }
 
         private void buttonI_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "I";
+            txtbox.Text = txtbox.Text + buttonI.Text;
         }
 
         private void buttonO_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "O";
+            txtbox.Text = txtbox.Text + buttonO.Text;
         }
 
         private void buttonP_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "P";
+            txtbox.Text = txtbox.Text + buttonP.Text;
         }
 
         private void buttonA_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "A";
+            txtbox.Text = txtbox.Text + buttonA.Text;
         }
 
         private void buttonS_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "S";
+            txtbox.Text = txtbox.Text + buttonS.Text;
         }
 
         private void buttonD_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "D";
+            txtbox.Text = txtbox.Text + buttonD.Text;
         }
 
         private void buttonF_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "F";
+            txtbox.Text = txtbox.Text + buttonF.Text;
         }
 
         private void buttonG_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "G";
+            txtbox.Text = txtbox.Text + buttonG.Text;
         }
 
         private void buttonH_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "H";
+            txtbox.Text = txtbox.Text + buttonH.Text;
         }
 
         private void buttonJ_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "J";
+            txtbox.Text = txtbox.Text + buttonJ.Text;
         }
 
         private void buttonK_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "K";
+            txtbox.Text = txtbox.Text + buttonK.Text;
         }
 
         private void buttonL_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "L";
+            txtbox.Text = txtbox.Text + buttonL.Text;
         }
 
         private void buttonÑ_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "Ñ";
+            txtbox.Text = txtbox.Text + buttonÑ.Text;
         }
 
         private void buttonZ_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "Z";
+            txtbox.Text = txtbox.Text + buttonZ.Text;
         }
 
         private void buttonX_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "X";
+            txtbox.Text = txtbox.Text + buttonX.Text;
         }
 
         private void buttonC_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "C";
+            txtbox.Text = txtbox.Text + buttonC.Text;
         }
 
         private void buttonV_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "V";
+            txtbox.Text = txtbox.Text + buttonV.Text;
         }
 
         private void buttonB_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "B";
+            txtbox.Text = txtbox.Text + buttonB.Text;
         }
 
         private void buttonN_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "N";
+            txtbox.Text = txtbox.Text + buttonN.Text;
         }
 
         private void buttonM_Click(object sender, EventArgs e)
         {
-            txtbox.Text = txtbox.Text + "M";
+            txtbox.Text = txtbox.Text + buttonM.Text;
         }
+
+        private void Borrar_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        //Funcion que retorna un arreglo de 10 palabras random sacadas de un arreglo previamente establecido
+        private String[] palabraRandom(String[] array)
+        {
+            Random rnd = new Random();
+            List<int> orden = Enumerable.Range(0, 20).OrderBy(i => rnd.Next()).Take(10).ToList();
+            String[] palabras = new String[10];
+            for (int i = 0; i < 10; i++)
+            {
+                palabras[i] = array[orden[i]];
+            }
+            return palabras;
+        }
+
     }
 }

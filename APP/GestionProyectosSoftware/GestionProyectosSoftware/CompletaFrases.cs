@@ -206,5 +206,10 @@ namespace GestionProyectosSoftware
             }
             return palabras;
         }
+
+        private void bt_Verificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.buttonW = new System.Windows.Forms.Button();
             this.buttonQ = new System.Windows.Forms.Button();
             this.txtbox = new System.Windows.Forms.TextBox();
+            this.bt_Verificar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -380,6 +381,22 @@
             this.txtbox.Size = new System.Drawing.Size(100, 20);
             this.txtbox.TabIndex = 69;
             // 
+            // bt_Verificar
+            // 
+            this.bt_Verificar.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Verificar.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
+            this.bt_Verificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_Verificar.FlatAppearance.BorderSize = 0;
+            this.bt_Verificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Verificar.ForeColor = System.Drawing.Color.White;
+            this.bt_Verificar.Location = new System.Drawing.Point(430, 186);
+            this.bt_Verificar.Name = "bt_Verificar";
+            this.bt_Verificar.Size = new System.Drawing.Size(80, 37);
+            this.bt_Verificar.TabIndex = 70;
+            this.bt_Verificar.Text = "Verificar";
+            this.bt_Verificar.UseVisualStyleBackColor = false;
+            this.bt_Verificar.Click += new System.EventHandler(this.bt_Verificar_Click);
+            // 
             // CompletaFrases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,6 +404,7 @@
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt_Verificar);
             this.Controls.Add(this.txtbox);
             this.Controls.Add(this.buttonÑ);
             this.Controls.Add(this.buttonM);
@@ -459,5 +477,6 @@
         private System.Windows.Forms.Button buttonW;
         private System.Windows.Forms.Button buttonQ;
         private System.Windows.Forms.TextBox txtbox;
+        private System.Windows.Forms.Button bt_Verificar;
     }
 }

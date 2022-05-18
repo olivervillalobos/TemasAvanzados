@@ -57,9 +57,12 @@
             this.buttonE = new System.Windows.Forms.Button();
             this.buttonW = new System.Windows.Forms.Button();
             this.buttonQ = new System.Windows.Forms.Button();
-            this.txtbox = new System.Windows.Forms.TextBox();
+            this.txtword = new System.Windows.Forms.TextBox();
             this.bt_Verificar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
+            this.lblcorrect = new System.Windows.Forms.Label();
+            this.lblincorrect = new System.Windows.Forms.Label();
+            this.lblword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -84,7 +87,7 @@
             this.buttonÑ.FlatAppearance.BorderSize = 0;
             this.buttonÑ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonÑ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonÑ.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonÑ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonÑ.Location = new System.Drawing.Point(630, 289);
             this.buttonÑ.Margin = new System.Windows.Forms.Padding(2);
             this.buttonÑ.Name = "buttonÑ";
@@ -100,7 +103,7 @@
             this.buttonM.FlatAppearance.BorderSize = 0;
             this.buttonM.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonM.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonM.Location = new System.Drawing.Point(497, 342);
             this.buttonM.Margin = new System.Windows.Forms.Padding(2);
             this.buttonM.Name = "buttonM";
@@ -116,7 +119,7 @@
             this.buttonN.FlatAppearance.BorderSize = 0;
             this.buttonN.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonN.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonN.Location = new System.Drawing.Point(446, 342);
             this.buttonN.Margin = new System.Windows.Forms.Padding(2);
             this.buttonN.Name = "buttonN";
@@ -132,7 +135,7 @@
             this.buttonB.FlatAppearance.BorderSize = 0;
             this.buttonB.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonB.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonB.Location = new System.Drawing.Point(395, 342);
             this.buttonB.Margin = new System.Windows.Forms.Padding(2);
             this.buttonB.Name = "buttonB";
@@ -148,7 +151,7 @@
             this.buttonV.FlatAppearance.BorderSize = 0;
             this.buttonV.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonV.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonV.Location = new System.Drawing.Point(345, 342);
             this.buttonV.Margin = new System.Windows.Forms.Padding(2);
             this.buttonV.Name = "buttonV";
@@ -164,7 +167,7 @@
             this.buttonC.FlatAppearance.BorderSize = 0;
             this.buttonC.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonC.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonC.Location = new System.Drawing.Point(295, 342);
             this.buttonC.Margin = new System.Windows.Forms.Padding(2);
             this.buttonC.Name = "buttonC";
@@ -180,7 +183,7 @@
             this.buttonX.FlatAppearance.BorderSize = 0;
             this.buttonX.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonX.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX.Location = new System.Drawing.Point(244, 342);
             this.buttonX.Margin = new System.Windows.Forms.Padding(2);
             this.buttonX.Name = "buttonX";
@@ -196,7 +199,7 @@
             this.buttonZ.FlatAppearance.BorderSize = 0;
             this.buttonZ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonZ.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonZ.Location = new System.Drawing.Point(193, 342);
             this.buttonZ.Margin = new System.Windows.Forms.Padding(2);
             this.buttonZ.Name = "buttonZ";
@@ -212,7 +215,7 @@
             this.buttonL.FlatAppearance.BorderSize = 0;
             this.buttonL.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonL.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonL.Location = new System.Drawing.Point(578, 289);
             this.buttonL.Margin = new System.Windows.Forms.Padding(2);
             this.buttonL.Name = "buttonL";
@@ -228,7 +231,7 @@
             this.buttonK.FlatAppearance.BorderSize = 0;
             this.buttonK.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonK.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonK.Location = new System.Drawing.Point(526, 289);
             this.buttonK.Margin = new System.Windows.Forms.Padding(2);
             this.buttonK.Name = "buttonK";
@@ -244,7 +247,7 @@
             this.buttonJ.FlatAppearance.BorderSize = 0;
             this.buttonJ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonJ.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonJ.Location = new System.Drawing.Point(474, 289);
             this.buttonJ.Margin = new System.Windows.Forms.Padding(2);
             this.buttonJ.Name = "buttonJ";
@@ -260,7 +263,7 @@
             this.buttonH.FlatAppearance.BorderSize = 0;
             this.buttonH.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonH.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonH.Location = new System.Drawing.Point(422, 289);
             this.buttonH.Margin = new System.Windows.Forms.Padding(2);
             this.buttonH.Name = "buttonH";
@@ -276,7 +279,7 @@
             this.buttonG.FlatAppearance.BorderSize = 0;
             this.buttonG.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonG.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonG.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonG.Location = new System.Drawing.Point(370, 289);
             this.buttonG.Margin = new System.Windows.Forms.Padding(2);
             this.buttonG.Name = "buttonG";
@@ -292,7 +295,7 @@
             this.buttonF.FlatAppearance.BorderSize = 0;
             this.buttonF.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonF.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonF.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonF.Location = new System.Drawing.Point(318, 289);
             this.buttonF.Margin = new System.Windows.Forms.Padding(2);
             this.buttonF.Name = "buttonF";
@@ -308,7 +311,7 @@
             this.buttonD.FlatAppearance.BorderSize = 0;
             this.buttonD.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonD.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonD.Location = new System.Drawing.Point(266, 289);
             this.buttonD.Margin = new System.Windows.Forms.Padding(2);
             this.buttonD.Name = "buttonD";
@@ -324,7 +327,7 @@
             this.buttonS.FlatAppearance.BorderSize = 0;
             this.buttonS.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonS.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonS.Location = new System.Drawing.Point(214, 289);
             this.buttonS.Margin = new System.Windows.Forms.Padding(2);
             this.buttonS.Name = "buttonS";
@@ -340,7 +343,7 @@
             this.buttonA.FlatAppearance.BorderSize = 0;
             this.buttonA.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonA.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonA.Location = new System.Drawing.Point(162, 289);
             this.buttonA.Margin = new System.Windows.Forms.Padding(2);
             this.buttonA.Name = "buttonA";
@@ -356,7 +359,7 @@
             this.buttonP.FlatAppearance.BorderSize = 0;
             this.buttonP.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonP.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonP.Location = new System.Drawing.Point(630, 236);
             this.buttonP.Margin = new System.Windows.Forms.Padding(2);
             this.buttonP.Name = "buttonP";
@@ -372,7 +375,7 @@
             this.buttonO.FlatAppearance.BorderSize = 0;
             this.buttonO.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonO.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonO.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonO.Location = new System.Drawing.Point(578, 236);
             this.buttonO.Margin = new System.Windows.Forms.Padding(2);
             this.buttonO.Name = "buttonO";
@@ -388,7 +391,7 @@
             this.buttonI.FlatAppearance.BorderSize = 0;
             this.buttonI.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonI.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonI.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonI.Location = new System.Drawing.Point(526, 236);
             this.buttonI.Margin = new System.Windows.Forms.Padding(2);
             this.buttonI.Name = "buttonI";
@@ -404,7 +407,7 @@
             this.buttonU.FlatAppearance.BorderSize = 0;
             this.buttonU.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonU.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonU.Location = new System.Drawing.Point(474, 236);
             this.buttonU.Margin = new System.Windows.Forms.Padding(2);
             this.buttonU.Name = "buttonU";
@@ -420,7 +423,7 @@
             this.buttonY.FlatAppearance.BorderSize = 0;
             this.buttonY.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonY.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonY.Location = new System.Drawing.Point(422, 236);
             this.buttonY.Margin = new System.Windows.Forms.Padding(2);
             this.buttonY.Name = "buttonY";
@@ -436,7 +439,7 @@
             this.buttonT.FlatAppearance.BorderSize = 0;
             this.buttonT.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonT.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonT.Location = new System.Drawing.Point(370, 236);
             this.buttonT.Margin = new System.Windows.Forms.Padding(2);
             this.buttonT.Name = "buttonT";
@@ -452,7 +455,7 @@
             this.buttonR.FlatAppearance.BorderSize = 0;
             this.buttonR.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonR.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonR.Location = new System.Drawing.Point(318, 236);
             this.buttonR.Margin = new System.Windows.Forms.Padding(2);
             this.buttonR.Name = "buttonR";
@@ -468,7 +471,7 @@
             this.buttonE.FlatAppearance.BorderSize = 0;
             this.buttonE.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonE.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonE.Location = new System.Drawing.Point(266, 236);
             this.buttonE.Margin = new System.Windows.Forms.Padding(2);
             this.buttonE.Name = "buttonE";
@@ -484,7 +487,7 @@
             this.buttonW.FlatAppearance.BorderSize = 0;
             this.buttonW.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonW.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonW.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonW.Location = new System.Drawing.Point(214, 236);
             this.buttonW.Margin = new System.Windows.Forms.Padding(2);
             this.buttonW.Name = "buttonW";
@@ -500,7 +503,7 @@
             this.buttonQ.FlatAppearance.BorderSize = 0;
             this.buttonQ.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.buttonQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQ.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQ.Location = new System.Drawing.Point(162, 236);
             this.buttonQ.Margin = new System.Windows.Forms.Padding(2);
             this.buttonQ.Name = "buttonQ";
@@ -510,13 +513,13 @@
             this.buttonQ.UseVisualStyleBackColor = false;
             this.buttonQ.Click += new System.EventHandler(this.buttonQ_Click);
             // 
-            // txtbox
+            // txtword
             // 
-            this.txtbox.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox.Location = new System.Drawing.Point(266, 60);
-            this.txtbox.Name = "txtbox";
-            this.txtbox.Size = new System.Drawing.Size(302, 46);
-            this.txtbox.TabIndex = 69;
+            this.txtword.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtword.Location = new System.Drawing.Point(275, 135);
+            this.txtword.Name = "txtword";
+            this.txtword.Size = new System.Drawing.Size(302, 53);
+            this.txtword.TabIndex = 69;
             // 
             // bt_Verificar
             // 
@@ -526,7 +529,7 @@
             this.bt_Verificar.FlatAppearance.BorderSize = 0;
             this.bt_Verificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Verificar.ForeColor = System.Drawing.Color.White;
-            this.bt_Verificar.Location = new System.Drawing.Point(673, 69);
+            this.bt_Verificar.Location = new System.Drawing.Point(381, 194);
             this.bt_Verificar.Name = "bt_Verificar";
             this.bt_Verificar.Size = new System.Drawing.Size(80, 37);
             this.bt_Verificar.TabIndex = 70;
@@ -540,7 +543,7 @@
             this.btnBorrar.FlatAppearance.BorderSize = 0;
             this.btnBorrar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrar.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.Location = new System.Drawing.Point(549, 343);
             this.btnBorrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBorrar.Name = "btnBorrar";
@@ -550,6 +553,42 @@
             this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
+            // lblcorrect
+            // 
+            this.lblcorrect.AutoSize = true;
+            this.lblcorrect.BackColor = System.Drawing.Color.Transparent;
+            this.lblcorrect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcorrect.ForeColor = System.Drawing.Color.White;
+            this.lblcorrect.Location = new System.Drawing.Point(275, 58);
+            this.lblcorrect.Name = "lblcorrect";
+            this.lblcorrect.Size = new System.Drawing.Size(109, 25);
+            this.lblcorrect.TabIndex = 72;
+            this.lblcorrect.Text = "Correcto: 0";
+            // 
+            // lblincorrect
+            // 
+            this.lblincorrect.AutoSize = true;
+            this.lblincorrect.BackColor = System.Drawing.Color.Transparent;
+            this.lblincorrect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblincorrect.ForeColor = System.Drawing.Color.White;
+            this.lblincorrect.Location = new System.Drawing.Point(457, 58);
+            this.lblincorrect.Name = "lblincorrect";
+            this.lblincorrect.Size = new System.Drawing.Size(120, 25);
+            this.lblincorrect.TabIndex = 73;
+            this.lblincorrect.Text = "Incorrecto: 0";
+            // 
+            // lblword
+            // 
+            this.lblword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblword.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblword.Location = new System.Drawing.Point(275, 96);
+            this.lblword.Name = "lblword";
+            this.lblword.Size = new System.Drawing.Size(302, 25);
+            this.lblword.TabIndex = 74;
+            this.lblword.Text = "PALABRA";
+            this.lblword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CompletaFrases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -557,9 +596,12 @@
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblword);
+            this.Controls.Add(this.lblincorrect);
+            this.Controls.Add(this.lblcorrect);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.bt_Verificar);
-            this.Controls.Add(this.txtbox);
+            this.Controls.Add(this.txtword);
             this.Controls.Add(this.buttonÑ);
             this.Controls.Add(this.buttonM);
             this.Controls.Add(this.buttonN);
@@ -630,8 +672,11 @@
         private System.Windows.Forms.Button buttonE;
         private System.Windows.Forms.Button buttonW;
         private System.Windows.Forms.Button buttonQ;
-        private System.Windows.Forms.TextBox txtbox;
+        private System.Windows.Forms.TextBox txtword;
         private System.Windows.Forms.Button bt_Verificar;
         private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label lblcorrect;
+        private System.Windows.Forms.Label lblincorrect;
+        private System.Windows.Forms.Label lblword;
     }
 }

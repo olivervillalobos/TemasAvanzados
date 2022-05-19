@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace GestionProyectosSoftware
 {
-    public partial class CompletaFrases : Form
+    public partial class TeclasDivertidas : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
         string[] words = { "PERRO", "GATO", "PEZ", "CIELO", "CARRO" };
@@ -20,9 +20,9 @@ namespace GestionProyectosSoftware
         int correct = 0;
         int incorrect = 0;
         int count = 0;
-        
+        Sonido miSonido = new Sonido();
 
-        public CompletaFrases()
+        public TeclasDivertidas()
         {
             InitializeComponent();
             lblword.Text = words[count];
@@ -237,6 +237,7 @@ namespace GestionProyectosSoftware
                 if (correct > incorrect)
                 {
                     //audioganador
+                    miSonido.reproducirSonido("Aprobado");
                     MessageBox.Show("GANASTE");
                     txtword.Text = null;
                     //INSERTAR UPDATE DEL PUNTAJE
@@ -244,6 +245,7 @@ namespace GestionProyectosSoftware
                 else if (incorrect > correct)
                 {
                     //audioperdiste
+                    miSonido.reproducirSonido("NoAprobado");
                     MessageBox.Show("PERDISTE");
                     txtword.Text = null;
                     //INSERTAR UPDATE DEL PUNTAJE
@@ -264,6 +266,7 @@ namespace GestionProyectosSoftware
                     if (count < words.Length)
                     {
                         lblword.Text = words[count];
+                        miSonido.reproducirSonido("Correcto");
                     }
                     txtword.Text = null;
                 }
@@ -274,6 +277,7 @@ namespace GestionProyectosSoftware
                     if (count < words.Length)
                     {
                         lblword.Text = words[count];
+                        miSonido.reproducirSonido("Incorrecto");
                     }
                     txtword.Text = null;
                 }

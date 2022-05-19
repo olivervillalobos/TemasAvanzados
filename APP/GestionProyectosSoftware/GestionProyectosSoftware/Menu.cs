@@ -205,7 +205,7 @@ namespace GestionProyectosSoftware
                 connection.Close();
             }
             this.Close();
-            Form CompletaFrases = new CompletaFrases();
+            Form CompletaFrases = new TeclasDivertidas();
             CompletaFrases.Show();
         }
     }

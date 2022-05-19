@@ -70,11 +70,11 @@
     <Compile Include="Aprender.Designer.cs">
       <DependentUpon>Aprender.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompletaFrases.cs">
+    <Compile Include="TeclasDivertidas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CompletaFrases.Designer.cs">
-      <DependentUpon>CompletaFrases.cs</DependentUpon>
+    <Compile Include="TeclasDivertidas.Designer.cs">
+      <DependentUpon>TeclasDivertidas.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfirmarCierreSesion.cs">
       <SubType>Form</SubType>
@@ -133,8 +133,8 @@
     <EmbeddedResource Include="Aprender.resx">
       <DependentUpon>Aprender.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompletaFrases.resx">
-      <DependentUpon>CompletaFrases.cs</DependentUpon>
+    <EmbeddedResource Include="TeclasDivertidas.resx">
+      <DependentUpon>TeclasDivertidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfirmarCierreSesion.resx">
       <DependentUpon>ConfirmarCierreSesion.cs</DependentUpon>

@@ -147,7 +147,7 @@ namespace GestionProyectosSoftware
             this.btnCompletaFrases.Name = "btnCompletaFrases";
             this.btnCompletaFrases.Size = new System.Drawing.Size(116, 36);
             this.btnCompletaFrases.TabIndex = 6;
-            this.btnCompletaFrases.Text = "COMPLETA FRASES";
+            this.btnCompletaFrases.Text = "TECLAS DIVERTIDAS";
             this.btnCompletaFrases.UseVisualStyleBackColor = false;
             this.btnCompletaFrases.Click += new System.EventHandler(this.btnCompletaFrases_Click);
             // 

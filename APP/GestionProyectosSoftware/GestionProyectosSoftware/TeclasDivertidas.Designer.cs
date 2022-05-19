@@ -1,6 +1,6 @@
 ﻿namespace GestionProyectosSoftware
 {
-    partial class CompletaFrases
+    partial class TeclasDivertidas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CompletaFrases));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeclasDivertidas));
             this.btnRegresar = new System.Windows.Forms.Button();
             this.buttonÑ = new System.Windows.Forms.Button();
             this.buttonM = new System.Windows.Forms.Button();

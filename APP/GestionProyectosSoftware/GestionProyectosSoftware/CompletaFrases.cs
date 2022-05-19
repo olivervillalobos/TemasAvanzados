@@ -220,11 +220,13 @@ namespace GestionProyectosSoftware
             count++;
             if (count >= words.Length)
             {
+                //correcto
                 if (txtword.Text == lblword.Text)
                 {
                     correct++;
                     txtword.Text = null;
                 }
+                //incorrecto
                 else
                 {
                     incorrect++;
@@ -234,14 +236,17 @@ namespace GestionProyectosSoftware
                 lblincorrect.Text = "Incorrecto: " + incorrect;
                 if (correct > incorrect)
                 {
+                    //audioganador
                     MessageBox.Show("GANASTE");
                     txtword.Text = null;
-
+                    //INSERTAR UPDATE DEL PUNTAJE
                 }
                 else if (incorrect > correct)
                 {
+                    //audioperdiste
                     MessageBox.Show("PERDISTE");
                     txtword.Text = null;
+                    //INSERTAR UPDATE DEL PUNTAJE
                 }
                 count = 0;
                 lblword.Text = words[count];
@@ -252,7 +257,7 @@ namespace GestionProyectosSoftware
             }
             else
             {
-
+                //correcto
                 if (txtword.Text == lblword.Text)
                 {
                     correct++;
@@ -262,6 +267,7 @@ namespace GestionProyectosSoftware
                     }
                     txtword.Text = null;
                 }
+                //incorrecto
                 else
                 {
                     incorrect++;
@@ -272,7 +278,7 @@ namespace GestionProyectosSoftware
                     txtword.Text = null;
                 }
                 lblcorrect.Text = "Correcto: " + correct;
-                lblincorrect.Text = "Inorrecto: " + incorrect;
+                lblincorrect.Text = "Incorrecto: " + incorrect;
             }
             txtword.Focus();
         }

@@ -130,7 +130,7 @@ namespace GestionProyectosSoftware
             try
             {
                 
-                if(threadQueue.Count >= 8)
+                if(threadQueue.Count >= 100)
                 {
                    
                     threadQueue.ElementAt(0).Abort();

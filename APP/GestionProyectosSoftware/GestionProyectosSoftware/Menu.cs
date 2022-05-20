@@ -191,19 +191,6 @@ namespace GestionProyectosSoftware
 
         private void btnCompletaFrases_Click(object sender, EventArgs e)
         {
-            try
-            {
-                connection.Open();
-                SqlCommand altas = new SqlCommand("UPDATE CompletaFrases set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_CompletaFrases = @Id_CompletaFrases", connection);
-                altas.Parameters.AddWithValue("Id_CompletaFrases", global.id_user);
-                altas.ExecuteNonQuery();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                connection.Close();
-            }
             this.Close();
             Form CompletaFrases = new TeclasDivertidas();
             CompletaFrases.Show();

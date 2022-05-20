@@ -77,7 +77,7 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnRegresar.Location = new System.Drawing.Point(621, 717);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(80, 37);
             this.btnRegresar.TabIndex = 14;
@@ -356,7 +356,7 @@
             this.b5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b5.ForeColor = System.Drawing.Color.Black;
             this.b5.Location = new System.Drawing.Point(628, 3);
-            this.b5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.b5.Margin = new System.Windows.Forms.Padding(2);
             this.b5.Name = "b5";
             this.b5.Size = new System.Drawing.Size(51, 296);
             this.b5.TabIndex = 63;
@@ -376,7 +376,7 @@
             this.a5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a5.ForeColor = System.Drawing.Color.Black;
             this.a5.Location = new System.Drawing.Point(580, 3);
-            this.a5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.a5.Margin = new System.Windows.Forms.Padding(2);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(51, 296);
             this.a5.TabIndex = 62;
@@ -396,7 +396,7 @@
             this.g5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g5.ForeColor = System.Drawing.Color.Black;
             this.g5.Location = new System.Drawing.Point(532, 3);
-            this.g5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.g5.Margin = new System.Windows.Forms.Padding(2);
             this.g5.Name = "g5";
             this.g5.Size = new System.Drawing.Size(51, 296);
             this.g5.TabIndex = 61;
@@ -416,7 +416,7 @@
             this.f5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.f5.ForeColor = System.Drawing.Color.Black;
             this.f5.Location = new System.Drawing.Point(484, 3);
-            this.f5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.f5.Margin = new System.Windows.Forms.Padding(2);
             this.f5.Name = "f5";
             this.f5.Size = new System.Drawing.Size(51, 296);
             this.f5.TabIndex = 60;
@@ -436,7 +436,7 @@
             this.e5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.e5.ForeColor = System.Drawing.Color.Black;
             this.e5.Location = new System.Drawing.Point(436, 3);
-            this.e5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.e5.Margin = new System.Windows.Forms.Padding(2);
             this.e5.Name = "e5";
             this.e5.Size = new System.Drawing.Size(51, 296);
             this.e5.TabIndex = 59;
@@ -456,7 +456,7 @@
             this.d5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d5.ForeColor = System.Drawing.Color.Black;
             this.d5.Location = new System.Drawing.Point(388, 3);
-            this.d5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.d5.Margin = new System.Windows.Forms.Padding(2);
             this.d5.Name = "d5";
             this.d5.Size = new System.Drawing.Size(51, 296);
             this.d5.TabIndex = 58;
@@ -476,7 +476,7 @@
             this.c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c5.ForeColor = System.Drawing.Color.Black;
             this.c5.Location = new System.Drawing.Point(340, 3);
-            this.c5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.c5.Margin = new System.Windows.Forms.Padding(2);
             this.c5.Name = "c5";
             this.c5.Size = new System.Drawing.Size(51, 296);
             this.c5.TabIndex = 57;
@@ -496,7 +496,7 @@
             this.b4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b4.ForeColor = System.Drawing.Color.Black;
             this.b4.Location = new System.Drawing.Point(292, 3);
-            this.b4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.b4.Margin = new System.Windows.Forms.Padding(2);
             this.b4.Name = "b4";
             this.b4.Size = new System.Drawing.Size(51, 296);
             this.b4.TabIndex = 56;
@@ -516,7 +516,7 @@
             this.a4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a4.ForeColor = System.Drawing.Color.Black;
             this.a4.Location = new System.Drawing.Point(244, 3);
-            this.a4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.a4.Margin = new System.Windows.Forms.Padding(2);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(51, 296);
             this.a4.TabIndex = 55;
@@ -536,7 +536,7 @@
             this.g4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g4.ForeColor = System.Drawing.Color.Black;
             this.g4.Location = new System.Drawing.Point(196, 3);
-            this.g4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.g4.Margin = new System.Windows.Forms.Padding(2);
             this.g4.Name = "g4";
             this.g4.Size = new System.Drawing.Size(51, 296);
             this.g4.TabIndex = 54;
@@ -556,7 +556,7 @@
             this.f4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.f4.ForeColor = System.Drawing.Color.Black;
             this.f4.Location = new System.Drawing.Point(148, 3);
-            this.f4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.f4.Margin = new System.Windows.Forms.Padding(2);
             this.f4.Name = "f4";
             this.f4.Size = new System.Drawing.Size(51, 296);
             this.f4.TabIndex = 53;
@@ -576,7 +576,7 @@
             this.e4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.e4.ForeColor = System.Drawing.Color.Black;
             this.e4.Location = new System.Drawing.Point(101, 3);
-            this.e4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.e4.Margin = new System.Windows.Forms.Padding(2);
             this.e4.Name = "e4";
             this.e4.Size = new System.Drawing.Size(51, 296);
             this.e4.TabIndex = 52;
@@ -596,7 +596,7 @@
             this.d4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d4.ForeColor = System.Drawing.Color.Black;
             this.d4.Location = new System.Drawing.Point(53, 3);
-            this.d4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.d4.Margin = new System.Windows.Forms.Padding(2);
             this.d4.Name = "d4";
             this.d4.Size = new System.Drawing.Size(51, 296);
             this.d4.TabIndex = 51;
@@ -616,7 +616,7 @@
             this.c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c4.ForeColor = System.Drawing.Color.Black;
             this.c4.Location = new System.Drawing.Point(4, 3);
-            this.c4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.c4.Margin = new System.Windows.Forms.Padding(2);
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(51, 296);
             this.c4.TabIndex = 50;
@@ -669,7 +669,7 @@
             this.buttonAlternar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAlternar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.buttonAlternar.Location = new System.Drawing.Point(542, 717);
-            this.buttonAlternar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAlternar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAlternar.Name = "buttonAlternar";
             this.buttonAlternar.Size = new System.Drawing.Size(73, 37);
             this.buttonAlternar.TabIndex = 52;
@@ -707,11 +707,11 @@
             // 
             this.lbEstrellita.AutoSize = true;
             this.lbEstrellita.BackColor = System.Drawing.Color.Transparent;
-            this.lbEstrellita.Font = new System.Drawing.Font("Adobe Gothic Std B", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEstrellita.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEstrellita.ForeColor = System.Drawing.Color.White;
             this.lbEstrellita.Location = new System.Drawing.Point(53, 46);
             this.lbEstrellita.Name = "lbEstrellita";
-            this.lbEstrellita.Size = new System.Drawing.Size(239, 25);
+            this.lbEstrellita.Size = new System.Drawing.Size(220, 25);
             this.lbEstrellita.TabIndex = 55;
             this.lbEstrellita.Text = "¿Estrellita dónde estás?";
             this.lbEstrellita.Click += new System.EventHandler(this.lbEstrellita_Click);
@@ -720,11 +720,11 @@
             // 
             this.lbMartinillo.AutoSize = true;
             this.lbMartinillo.BackColor = System.Drawing.Color.Transparent;
-            this.lbMartinillo.Font = new System.Drawing.Font("Adobe Gothic Std B", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMartinillo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMartinillo.ForeColor = System.Drawing.Color.White;
             this.lbMartinillo.Location = new System.Drawing.Point(353, 46);
             this.lbMartinillo.Name = "lbMartinillo";
-            this.lbMartinillo.Size = new System.Drawing.Size(104, 25);
+            this.lbMartinillo.Size = new System.Drawing.Size(89, 25);
             this.lbMartinillo.TabIndex = 56;
             this.lbMartinillo.Text = "Martinillo";
             this.lbMartinillo.Click += new System.EventHandler(this.lbMartinillo_Click);
@@ -733,11 +733,11 @@
             // 
             this.lbGranja.AutoSize = true;
             this.lbGranja.BackColor = System.Drawing.Color.Transparent;
-            this.lbGranja.Font = new System.Drawing.Font("Adobe Gothic Std B", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGranja.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGranja.ForeColor = System.Drawing.Color.White;
             this.lbGranja.Location = new System.Drawing.Point(510, 46);
             this.lbGranja.Name = "lbGranja";
-            this.lbGranja.Size = new System.Drawing.Size(277, 25);
+            this.lbGranja.Size = new System.Drawing.Size(263, 25);
             this.lbGranja.TabIndex = 57;
             this.lbGranja.Text = "La granja del viejo McDonald";
             this.lbGranja.Click += new System.EventHandler(this.lbGranja_Click);
@@ -763,7 +763,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Piano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

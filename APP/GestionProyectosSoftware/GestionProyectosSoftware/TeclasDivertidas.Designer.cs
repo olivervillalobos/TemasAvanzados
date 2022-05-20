@@ -63,6 +63,7 @@
             this.lblcorrect = new System.Windows.Forms.Label();
             this.lblincorrect = new System.Windows.Forms.Label();
             this.lblword = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -518,7 +519,7 @@
             this.txtword.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtword.Location = new System.Drawing.Point(275, 135);
             this.txtword.Name = "txtword";
-            this.txtword.Size = new System.Drawing.Size(302, 53);
+            this.txtword.Size = new System.Drawing.Size(302, 44);
             this.txtword.TabIndex = 69;
             // 
             // bt_Verificar
@@ -561,7 +562,7 @@
             this.lblcorrect.ForeColor = System.Drawing.Color.White;
             this.lblcorrect.Location = new System.Drawing.Point(275, 58);
             this.lblcorrect.Name = "lblcorrect";
-            this.lblcorrect.Size = new System.Drawing.Size(109, 25);
+            this.lblcorrect.Size = new System.Drawing.Size(87, 20);
             this.lblcorrect.TabIndex = 72;
             this.lblcorrect.Text = "Correcto: 0";
             // 
@@ -573,7 +574,7 @@
             this.lblincorrect.ForeColor = System.Drawing.Color.White;
             this.lblincorrect.Location = new System.Drawing.Point(457, 58);
             this.lblincorrect.Name = "lblincorrect";
-            this.lblincorrect.Size = new System.Drawing.Size(120, 25);
+            this.lblincorrect.Size = new System.Drawing.Size(98, 20);
             this.lblincorrect.TabIndex = 73;
             this.lblincorrect.Text = "Incorrecto: 0";
             // 
@@ -589,13 +590,30 @@
             this.lblword.Text = "PALABRA";
             this.lblword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CompletaFrases
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.button;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(55, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 37);
+            this.button1.TabIndex = 75;
+            this.button1.Text = "Jugar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // TeclasDivertidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GestionProyectosSoftware.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblword);
             this.Controls.Add(this.lblincorrect);
             this.Controls.Add(this.lblcorrect);
@@ -634,9 +652,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "CompletaFrases";
+            this.Name = "TeclasDivertidas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CompletaFrases";
+            this.Load += new System.EventHandler(this.TeclasDivertidas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -678,5 +697,6 @@
         private System.Windows.Forms.Label lblcorrect;
         private System.Windows.Forms.Label lblincorrect;
         private System.Windows.Forms.Label lblword;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -16,7 +16,7 @@ namespace GestionProyectosSoftware
     {
         SqlConnection connection = new SqlConnection(@"Data Source=sqlservertrini.database.windows.net;Initial Catalog=appschool;Persist Security Info=True;User ID=azureuser;Password=Oliver.1999");
         string[] words = { "PERRO", "GATO", "PEZ", "CIELO", "CARRO" };
-
+        int points;
         int correct = 0;
         int incorrect = 0;
         int count = 0;
@@ -25,8 +25,6 @@ namespace GestionProyectosSoftware
         public TeclasDivertidas()
         {
             InitializeComponent();
-            lblword.Text = words[count];
-            txtword.Focus();
             txtword.CharacterCasing = CharacterCasing.Upper;
         }
 
@@ -63,6 +61,12 @@ namespace GestionProyectosSoftware
             this.Close();
             Form frmMenu = new Menu();
             frmMenu.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            enabled();
+            lblword.Text = words[count];
         }
 
         private void buttonQ_Click(object sender, EventArgs e)
@@ -234,11 +238,23 @@ namespace GestionProyectosSoftware
                 }
                 lblcorrect.Text = "Correcto: " + correct;
                 lblincorrect.Text = "Incorrecto: " + incorrect;
+
+                if (correct != 0)
+                {
+                    points = correct * 10;
+                    upload(points);
+
+                }
+                else if(correct == 0)
+                {
+                    upload(0);
+                }
+
                 if (correct > incorrect)
                 {
                     //audioganador
                     miSonido.reproducirSonido("Aprobado");
-                    MessageBox.Show("GANASTE");
+                    MessageBox.Show("GANASTE /n Puntaje: "+points);
                     txtword.Text = null;
                     //INSERTAR UPDATE DEL PUNTAJE
                 }
@@ -246,16 +262,27 @@ namespace GestionProyectosSoftware
                 {
                     //audioperdiste
                     miSonido.reproducirSonido("NoAprobado");
-                    MessageBox.Show("PERDISTE");
+                    if(correct==0)
+                    {
+                        MessageBox.Show("PERDISTE\n\rPuntaje: 0");
+                    }
+                    else
+                    {
+                        MessageBox.Show("PERDISTE\n\rPuntaje: " + points);
+                    }
                     txtword.Text = null;
                     //INSERTAR UPDATE DEL PUNTAJE
                 }
+
                 count = 0;
                 lblword.Text = words[count];
                 correct = 0;
                 incorrect = 0;
+                points = 0;
                 lblcorrect.Text = "Correcto: " + correct;
                 lblincorrect.Text = "Incorrecto: " + incorrect;
+                times_played();
+                disable();
             }
             else
             {
@@ -291,5 +318,63 @@ namespace GestionProyectosSoftware
         {
             txtword.Text = "";
         }
+
+        private void TeclasDivertidas_Load(object sender, EventArgs e)
+        {
+            disable();
+        }
+
+        public void times_played()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE CompletaFrases set Veces_Jugadas = (Veces_Jugadas + 1) WHERE Id_CompletaFrases = @Id_CompletaFrases", connection);
+                altas.Parameters.AddWithValue("Id_CompletaFrases", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
+
+        public void enabled()
+        {
+            txtword.Visible = true;
+            txtword.Enabled = true;
+            lblword.Enabled = true;
+            bt_Verificar.Enabled = true;
+            txtword.Text = "";
+        }
+
+        public void disable()
+        {
+            txtword.Visible = false;
+            txtword.Enabled = false;
+            lblword.Enabled = false;
+            bt_Verificar.Enabled = false;
+        }
+
+        public void upload(int valor)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand altas = new SqlCommand("UPDATE CompletaFrases set Puntos_CompletaFrases = (Puntos_CompletaFrases + " + valor + ") WHERE Id_CompletaFrases = @Id_CompletaFrases", connection);
+                altas.Parameters.AddWithValue("Id_CompletaFrases", global.id_user);
+                altas.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                connection.Close();
+            }
+        }
+
+
     }
 }

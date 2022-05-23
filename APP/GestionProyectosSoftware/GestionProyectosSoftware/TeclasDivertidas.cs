@@ -66,7 +66,9 @@ namespace GestionProyectosSoftware
         private void button1_Click(object sender, EventArgs e)
         {
             enabled();
+            words = palabraRandom(words);
             lblword.Text = words[count];
+            txtword.Focus();
         }
 
         private void buttonQ_Click(object sender, EventArgs e)
@@ -210,9 +212,9 @@ namespace GestionProyectosSoftware
         private String[] palabraRandom(String[] array)
         {
             Random rnd = new Random();
-            List<int> orden = Enumerable.Range(0, 20).OrderBy(i => rnd.Next()).Take(10).ToList();
-            String[] palabras = new String[10];
-            for(int i = 0; i < 10; i++)
+            List<int> orden = Enumerable.Range(0, array.Length).OrderBy(i => rnd.Next()).Take(array.Length).ToList();
+            String[] palabras = new String[array.Length];
+            for(int i = 0; i < array.Length; i++)
             {
                 palabras[i] = array[orden[i]];
             }
@@ -221,95 +223,123 @@ namespace GestionProyectosSoftware
 
         private void bt_Verificar_Click(object sender, EventArgs e)
         {
-            count++;
-            if (count >= words.Length)
+            if (bt_Verificar.Text == "Verificar")
             {
-                //correcto
-                if (txtword.Text == lblword.Text)
+                count++;
+                if (count >= words.Length)
                 {
-                    correct++;
-                    txtword.Text = null;
-                }
-                //incorrecto
-                else
-                {
-                    incorrect++;
-                    txtword.Text = null;
-                }
-                lblcorrect.Text = "Correcto: " + correct;
-                lblincorrect.Text = "Incorrecto: " + incorrect;
-
-                if (correct != 0)
-                {
-                    points = correct * 10;
-                    upload(points);
-
-                }
-                else if(correct == 0)
-                {
-                    upload(0);
-                }
-
-                if (correct > incorrect)
-                {
-                    //audioganador
-                    miSonido.reproducirSonido("Aprobado");
-                    MessageBox.Show("GANASTE /n Puntaje: "+points);
-                    txtword.Text = null;
-                    //INSERTAR UPDATE DEL PUNTAJE
-                }
-                else if (incorrect > correct)
-                {
-                    //audioperdiste
-                    miSonido.reproducirSonido("NoAprobado");
-                    if(correct==0)
+                    if (txtword.Text == "")
                     {
-                        MessageBox.Show("PERDISTE\n\rPuntaje: 0");
+                        lblword.Text = "ESCRIBE LA PALABRA";
+                        lblword.BackColor = Color.LightYellow;
+                        count--;
+                        bt_Verificar.Text = "Volver";
                     }
+                    //correcto
+                    else if (txtword.Text == lblword.Text)
+                    {
+                        correct++;
+                        lblword.BackColor = Color.LightGreen;
+                        txtword.Text = null;
+                    }
+                    //incorrecto
                     else
                     {
-                        MessageBox.Show("PERDISTE\n\rPuntaje: " + points);
+                        incorrect++;
+                        lblword.BackColor = Color.LightCoral;
+                        txtword.Text = null;
                     }
-                    txtword.Text = null;
-                    //INSERTAR UPDATE DEL PUNTAJE
-                }
+                    lblcorrect.Text = "Correcto: " + correct;
+                    lblincorrect.Text = "Incorrecto: " + incorrect;
 
-                count = 0;
-                lblword.Text = words[count];
-                correct = 0;
-                incorrect = 0;
-                points = 0;
-                lblcorrect.Text = "Correcto: " + correct;
-                lblincorrect.Text = "Incorrecto: " + incorrect;
-                times_played();
-                disable();
+                    if (correct != 0)
+                    {
+                        points = correct * 10;
+                        upload(points);
+
+                    }
+                    else if (correct == 0)
+                    {
+                        upload(0);
+                    }
+
+                    if (correct > incorrect)
+                    {
+                        //audioganador
+                        miSonido.reproducirSonido("Aprobado");
+                        MessageBox.Show("GANASTE\nPuntaje: " + points);
+                        txtword.Text = null;
+                        //INSERTAR UPDATE DEL PUNTAJE
+                    }
+                    else if (incorrect > correct)
+                    {
+                        //audioperdiste
+                        miSonido.reproducirSonido("NoAprobado");
+                        if (correct == 0)
+                        {
+                            MessageBox.Show("PERDISTE\nPuntaje: 0");
+                        }
+                        else
+                        {
+                            MessageBox.Show("PERDISTE\nPuntaje: " + points);
+                        }
+                        txtword.Text = null;
+                        //INSERTAR UPDATE DEL PUNTAJE
+                    }
+
+                    count = 0;
+                    lblword.Text = "PALABRA";
+                    lblword.BackColor = Color.Gainsboro;
+                    correct = 0;
+                    incorrect = 0;
+                    points = 0;
+                    lblcorrect.Text = "Correcto: " + correct;
+                    lblincorrect.Text = "Incorrecto: " + incorrect;
+                    times_played();
+                    disable();
+                }
+                else
+                {
+                    if (txtword.Text == "")
+                    { 
+                        lblword.Text = "ESCRIBE LA PALABRA";
+                        lblword.BackColor = Color.LightYellow;
+                        count--;
+                        bt_Verificar.Text = "Volver";
+                    }
+                    //correcto
+                    else if (txtword.Text == lblword.Text)
+                    {
+                        correct++;
+                        if (count < words.Length)
+                        {
+                            miSonido.reproducirSonido("Correcto");
+                            lblword.BackColor = Color.LightGreen;
+                            bt_Verificar.Text = "Siguiente";
+                        }
+                        txtword.Text = null;
+                    }
+                    //incorrecto
+                    else
+                    {
+                        incorrect++;
+                        if (count < words.Length)
+                        {
+                            miSonido.reproducirSonido("Incorrecto");
+                            lblword.BackColor = Color.LightCoral;
+                            bt_Verificar.Text = "Siguiente";
+                        }
+                        txtword.Text = null;
+                    }
+                    lblcorrect.Text = "Correcto: " + correct;
+                    lblincorrect.Text = "Incorrecto: " + incorrect;
+                }   
             }
             else
             {
-                //correcto
-                if (txtword.Text == lblword.Text)
-                {
-                    correct++;
-                    if (count < words.Length)
-                    {
-                        lblword.Text = words[count];
-                        miSonido.reproducirSonido("Correcto");
-                    }
-                    txtword.Text = null;
-                }
-                //incorrecto
-                else
-                {
-                    incorrect++;
-                    if (count < words.Length)
-                    {
-                        lblword.Text = words[count];
-                        miSonido.reproducirSonido("Incorrecto");
-                    }
-                    txtword.Text = null;
-                }
-                lblcorrect.Text = "Correcto: " + correct;
-                lblincorrect.Text = "Incorrecto: " + incorrect;
+                lblword.Text = words[count];
+                lblword.BackColor = Color.Gainsboro;
+                bt_Verificar.Text = "Verificar";
             }
             txtword.Focus();
         }

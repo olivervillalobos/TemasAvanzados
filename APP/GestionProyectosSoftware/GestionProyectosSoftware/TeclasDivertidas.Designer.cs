@@ -521,6 +521,7 @@
             this.txtword.Name = "txtword";
             this.txtword.Size = new System.Drawing.Size(302, 44);
             this.txtword.TabIndex = 69;
+            this.txtword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bt_Verificar
             // 
